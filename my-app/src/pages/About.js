@@ -8,17 +8,15 @@ function About() {
     return (
         <div className = "flex-box">
             <div className = "box">
-                <h1 style = {{marginTop: 25 + 'px'}}> about me </h1> 
+                <h1> about me </h1> 
 
                 <h3> hello! </h3>
 
-                <p style = {{marginTop: 15 + 'px'}}> i’m a second year cs major at ucla, interested mostly in front-end and ui/ux! </p>
-                <p> in my spare time, i enjoy playing video games, reading manhwas and novels, </p> 
-                <p> and exploring whatever my latest interest might be. </p>  
+                <p style = {{marginTop: 15 + 'px', maxWidth: 600 + 'px'}}> i’m a second year cs major at ucla, interested mostly in front-end and ui/ux! in my spare time, i enjoy playing video games, reading manhwas and novels, and exploring whatever my latest interest might be. </p>  
 
                 <h3 style = {{marginTop: 25 + 'px'}}> my most recent listen: </h3>
 
-                <h1 style = {{marginTop: 30 + 'px'}}> contact me </h1>
+                <h1 style = {{marginTop: 30 + 'px'}}> contact </h1>
 
                 <div className = "icon-text" style = {{marginBottom: 15 + 'px'}}> 
                     <a href = "mailto:jenna2004@gmail.com" target="_blank" rel="noopener noreferrer">
@@ -40,7 +38,7 @@ function About() {
                 </div>
             </div>
 
-            <img id = "newspaper" style = {{ }} src = {newspaper} />
+            <img id = "newspaper" style = {{ marginLeft: 100 + 'px', marginBottom: 100 + 'px' }} src = {newspaper} />
         </div>
     )
 }

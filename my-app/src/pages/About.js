@@ -14,7 +14,7 @@ function About() {
 
                 <p style = {{marginTop: 15 + 'px', maxWidth: 600 + 'px'}}> i’m a second year cs major at ucla, interested mostly in front-end and ui/ux! in my spare time, i enjoy playing video games, reading manhwas and novels, and exploring whatever my latest interest might be. </p>  
 
-                <h3 style = {{marginTop: 25 + 'px'}}> my most recent listen: </h3>
+                <h3 style = {{marginTop: 25 + 'px'}}> ♪ my most recent listen: </h3>
 
                 <h1 style = {{marginTop: 30 + 'px'}}> contact </h1>
 

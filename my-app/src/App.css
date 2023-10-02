@@ -94,7 +94,9 @@ p {
 
   display: flex;
   justify-content: center;
-  width: 100%
+  width: 100%;
+
+  z-index: 2;
 }
 
 #navigation a:link {
@@ -154,7 +156,8 @@ p {
   top: 0px;
   transform: rotate(180deg);
   height: 15%;
-  width: 100%
+  width: 100%;
+  z-index: 1;
 }
 
 #bottom-border {
@@ -258,6 +261,28 @@ p {
   max-inline-size: 100%;
   width: 600px;
   margin-bottom: 50px;
+}
+
+.tag {
+  color: var(--ti-bg);
+  font-weight: 600;
+  background-color: var(--ti-brown);
+  margin-right: 5px;
+  border-radius: 8px;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  transform: translateX(-325px) translateY(156px);
+}
+
+.shifted-tag {
+  color: var(--ti-bg);
+  font-weight: 600;
+  background-color: var(--ti-brown);
+  margin-right: 5px;
+  border-radius: 8px;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  transform: translateX(-255px) translateY(156px);
 }
 
 /* .side-nav {

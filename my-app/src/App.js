@@ -5,6 +5,11 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Vroomin from './pages/Vroomin';
 import Kalbum from './pages/Kalbum';
+import CreatorHub from './pages/CreatorHub';
+import Kalah from './pages/Kalah';
+import Olyverse from './pages/Olyverse';
+import Loocator from './pages/Loocator';
+import NamCap from './pages/NamCap';
 import border from './assets/border.png';
 
 // npm install react-router-dom
@@ -29,6 +34,11 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/vroomin" element={<Vroomin />} />
           <Route path="/kalbum" element={<Kalbum />} />
+          <Route path="/creatorhub" element={<CreatorHub />} />
+          <Route path="/kalah" element={<Kalah />} />
+          <Route path="/olyverse" element={<Olyverse />} />
+          <Route path="/loocator" element={<Loocator />} />
+          <Route path="/nam-cap" element={<NamCap />} />
         </Routes>
       </div>
 

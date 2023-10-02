@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Jenna Wang's Portfolio
+
+Due to the way I copy-pasted this from my old website and the way my old website was set up, insetad of `npm start`, I believe `yarn start` works better. Now onto the main event:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

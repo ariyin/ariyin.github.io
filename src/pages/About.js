@@ -20,25 +20,25 @@ function About() {
 
                 <div className = "icon-text" style = {{marginBottom: 15 + 'px'}}> 
                     <a href = "mailto:jenna2004@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <img className = "icon" src = {mail} /> 
+                        <img className = "icon" alt = "mail icon" src = {mail} /> 
                     </a>
                     <p> jenna2004@gmail.com </p>
                 </div>
 
                 <div className = "icon-text" style = {{marginBottom: 15 + 'px'}}> 
-                    <img className = "icon" src = {discord} /> 
+                    <img className = "icon" alt = "discord icon" src = {discord} /> 
                     <p> jayenay </p>
                 </div>
 
                 <div className = "icon-text"> 
                     <a href = "https://www.linkedin.com/in/jyw42/" target="_blank" rel="noopener noreferrer">
-                        <img className = "icon" src = {linkedin} /> 
+                        <img className = "icon" alt = "linkedin icon" src = {linkedin} /> 
                     </a>
                     <p> /jyw42 </p>
                 </div>
             </div>
 
-            <img id = "newspaper" style = {{ marginLeft: 100 + 'px', marginBottom: 100 + 'px' }} src = {newspaper} />
+            <img id = "newspaper" alt = "toro reading newspaper" style = {{ marginLeft: 100 + 'px', marginBottom: 100 + 'px' }} src = {newspaper} />
         </div>
     )
 }

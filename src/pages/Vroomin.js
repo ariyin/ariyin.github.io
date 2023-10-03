@@ -35,7 +35,7 @@ function Vroomin() {
                     <h2> goal </h2>
                     <p> design an app/website that will allow college students to find other people going the same places. </p>
 
-                    <h2> background </h2>
+                    <h2> context </h2>
                     <p> i’ve often wanted to go to events, places, or concerts in la. however, with a lack of access to a car, no desire to ride public transportation for more than an hour to arrive at my destination, and an unfortunately empty wallet, i found it hard to go to places. </p>
                     <br/>
                     <p> while thinking of prompts for coursera’s google ux design certificate course, which emphasized designing a user experience for social good, i thought of a ridesharing platform for college students. not only would it make students’ lives more convenient, but you would be able to reduce individual carbon footprints. </p>
@@ -61,7 +61,7 @@ function Vroomin() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 380 + 'px', marginTop: 50 + 'px'}} src = {think} />
+                    <img style = {{ height: 380 + 'px', marginTop: 50 + 'px'}} alt = "toro thinking" src = {think} />
                 </div>
             </div>
 
@@ -69,18 +69,18 @@ function Vroomin() {
                 <h2> mockups </h2>
                 <p> see prototype for more screens. </p>
                 <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
-                    <img className = "mobile-proto" src = {v_1} />
-                    <img className = "mobile-proto" src = {v_2} />
-                    <img className = "mobile-proto" src = {v_3} />
-                    <img className = "mobile-proto" src = {v_4} />
-                    <img className = "web-proto" src = {v_5} />
-                    <img className = "web-proto" src = {v_6} />
-                    <img className = "web-proto" src = {v_7} />
-                    <img className = "web-proto" src = {v_8} />
+                    <img className = "mobile-proto" alt = "home" src = {v_1} />
+                    <img className = "mobile-proto" alt = "choose a ride" src = {v_2} />
+                    <img className = "mobile-proto" alt = "ride information" src = {v_3} />
+                    <img className = "mobile-proto" alt = "ride requested" src = {v_4} />
+                    <img className = "web-proto" alt = "home" src = {v_5} />
+                    <img className = "web-proto" alt = "choose a ride" src = {v_6} />
+                    <img className = "web-proto"  alt = "ride information" src = {v_7} />
+                    <img className = "web-proto" alt = "ride requested" src = {v_8} />
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ width: 350 + 'px', marginTop: 100 + 'px' }} src = {laying} />
+                    <img style = {{ width: 350 + 'px', marginTop: 100 + 'px' }} alt = "kuro laying down" src = {laying} />
                     <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
                         <h2> next steps </h2>
                         <p> what i have are merely designs for the main flow. other features i’d like to explore include messaging, notifications, and a profile. i’d also like to think of a way to reward users for successfully reducing their carbon footprint. </p>

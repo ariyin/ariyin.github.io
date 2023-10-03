@@ -9,7 +9,7 @@ function CreatorHub() {
     return (
         <div>
             <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
-                <h1> creatorhub </h1>
+                <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> creator&shy;hub </h1>
                 <h3> a platform to connect brands with content creators for advertisement </h3>        
             </div>
             
@@ -18,7 +18,7 @@ function CreatorHub() {
                     <h2> goal </h2>
                     <p> design the screens for the creatorhub mvp. </p>
 
-                    <h2> background </h2>
+                    <h2> context </h2>
                     <p> i am a gamer through and through (though not as much anymore). while looking for internships for summer 2023, i saw that creatorhub (a ucla startup that has to do with games) was looking for ui/ux interns. i applied, and lo and behold, got my summer internship. </p>
                     <br/>
                     <p> i like games, i like the color pink, what more could i ask for? (though admittedly i’m a light mode user, not a dark mode user, but i do like the color black.) </p>
@@ -43,24 +43,24 @@ function CreatorHub() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 380 + 'px', marginTop: 50 + 'px'}} src = {sit} />
+                    <img style = {{ height: 300 + 'px', marginTop: 50 + 'px'}} alt = "sora sitting" src = {sit} />
                 </div>
             </div>
 
             <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
                 <h2> mockups </h2>
                 <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
-                    <img className = "web-proto" src = {c_1} />
-                    <img className = "web-proto" src = {c_2} />
-                    <img className = "web-proto" src = {c_3} />
-                    <img className = "web-proto" src = {c_4} />
+                    <img className = "web-proto" alt = "home" src = {c_1} />
+                    <img className = "web-proto" alt = "sign up" src = {c_2} />
+                    <img className = "web-proto" alt = "profile" src = {c_3} />
+                    <img className = "web-proto" alt = "analytics" src = {c_4} />
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ width: 300 + 'px', marginTop: 100 + 'px' }} src = {chat} />
+                    <img style = {{ width: 300 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro chatting" src = {chat} />
                     <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
                         <h2> next steps </h2>
-                        <p> since this was a summer internship, i don’t have a lot of notes about personal next steps. but i think the next steps would be to complete the coding portion of the mvp and then make it greater. </p>
+                        <p> since this was a summer internship, i don’t have a lot of notes about personal next steps. but i think there are always ways to improve and reiterate pre-existing designs. </p>
                         
                         <h2> conclusion </h2>
                         <p> i have successfully completed a summer internship! </p>

@@ -16,7 +16,7 @@ function NamCap() {
             <div className = "flex-box-2">
                 <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
                     <h2> goal </h2>
-                    <p> code a functional game that incorporates the features brainstormed before starting the project. </p>
+                    <p> code a functional game that incorporates the features brainstormed prior to starting the project. </p>
 
                     <h2> background </h2>
                     <p> for our final capstone project for apcs, we decided to create a game based on pacman, as one of our previous assignments focused on 2d arrays and using recursion through those arrays. however, we added a little twist: instead of playing as pacman, the player would play as one of the ghosts.   </p>
@@ -27,7 +27,7 @@ function NamCap() {
                     <br/>
                     <p> a cool feature that might go unnoticed is that depending on whichever ghost you choose, the icons and images of said ghost will have the same color as the one you choose. </p>
                     <br/>
-                    <p> overall, i believe we accomplished a great deal of what we wanted to accomplish. although the game isn’t as good as it could be (assuming we were all experienced developers), it’s still a pretty fun game that embodies the pacman retro vibe. </p>
+                    <p> overall, i believe we accomplished a great deal of what we wanted to accomplish. although the game isn’t as good as it could be (in the alternate universe where we're all experienced developers), it’s still a pretty fun game that embodies the pacman retro vibe. </p>
                 </div>
 
                 <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
@@ -51,21 +51,21 @@ function NamCap() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 400 + 'px', marginTop: 50 + 'px' }} src = {bluewave} />
+                    <img style = {{ height: 300 + 'px', marginTop: 50 + 'px' }} alt = "sora waving" src = {bluewave} />
                 </div>
             </div>
 
             <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
                 <h2> gallery </h2>
                 <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
-                    <img className = "web-proto" src = {n_1} />
-                    <img className = "web-proto" src = {n_2} />
-                    <img className = "web-proto" src = {n_3} />
-                    <img className = "web-proto" src = {n_4} />
+                    <img className = "web-proto" alt = "home" src = {n_1} />
+                    <img className = "web-proto" alt = "alternate home" src = {n_2} />
+                    <img className = "web-proto" alt = "playing" src = {n_3} />
+                    <img className = "web-proto" alt = "game over" src = {n_4} />
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 250 + 'px', marginTop: 100 + 'px' }} src = {sleep} />
+                    <img style = {{ height: 200 + 'px', marginTop: 100 + 'px' }} alt = "ricky sleeping" src = {sleep} />
                     <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
                         <h2> next steps </h2>
                         <p> other features that could be implemented is a smartness level, where players may choose how "smart" they wish nam-cap will behave; multiplayer functions that will allow user control for nam-cap and the other ghosts on different devices; different features on maps such as portals, secret passages, and hiding spots. </p>

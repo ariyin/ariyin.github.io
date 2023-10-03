@@ -30,7 +30,7 @@ function Olyverse() {
                     <h2> background </h2>
                     <p> “ucla, aws, & slalom innovation challenge”  </p>
                     <br/>
-                    <p> wouldn’t that name and the exclusiveness motivate you to join and see what it’s about? well it definitely encouraged me. and encouraged the 36 screens i made single-handedly in the span of one month while juggling schoolwork. </p>
+                    <p> wouldn’t that name motivate you to join and see what it’s about? well it definitely encouraged me. and encouraged the 36 screens i made in the span of one month. </p>
                     <br/>
                     <p> the prompt we were given was: “create a digital experience to engage with fans on all things ancillary to the LA28 games - access to athletes, special events, discounts, partner offers, merchandise, gamification (e.g., fantasy olympics, lotteries, etc.), social media, loyalty, personalized/premium digital content/media, fundraising” </p>
                     <br/>
@@ -55,11 +55,11 @@ function Olyverse() {
                         <p> april 2023 - may 2023 </p>
                         <br/>
                         <h3> link </h3>
-                        <div class = "project-link"> <a href = "https://www.figma.com/proto/j0SvxjCB04E5bt2lMVlHmr/olyverse?page-id=0%3A1&type=design&node-id=60-5955&viewport=143%2C451%2C0.11&t=WN55rM6BlRbhfa1t-1&scaling=scale-down&starting-point-node-id=175%3A2489&mode=design" target="_blank" rel="noopener noreferrer"> prototype </a> </div>
+                        <div class = "project-link"> <a href = "https://www.figma.com/proto/j0SvxjCB04E5bt2lMVlHmr/olyverse?page-id=0%3A1&type=design&node-id=175-2489&viewport=262%2C620%2C0.4&t=FbPHlckLynHC7iYL-1&scaling=scale-down&starting-point-node-id=175%3A2489&mode=design" target="_blank" rel="noopener noreferrer"> prototype </a> </div>
                         <br/>
                     </div>
 
-                    <img style = {{ height: 400 + 'px', marginTop: 50 + 'px' }} src = {cheers} />
+                    <img style = {{ height: 300 + 'px', width: 240 + 'px', marginTop: 50 + 'px' }} alt = "kuro cheers" src = {cheers} />
                 </div>
             </div>
 
@@ -67,28 +67,29 @@ function Olyverse() {
                 <h2> mockups </h2>
                 <p> see prototype for more screens. </p>
                 <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
-                    <img className = "mobile-proto" src = {o_1} />
-                    <img className = "mobile-proto" src = {o_2} />
-                    <img className = "mobile-proto" src = {o_3} />
-                    <img className = "mobile-proto" src = {o_4} />
-                    <img className = "mobile-proto" src = {o_5} />
-                    <img className = "mobile-proto" src = {o_6} />
-                    <img className = "mobile-proto" src = {o_7} />
-                    <img className = "mobile-proto" src = {o_8} />
-                    <img className = "mobile-proto" src = {o_9} />
-                    <img className = "mobile-proto" src = {o_10} />
-                    <img className = "mobile-proto" src = {o_11} />
-                    <img className = "mobile-proto" src = {o_12} />
+                    <img className = "mobile-proto" alt = "login" src = {o_1} />
+                    <img className = "mobile-proto" alt = "follow athletes" src = {o_2} />
+                    <img className = "mobile-proto" alt = "home" src = {o_3} />
+                    <img className = "mobile-proto" alt = "explore" src = {o_4} />
+                    <img className = "mobile-proto" alt = "team" src = {o_5} />
+                    <img className = "mobile-proto" alt = "shop" src = {o_6} />
+                    <img className = "mobile-proto" alt = "lottery" src = {o_7} />
+                    <img className = "mobile-proto" alt = "stream" src = {o_8} />
+                    <img className = "mobile-proto" alt = "watch party" src = {o_9} />
+                    <img className = "mobile-proto" alt = "fantasy olympics" src = {o_10} />
+                    <img className = "mobile-proto" alt = "leaderboard" src = {o_11} />
+                    <img className = "mobile-proto" alt = "results" src = {o_12} />
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 200 + 'px', marginTop: 100 + 'px' }} src = {racecar} />
+                    <img style = {{ height: 200 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro racecar" src = {racecar} />
                     <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
                         <h2> next steps </h2>
-                        <p> let this idea die since i don't think the olympics committee or whoever was in charge of the challenge was super interested.  </p>
-                        
+                        <p> let this idea die since i don't think the olympics committee or whoever was in charge of the challenge was super interested. </p>
+                        <br/>
+                        <p> but this idea can still be used for a lot of different industries, so if anyone else is interested in it, please hire me. </p>
                         <h2> conclusion </h2>
-                        <p> i learned a lot about figma and its functions. i would not do this challenge again due to the stress and false advertisement though. </p>
+                        <p> i learned a lot about figma and its functions. the olympics would be based if this app existed (not biased review at all). </p>
                     </div>
                 </div>
             </div>

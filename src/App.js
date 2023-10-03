@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -18,7 +18,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 function App() {
   return (
     <> 
-      <img id = "top-border" src = {border} />
+      <img id = "top-border" alt = "top border" src = {border} />
 
       <div id = "navigation">
           <div class = "underline"> <Link to="/"> home </Link> </div>
@@ -42,7 +42,7 @@ function App() {
         </Routes>
       </div>
 
-      {/* <img id = "bottom-border" src = {border} /> */}
+      {/* <img id = "bottom-border" alt = "bottom border" src = {border} /> */}
     </>
   );
 }

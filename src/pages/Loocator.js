@@ -21,9 +21,11 @@ function Loocator() {
                     <h2> background </h2>
                     <p> please read the pitch in our devpost. or our devpost in general. it explains everything.  </p>
                     <br/>
+                    <p> as you might be able to tell after seeing the gallery, the app is heavily duck-themed, due to la hack's duck theme. the ducks are very cute (but irl ducks aren't as cute). </p>
+                    <br/>
                     <p> the prototype is a little different than the actual finished product since there were some features / things we weren’t able to do but might be possible, had this been a long-term project. additionally, the prototype was a very early-stage ideation product, while during the actual coding, there were more opportunities to improve upon the ideations. </p>
                     <br/>
-                    <p> i’m very proud of our team for coding as completing as much as we did! (though i'm not sure staying up until 5am was worth it.) </p>
+                    <p> i’m very proud of our team for coding and completing as much as we did! (though i'm not sure staying up until 5am was worth it.) </p>
                 </div>
 
                 <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
@@ -49,27 +51,27 @@ function Loocator() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 200 + 'px', marginTop: 50 + 'px' }} src = {wood} />
+                    <img style = {{ height: 200 + 'px', marginTop: 50 + 'px' }} alt = "ricky carrying stuff" src = {wood} />
                 </div>
             </div>
 
             <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
                 <h2> gallery </h2>
                 <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
-                    <img className = "mobile-proto" src = {l_1} />
-                    <img className = "mobile-proto" src = {l_2} />
-                    <img className = "mobile-proto" src = {l_3} />
-                    <img className = "mobile-proto" src = {l_4} />
+                    <img className = "mobile-proto" alt = "login" src = {l_1} />
+                    <img className = "mobile-proto" alt = "loading screen" src = {l_2} />
+                    <img className = "mobile-proto" alt = "home" src = {l_3} />
+                    <img className = "mobile-proto" alt = "profile" src = {l_4} />
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 300 + 'px', marginTop: 100 + 'px' }} src = {hi} />
+                    <img style = {{ height: 300 + 'px', marginTop: 100 + 'px' }} alt = "kuro waving" src = {hi} />
                     <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
                         <h2> next steps </h2>
                         <p> if this were an actual app, some features i'd like to include would be: a social aspect, leaderboard, explore page, bookmarking system, and the actual review system this app is dependent upon.  </p>
                         
                         <h2> conclusion </h2>
-                        <p> gonna miss the loocrew. i believe in other fellow loothusiasts to complete this vision. </p>
+                        <p> gonna miss the loocrew. to all the other fellow loothusiasts out there: don't worry, the loocrew will come back one day. eventually. </p>
                     </div>
                 </div>
             </div>

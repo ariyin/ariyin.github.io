@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3219a840.css",
-    "main.js": "/static/js/main.3a095f97.js",
+    "main.js": "/static/js/main.c387a89b.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/k_5.png": "/static/media/k_5.7c8dd75a9337b365f7ab.png",
     "static/media/k_8.png": "/static/media/k_8.016dd8bb4d9b543475f8.png",
@@ -12,6 +12,7 @@
     "static/media/o_8.png": "/static/media/o_8.0943c92db9574e805421.png",
     "static/media/olyverse.png": "/static/media/olyverse.abd0e6c993d33c2b61a5.png",
     "static/media/c_1.png": "/static/media/c_1.acedad80d55055af050b.png",
+    "static/media/portfolio.png": "/static/media/portfolio.368426ce3f2f281cdbf8.png",
     "static/media/loocator.png": "/static/media/loocator.1545183afdcd4ddc283c.png",
     "static/media/o_9.png": "/static/media/o_9.4c9596bc31aa82b43c21.png",
     "static/media/vroomin.png": "/static/media/vroomin.f4f098bd1be1c9cd32c7.png",
@@ -77,11 +78,11 @@
     "static/media/grand-wilson-sans.otf": "/static/media/grand-wilson-sans.07ccf8653a3c3f8adf61.otf",
     "index.html": "/index.html",
     "main.3219a840.css.map": "/static/css/main.3219a840.css.map",
-    "main.3a095f97.js.map": "/static/js/main.3a095f97.js.map",
+    "main.c387a89b.js.map": "/static/js/main.c387a89b.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3219a840.css",
-    "static/js/main.3a095f97.js"
+    "static/js/main.c387a89b.js"
   ]
 }

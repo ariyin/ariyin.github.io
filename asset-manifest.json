@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.464ce889.css",
-    "main.js": "/static/js/main.d408d599.js",
+    "main.css": "/static/css/main.3219a840.css",
+    "main.js": "/static/js/main.3a095f97.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/k_5.png": "/static/media/k_5.7c8dd75a9337b365f7ab.png",
     "static/media/k_8.png": "/static/media/k_8.016dd8bb4d9b543475f8.png",
@@ -67,6 +67,8 @@
     "static/media/ti_chat.webp": "/static/media/ti_chat.df0cd810e15a123bf359.webp",
     "static/media/ti_peekaboo.webp": "/static/media/ti_peekaboo.2dd2ad7ca1427d6ae521.webp",
     "static/media/ti_think.webp": "/static/media/ti_think.e41c6133b3251cad94b4.webp",
+    "static/media/ti_call.webp": "/static/media/ti_call.f6d2119e8098b9a539f6.webp",
+    "static/media/ti_recieve.webp": "/static/media/ti_recieve.2bee101bd730c5c189dd.webp",
     "static/media/ti_sleep.webp": "/static/media/ti_sleep.c11eef810dd7e85a4a7d.webp",
     "static/media/discord.png": "/static/media/discord.18861e68cee819f13153.png",
     "static/media/border.png": "/static/media/border.0986776459cd46bbe1ae.png",
@@ -74,12 +76,12 @@
     "static/media/linkedin.png": "/static/media/linkedin.5448cfebb2376665f655.png",
     "static/media/grand-wilson-sans.otf": "/static/media/grand-wilson-sans.07ccf8653a3c3f8adf61.otf",
     "index.html": "/index.html",
-    "main.464ce889.css.map": "/static/css/main.464ce889.css.map",
-    "main.d408d599.js.map": "/static/js/main.d408d599.js.map",
+    "main.3219a840.css.map": "/static/css/main.3219a840.css.map",
+    "main.3a095f97.js.map": "/static/js/main.3a095f97.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.464ce889.css",
-    "static/js/main.d408d599.js"
+    "static/css/main.3219a840.css",
+    "static/js/main.3a095f97.js"
   ]
 }

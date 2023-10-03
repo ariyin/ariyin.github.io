@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Project({ name, date, description, uix, code, image }) {
     return (
-        <div style={{marginTop: 25 + 'px', marginBottom: 25 + 'px'}}>
-            <img src = {image} alt = "project thumbnail" width = {340} height = {200} style = {{borderRadius: 15 + 'px'}}/>
+        <div className = "grow" style={{marginTop: 25 + 'px', marginBottom: 25 + 'px'}}>
+            <img src = {image} alt = "project thumbnail" loading = "lazy" width = {340} height = {200} style = {{borderRadius: 15 + 'px'}}/>
             {code ? (
                 <span>
                     <span className = "tag"> code </span>

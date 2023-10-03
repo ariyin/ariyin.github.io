@@ -13,7 +13,7 @@ import NamCap from './pages/NamCap';
 import border from './assets/border.png';
 
 // npm install react-router-dom
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom"
 
 function App() {
   return (
@@ -21,9 +21,9 @@ function App() {
       <img id = "top-border" alt = "top border" src = {border} />
 
       <div id = "navigation">
-          <div class = "underline"> <Link to="/"> home </Link> </div>
-          <div class = "underline"> <Link to="/about"> about </Link> </div>
-          <div class = "underline"> <Link to="/projects"> projects </Link> </div>
+          <div class = "underline"> <NavLink to="/"> home </NavLink> </div>
+          <div class = "underline"> <NavLink to="/about"> about </NavLink> </div>
+          <div class = "underline"> <NavLink to="/projects"> projects </NavLink> </div>
           <div class = "underline"> <a href = "Wang_Jenna_Resume.pdf" target="_blank" rel="noopener noreferrer"> resume </a> </div>
       </div>
 
@@ -41,8 +41,6 @@ function App() {
           <Route path="/nam-cap" element={<NamCap />} />
         </Routes>
       </div>
-
-      {/* <img id = "bottom-border" alt = "bottom border" src = {border} /> */}
     </>
   );
 }

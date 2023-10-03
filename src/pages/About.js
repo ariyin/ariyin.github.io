@@ -3,6 +3,7 @@ import mail from '../assets/mail.png';
 import discord from '../assets/discord.png';
 import linkedin from '../assets/linkedin.png';
 import newspaper from '../assets/newspaper.png';
+import { LastFMData } from './LastFMData';
 
 function About() {
     return (
@@ -12,9 +13,12 @@ function About() {
 
                 <h3> hello! </h3>
 
-                <p style = {{marginTop: 15 + 'px', maxWidth: 600 + 'px'}}> i’m a second year cs major at ucla, interested mostly in front-end and ui/ux! in my spare time, i enjoy playing video games, reading manhwas and novels, and exploring whatever my latest interest might be. </p>  
+                <p style = {{marginTop: 15 + 'px', marginBottom: 25 + 'px', maxWidth: 600 + 'px'}}> i’m a second year cs major at ucla, interested mostly in front-end and ui/ux! in my spare time, i enjoy playing video games, reading manhwas and novels, and exploring whatever my latest interest might be. </p>  
 
-                <h3 style = {{marginTop: 25 + 'px'}}> ♪ my most recent listen: </h3>
+                <LastFMData
+                    username = {'j00101010'}
+                    apiKey = {'2e9538854d56a1ff4ca740d44ce38ab7'}
+                />
 
                 <h1 style = {{marginTop: 30 + 'px'}}> contact </h1>
 

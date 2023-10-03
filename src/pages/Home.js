@@ -1,11 +1,25 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import toroinoue from '../assets/ti.png';
+import border from '../assets/border.png';
 
 function Home() {
     return (
         <>
-            <img className = "background-image" style = {{ transform: 'translateX(-50%) translateY(-50%)' }} src = {toroinoue} /> 
+            <div class = "triangles">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <img className = "background-image" style = {{ transform: 'translateX(-50%) translateY(-52%)' }} src = {toroinoue} /> 
 
             {/* <Tilt 
                 // style = {{transformStyle: "preserve-3d"}}
@@ -27,6 +41,9 @@ function Home() {
                 <br/>
                 <span id = "name-w"> w </span> ang 
             </div>
+
+            <img id = "bottom-border" alt = "bottom border" src = {border} />
+
         </>
     )
 }

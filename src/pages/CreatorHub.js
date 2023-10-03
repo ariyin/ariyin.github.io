@@ -18,7 +18,7 @@ function CreatorHub() {
                     <h2> goal </h2>
                     <p> design the screens for the creatorhub mvp. </p>
 
-                    <h2> context </h2>
+                    <h2> thoughts </h2>
                     <p> i am a gamer through and through (though not as much anymore). while looking for internships for summer 2023, i saw that creatorhub (a ucla startup that has to do with games) was looking for ui/ux interns. i applied, and lo and behold, got my summer internship. </p>
                     <br/>
                     <p> i like games, i like the color pink, what more could i ask for? (though admittedly i’m a light mode user, not a dark mode user, but i do like the color black.) </p>

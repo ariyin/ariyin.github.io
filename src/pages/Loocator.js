@@ -18,7 +18,7 @@ function Loocator() {
                     <h2> goal </h2>
                     <p> participate in la hacks 2023 and learn new technologies while coding with friends. </p>
 
-                    <h2> background </h2>
+                    <h2> thoughts </h2>
                     <p> please read the pitch in our devpost. or our devpost in general. it explains everything.  </p>
                     <br/>
                     <p> as you might be able to tell after seeing the gallery, the app is heavily duck-themed, due to la hack's duck theme. the ducks are very cute (but irl ducks aren't as cute). </p>
@@ -42,6 +42,7 @@ function Loocator() {
                         <h3> tools </h3>
                         <p> react native </p>
                         <p> javascript </p>
+                        <p> html/css </p>
                         <p> google maps api </p>
                         <br/>
                         <h3> links </h3>

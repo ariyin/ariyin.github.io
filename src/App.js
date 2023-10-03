@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 import Vroomin from './pages/Vroomin';
 import Kalbum from './pages/Kalbum';
 import CreatorHub from './pages/CreatorHub';
@@ -17,7 +18,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-do
 
 function App() {
   return (
-    <> 
+    <Router basename = '/'> 
       <img id = "top-border" alt = "top border" src = {border} />
 
       <div id = "navigation">
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/vroomin" element={<Vroomin />} />
           <Route path="/kalbum" element={<Kalbum />} />
           <Route path="/creatorhub" element={<CreatorHub />} />
@@ -41,7 +43,7 @@ function App() {
           <Route path="/nam-cap" element={<NamCap />} />
         </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 

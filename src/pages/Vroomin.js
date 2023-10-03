@@ -35,7 +35,7 @@ function Vroomin() {
                     <h2> goal </h2>
                     <p> design an app/website that will allow college students to find other people going the same places. </p>
 
-                    <h2> context </h2>
+                    <h2> thoughts </h2>
                     <p> i’ve often wanted to go to events, places, or concerts in la. however, with a lack of access to a car, no desire to ride public transportation for more than an hour to arrive at my destination, and an unfortunately empty wallet, i found it hard to go to places. </p>
                     <br/>
                     <p> while thinking of prompts for coursera’s google ux design certificate course, which emphasized designing a user experience for social good, i thought of a ridesharing platform for college students. not only would it make students’ lives more convenient, but you would be able to reduce individual carbon footprints. </p>

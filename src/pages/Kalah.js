@@ -14,7 +14,7 @@ function Kalah() {
                     <h2> goal </h2>
                     <p> create a program that fulfills the project requirements. </p>
 
-                    <h2> context </h2>
+                    <h2> thoughts </h2>
                     <p> if you’ve never played mancala, wyd? back in my days (when i was in elementary school), i used to sit on the living room rug playing mancala against myself and calculate the best move sequence so i could continuously keep gaining an extra turn (i don’t know what that says about myself for me to be doing that at such a young age but i’m not gonna think too much abt it).  </p>
                     <br/>
                     <p> needless to say, i was a bit excited at receiving mancala as my project 3 assignment in cs 32 (supposedly the most notoriously difficult project).  </p>

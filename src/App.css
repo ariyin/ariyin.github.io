@@ -120,7 +120,7 @@ p {
   content: "";
   position: absolute;
   background-color: var(--ti-brown);
-  height: 2px;
+  height: 2.5px;
   width: 0;
   left: 0;
   bottom: -2px;
@@ -247,8 +247,9 @@ p {
   display: flex;
   flex-direction: horizontal;
   align-content: space-between;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 0px 110px;
 }
 
 .mobile-proto {

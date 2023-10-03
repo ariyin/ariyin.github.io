@@ -18,7 +18,7 @@ function NamCap() {
                     <h2> goal </h2>
                     <p> code a functional game that incorporates the features brainstormed prior to starting the project. </p>
 
-                    <h2> background </h2>
+                    <h2> thoughts </h2>
                     <p> for our final capstone project for apcs, we decided to create a game based on pacman, as one of our previous assignments focused on 2d arrays and using recursion through those arrays. however, we added a little twist: instead of playing as pacman, the player would play as one of the ghosts.   </p>
                     <br/>
                     <p> the idea of the game is simple: players first choose the ghost they wish to play with. players can gain points by consuming the strawberries around the map or by eating nam-cap. if nam-cap eats a kiwi, nam-cap gains the ability to eat the player. the overall goal of the game is to gain as many points as possible before losing all three lives.  </p>

@@ -27,7 +27,7 @@ function Olyverse() {
                     <h2> goal </h2>
                     <p> design an app that allows users to interact with LA28 athletes and get a fuller LA28 experience. </p>
 
-                    <h2> background </h2>
+                    <h2> thoughts </h2>
                     <p> “ucla, aws, & slalom innovation challenge”  </p>
                     <br/>
                     <p> wouldn’t that name motivate you to join and see what it’s about? well it definitely encouraged me. and encouraged the 36 screens i made in the span of one month. </p>

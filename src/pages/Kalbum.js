@@ -23,7 +23,7 @@ function Kalbum() {
                     <h2> goal </h2>
                     <p> design an app/website where a user can preorder whatever kpop album they want seamlessly. </p>
 
-                    <h2> context </h2>
+                    <h2> thoughts </h2>
                     <p> i’ve been into kpop since 2017. collecting albums is one of those things that a lot of fans are interested in. (but which i’ve never done because i can’t convince myself to spend money on a photobook of real people i’ll only look at once. but i do see the appeal. i really do.)  </p>
                     <br/>
                     <p> however, there are some problems with current album preordering platforms: </p>

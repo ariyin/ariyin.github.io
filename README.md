@@ -2,7 +2,7 @@
 
 Due to the way I copy-pasted this from my old website and the way my old website was set up, insetad of `npm start`, I believe `yarn start` works better. 
 
-Additionally, to update the main branch, use `npm run deploy`.
+Additionally, to update the main branch, use `yarn deploy`.
 
 Now onto the main event:
 

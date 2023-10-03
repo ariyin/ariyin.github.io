@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project';
 
+import portfolio from '../assets/portfolio.png';
 import vroomin from '../assets/vroomin.png';
 import kalbum from '../assets/kalbum.png';
 import creatorhub from '../assets/creatorhub.png';
@@ -10,7 +11,7 @@ import loocator from '../assets/loocator.png';
 import namcap from '../assets/namcap.png';
 
 const projectInfo = [
-    { name: 'portfolio', date: 'september 2023 - present', description: 'this website aka what you are looking at right now :3', uix: true, code: true, image: vroomin},
+    { name: 'portfolio', date: 'september 2023 - present', description: 'this website aka what you are looking at right now :3', uix: true, code: true, image: portfolio},
     { name: 'vroomin', date: 'august 2023', description: 'a user experience designed to help facilitate campus ridesharing', uix: true, code: false, image: vroomin},
     { name: 'kalbum', date: 'july 2023 - august 2023', description: 'an ecommerce app & website for preordering kpop albums', uix: true, code: false, image: kalbum},
     { name: 'creatorhub', date: 'june 2023 - august 2023', description: 'a platform to connect brands with content creators for advertisement', uix: true, code: false, image: creatorhub},
@@ -27,7 +28,7 @@ function Projects() {
             <h1> projects </h1> 
             <div id = "project-flex">
                 {projectInfo.map((projects) => (
-                    <a href={'/' + projects.name}> <Project name = {projects.name} date = {projects.date} description = {projects.description} uix = {projects.uix} code = {projects.code} image = {projects.image} /> </a>
+                    <a href={'https://ariyin.github.io/' + projects.name}> <Project name = {projects.name} date = {projects.date} description = {projects.description} uix = {projects.uix} code = {projects.code} image = {projects.image} /> </a>
                 ))}
             </div>
         </div>

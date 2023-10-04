@@ -393,7 +393,6 @@ p {
 }
 
 .grow {
-  position: relative;
   transition: all .2s ease-in-out; 
 }
 
@@ -410,7 +409,19 @@ p {
   padding-bottom: 15px;
 }
 
+.width-scale {
+  max-width: 340px;
+}
+
 @media (max-width: 800px) {
+  #name {
+    font-size: 80px;
+  }
+
+  #name-w {
+    letter-spacing: -20px;
+  }
+  
   .margin-sides {
     margin-left: 50px;
     margin-right: 50px;
@@ -426,6 +437,10 @@ p {
       transform: scale(0.9);
       transform-origin: top left;
       padding-bottom: 0px;
+    }
+
+    .width-scale {
+      max-width: 300px;
     }
   }
 

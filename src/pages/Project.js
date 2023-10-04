@@ -14,7 +14,7 @@ export default function Project({ name, date, description, uix, code, image, lin
             </div>
             <h3> {name} </h3>
             <h3> {date} </h3>
-            <p style = {{maxWidth: 340 + 'px', paddingTop: 5 + 'px'}}> {description} </p>
+            <p className = "width-scale" style = {{paddingTop: 5 + 'px'}}> {description} </p>
         </div>
     )
 }

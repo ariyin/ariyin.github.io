@@ -96,7 +96,7 @@ p {
   justify-content: center;
   width: 100%;
 
-  z-index: 2;
+  z-index: 1;
 }
 
 #navigation a:link {
@@ -184,23 +184,15 @@ p {
 }
 
 .background-image {
-  height: 100vh;
+  height: 100%;
+  width: 88%;
   object-fit: contain;
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-52%);
-}
-
-#newspaper {
-  width: 300px;
-  object-fit: contain;
-  max-inline-size: 100%;
-  margin: 0px 100px 100px 100px;
-  /* position: absolute;
-  right: 200px;
-  bottom: 150px; */
+  object-position: center 75%;
 }
 
 .flex-box {
@@ -421,7 +413,7 @@ p {
   #name-w {
     letter-spacing: -20px;
   }
-  
+
   .margin-sides {
     margin-left: 50px;
     margin-right: 50px;
@@ -432,16 +424,16 @@ p {
     margin-right: 50px;
     margin-bottom: 100px;
     margin-top: 150px;
+  }
 
-    .component-scale {
-      transform: scale(0.9);
-      transform-origin: top left;
-      padding-bottom: 0px;
-    }
+  .component-scale {
+    transform: scale(0.9);
+    transform-origin: top left;
+    padding-bottom: 0px;
+  }
 
-    .width-scale {
-      max-width: 300px;
-    }
+  .width-scale {
+    max-width: 300px;
   }
 
   /* #navigation {

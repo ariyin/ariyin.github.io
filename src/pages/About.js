@@ -42,7 +42,7 @@ function About() {
                 </div>
             </div>
 
-            <img className = "margin-sides" style = {{ width: 300 + 'px', objectFit: 'contain', maxInlineSize: '100%', marginBottom: 100 + 'px' }} alt = "toro reading newspaper" src = {newspaper} />
+            <img className = "margin-sides" style = {{ width: 280 + 'px', objectFit: 'contain', maxInlineSize: '100%', marginBottom: 100 + 'px' }} alt = "toro reading newspaper" src = {newspaper} />
         </div>
     )
 }

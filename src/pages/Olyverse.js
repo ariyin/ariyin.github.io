@@ -16,7 +16,7 @@ import o_12 from "../assets/o_12.png"
 
 function Olyverse() {
     return (
-        <div className = "margin-left">
+        <div className = "margin-sides">
             <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginRight: 100 + 'px'}}>
                 <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> oly&shy;verse </h1>
                 <h3> a digital experience to engage with fans on all things ancillary to the LA28 games </h3>        
@@ -43,7 +43,7 @@ function Olyverse() {
                     <p> although we didn’t win, i learned a lot through this challenge and got to make some unforgettable memories. </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> ui/ux </p>
@@ -66,26 +66,24 @@ function Olyverse() {
             <div style = {{marginBottom: 100 + 'px' }}>
                 <h2> mockups </h2>
                 <p> see prototype for more screens. </p>
-                <div className = "margin-right">
-                    <div className = "flex-box-3" style = {{ marginTop: 30 + 'px'}}> 
-                        <img className = "mobile-proto" alt = "login" src = {o_1} />
-                        <img className = "mobile-proto" alt = "follow athletes" src = {o_2} />
-                        <img className = "mobile-proto" alt = "home" src = {o_3} />
-                        <img className = "mobile-proto" alt = "explore" src = {o_4} />
-                        <img className = "mobile-proto" alt = "team" src = {o_5} />
-                        <img className = "mobile-proto" alt = "shop" src = {o_6} />
-                        <img className = "mobile-proto" alt = "lottery" src = {o_7} />
-                        <img className = "mobile-proto" alt = "stream" src = {o_8} />
-                        <img className = "mobile-proto" alt = "watch party" src = {o_9} />
-                        <img className = "mobile-proto" alt = "fantasy olympics" src = {o_10} />
-                        <img className = "mobile-proto" alt = "leaderboard" src = {o_11} />
-                        <img className = "mobile-proto" alt = "results" src = {o_12} />
-                    </div>
+                <div className = "flex-box-3" style = {{ marginTop: 30 + 'px'}}> 
+                    <img className = "mobile-proto" alt = "login" src = {o_1} />
+                    <img className = "mobile-proto" alt = "follow athletes" src = {o_2} />
+                    <img className = "mobile-proto" alt = "home" src = {o_3} />
+                    <img className = "mobile-proto" alt = "explore" src = {o_4} />
+                    <img className = "mobile-proto" alt = "team" src = {o_5} />
+                    <img className = "mobile-proto" alt = "shop" src = {o_6} />
+                    <img className = "mobile-proto" alt = "lottery" src = {o_7} />
+                    <img className = "mobile-proto" alt = "stream" src = {o_8} />
+                    <img className = "mobile-proto" alt = "watch party" src = {o_9} />
+                    <img className = "mobile-proto" alt = "fantasy olympics" src = {o_10} />
+                    <img className = "mobile-proto" alt = "leaderboard" src = {o_11} />
+                    <img className = "mobile-proto" alt = "results" src = {o_12} />
                 </div>
 
                 <div className = "flex-box-3"> 
                     <img style = {{ height: 160 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro racecar" src = {racecar} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> let this idea die since i don't think the olympics committee or whoever was in charge of the challenge was super interested. </p>
                         <br/>

@@ -28,7 +28,9 @@ function Projects() {
             <h1> projects </h1> 
             <div id = "project-flex">
                 {projectInfo.map((projects) => (
-                    <Link to = {projects.link}> <Project name = {projects.name} date = {projects.date} description = {projects.description} uix = {projects.uix} code = {projects.code} image = {projects.image} /> </Link>
+                    <Link to = {projects.link}> 
+                        <Project name = {projects.name} date = {projects.date} description = {projects.description} uix = {projects.uix} code = {projects.code} image = {projects.image} /> 
+                    </Link>
                 ))}
             </div>
         </div>

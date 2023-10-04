@@ -9,7 +9,7 @@ function CreatorHub() {
     return (
         <div className = "margin-sides">
             <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
-                <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> creator&shy;hub </h1>
+                <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> crea&shy;tor&shy;hub </h1>
                 <h3> a platform to connect brands with content creators for advertisement </h3>        
             </div>
             

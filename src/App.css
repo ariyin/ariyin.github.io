@@ -266,10 +266,10 @@ p {
   color: var(--ti-bg);
   font-weight: 600;
   background-color: var(--ti-brown);
-  margin-right: 5px;
   border-radius: 8px;
   padding: 5px 10px 5px 10px;
   position: absolute;
+  text-align: center;
   transform: translateX(-325px) translateY(156px);
 }
 
@@ -393,6 +393,7 @@ p {
 }
 
 .grow {
+  position: relative;
   transition: all .2s ease-in-out; 
 }
 
@@ -403,6 +404,10 @@ p {
 .margin-sides {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.component-scale {
+  padding-bottom: 15px;
 }
 
 @media (max-width: 800px) {
@@ -416,6 +421,12 @@ p {
     margin-right: 50px;
     margin-bottom: 100px;
     margin-top: 150px;
+
+    .component-scale {
+      transform: scale(0.9);
+      transform-origin: top left;
+      padding-bottom: 0px;
+    }
   }
 
   /* #navigation {

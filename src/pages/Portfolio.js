@@ -5,7 +5,7 @@ function Portfolio() {
     return (
         <div className = "margin-sides">
             <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
-                <h1> portfolio </h1>
+                <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> port&shy;folio </h1>
                 <h3> this website aka what you are looking at right now :3 </h3>        
             </div>
             

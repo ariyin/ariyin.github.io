@@ -404,33 +404,27 @@ p {
   margin-left: 100px;
   margin-right: 100px;
 }
-.margin-left {
-  margin-left: 100px;
-}
-
-.margin-right {
-  margin-right: 100px;
-}
 
 @media (max-width: 800px) {
   .margin-sides {
     margin-left: 50px;
     margin-right: 50px;
   }
-  .margin-left {
-    margin-left: 50px;
-  }
 
-  .margin-right {
-    margin-right: 50px;
-  }
-  
   .box {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
     margin-top: 150px;
   }
+
+  /* #navigation {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline;
+  } */
 }
 
 /* .active {
@@ -456,7 +450,7 @@ p {
   text-decoration: none;
 } */
 
-html {
+html, body {
   overflow-x: hidden;
   background-color: var(--ti-bg);
 }

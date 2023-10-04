@@ -18,7 +18,7 @@ function Olyverse() {
     return (
         <div className = "margin-left">
             <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginRight: 100 + 'px'}}>
-                <h1> olyverse </h1>
+                <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> oly&shy;verse </h1>
                 <h3> a digital experience to engage with fans on all things ancillary to the LA28 games </h3>        
             </div>
             

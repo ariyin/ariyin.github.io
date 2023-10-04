@@ -27,7 +27,7 @@ function App() {
           <div class = "underline" style = {{ marginRight: 40 + 'px'}}> <NavLink to="/projects"> projects </NavLink> </div>
           <div class = "underline"> <a href = "Wang_Jenna_Resume.pdf" target="_blank" rel="noopener noreferrer"> resume </a> </div>
       </div>
-
+      
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

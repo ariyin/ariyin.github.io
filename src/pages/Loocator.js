@@ -9,7 +9,7 @@ function Loocator() {
     return (
         <div className = "margin-sides">
             <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
-                <h1> loocator </h1>
+                <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> loo&shy;cator </h1>
                 <h3> an app designed to help you locate toilets close to you in your darkest hour </h3>        
             </div>
             

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c6cd888.css",
-    "main.js": "/static/js/main.56ced20f.js",
+    "main.css": "/static/css/main.deca0e72.css",
+    "main.js": "/static/js/main.7a6668ce.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/k_5.png": "/static/media/k_5.7c8dd75a9337b365f7ab.png",
     "static/media/k_8.png": "/static/media/k_8.016dd8bb4d9b543475f8.png",
@@ -77,12 +77,12 @@
     "static/media/linkedin.png": "/static/media/linkedin.5448cfebb2376665f655.png",
     "static/media/grand-wilson-sans.otf": "/static/media/grand-wilson-sans.07ccf8653a3c3f8adf61.otf",
     "index.html": "/index.html",
-    "main.7c6cd888.css.map": "/static/css/main.7c6cd888.css.map",
-    "main.56ced20f.js.map": "/static/js/main.56ced20f.js.map",
+    "main.deca0e72.css.map": "/static/css/main.deca0e72.css.map",
+    "main.7a6668ce.js.map": "/static/js/main.7a6668ce.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c6cd888.css",
-    "static/js/main.56ced20f.js"
+    "static/css/main.deca0e72.css",
+    "static/js/main.7a6668ce.js"
   ]
 }

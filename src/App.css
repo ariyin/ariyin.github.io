@@ -11,14 +11,14 @@
 /* Fakt Soft */
 @font-face {
   font-family: 'Fakt Soft'; 
-  src: url('fonts/fakt-soft-nor.ttf') format('ttf');
+  src: url('fonts/fakt-soft-nor.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Fakt Soft'; 
-  src: url('fonts/fakt-soft-smbd.ttf') format('ttf');
+  src: url('fonts/fakt-soft-smbd.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -113,7 +113,6 @@ p {
   display: inline-block;
   position: relative;
   width: fit-content;
-  margin-right: 40px;
 }
 
 .underline a:after {
@@ -136,7 +135,7 @@ p {
   color: #4D2601;
   text-align: center;
   font-family: 'Grand Wilson Sans';
-  font-size: 100px;
+  font-size: 95px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -170,8 +169,6 @@ p {
 .box {
   margin: 100px;
   margin-top: 150px;
-  /* width: fit-content; */
-  /* position: absolute; */
 }
 
 .icon-text {
@@ -193,13 +190,14 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-
-  transform-style: preserve-3d;
+  transform: translateX(-50%) translateY(-52%);
 }
 
 #newspaper {
-  width: 350px;
+  width: 300px;
   object-fit: contain;
+  max-inline-size: 100%;
+  margin: 0px 100px 100px 100px;
   /* position: absolute;
   right: 200px;
   bottom: 150px; */
@@ -401,6 +399,40 @@ p {
 .grow:hover {
   transform: scale(1.025);
 }
+
+.margin-sides {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.margin-left {
+  margin-left: 100px;
+}
+
+.margin-right {
+  margin-right: 100px;
+}
+
+@media (max-width: 800px) {
+  .margin-sides {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .margin-left {
+    margin-left: 50px;
+  }
+
+  .margin-right {
+    margin-right: 50px;
+  }
+  
+  .box {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+  }
+}
+
 /* .active {
   background-color: #F7DDA8;
   padding: 5px 10px 5px 10px;
@@ -425,5 +457,6 @@ p {
 } */
 
 html {
+  overflow-x: hidden;
   background-color: var(--ti-bg);
 }

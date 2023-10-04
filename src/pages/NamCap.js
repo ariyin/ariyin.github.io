@@ -7,14 +7,14 @@ import n_4 from "../assets/n_4.png"
 
 function NamCap() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1> nam-cap </h1>
                 <h3> pac-man but in reverse, where the player is a ghost and chases pac-man </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> code a functional game that incorporates the features brainstormed prior to starting the project. </p>
 
@@ -30,7 +30,7 @@ function NamCap() {
                     <p> overall, i believe we accomplished a great deal of what we wanted to accomplish. although the game isn’t as good as it could be (in the alternate universe where we're all experienced developers), it’s still a pretty fun game that embodies the pacman retro vibe. </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> graphics </p>
@@ -55,9 +55,9 @@ function NamCap() {
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <h2> gallery </h2>
-                <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
+                <div className = "flex-box-3" style = {{marginTop: 30 + 'px'}}> 
                     <img className = "web-proto" alt = "home" src = {n_1} />
                     <img className = "web-proto" alt = "alternate home" src = {n_2} />
                     <img className = "web-proto" alt = "playing" src = {n_3} />
@@ -65,8 +65,8 @@ function NamCap() {
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 200 + 'px', marginTop: 100 + 'px' }} alt = "ricky sleeping" src = {sleep} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <img style = {{ height: 180 + 'px', marginTop: 100 + 'px' }} alt = "ricky sleeping" src = {sleep} />
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> other features that could be implemented is a smartness level, where players may choose how "smart" they wish nam-cap will behave; multiplayer functions that will allow user control for nam-cap and the other ghosts on different devices; different features on maps such as portals, secret passages, and hiding spots. </p>
                         

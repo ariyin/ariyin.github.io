@@ -3,14 +3,14 @@ import painting from "../assets/ti_painting.webp"
 
 function Kalah() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1> kalah </h1>
                 <h3> aka mancala; the goal is to get as many rocks as possible in your hole </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> create a program that fulfills the project requirements. </p>
 
@@ -26,7 +26,7 @@ function Kalah() {
                     <p> but i did it! and the ai opponent is pretty smart! who would’ve figured, right? </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> code </p>
@@ -46,14 +46,14 @@ function Kalah() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 300 + 'px', marginTop: 50 + 'px' }} alt = "toro and kuro peekaboo" src = {peekaboo} />
+                    <img style = {{ height: 250 + 'px', marginTop: 50 + 'px' }} alt = "toro and kuro peekaboo" src = {peekaboo} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 250 + 'px', marginTop: 100 + 'px' }} alt = "pierre painting" src = {painting} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <img style = {{ height: 230 + 'px', marginTop: 100 + 'px' }} alt = "pierre painting" src = {painting} />
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> figure out what went wrong, because my code was unfortunately not perfect. and figure out if i can ever beat the ai. </p>
                         

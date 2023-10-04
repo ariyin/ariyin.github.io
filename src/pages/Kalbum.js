@@ -12,14 +12,14 @@ import k_8 from "../assets/k_8.png"
 
 function Kalbum() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1> kalbum </h1>
                 <h3> an ecommerce app & website for preordering kpop albums </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> design an app/website where a user can preorder whatever kpop album they want seamlessly. </p>
 
@@ -45,7 +45,7 @@ function Kalbum() {
                     <p> both designs use newjeans graphics for more of a y2k aesthetic. i designed the app in july (using figma), while the website was designed in august (using adobe xd, which i’m not sure how many people use these days). i guess in this short span of time, i became more critical and aware of what i designed. </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> everything </p>
@@ -62,14 +62,14 @@ function Kalbum() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 450 + 'px', marginTop: 50 + 'px' }} alt = "toro cheering" src = {cheer} />
+                    <img style = {{ width: 200 + 'px', marginTop: 50 + 'px' }} alt = "toro cheering" src = {cheer} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <h2> mockups </h2>
                 <p> see prototypes for more screens. </p>
-                <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
+                <div className = "flex-box-3" style = {{ marginTop: 30 + 'px'}}> 
                     <img className = "mobile-proto" alt = "home" src = {k_1} />
                     <img className = "mobile-proto" alt = "product" src = {k_2} />
                     <img className = "mobile-proto" alt = "shopping cart" src = {k_3} />
@@ -81,8 +81,8 @@ function Kalbum() {
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 400 + 'px', marginTop: 100 + 'px' }} alt = "kuro getting smacked by a pan" src = {pan} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <img style = {{ height: 300 + 'px', marginTop: 100 + 'px' }} alt = "kuro getting smacked by a pan" src = {pan} />
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> because the prototypes i have are mainly concerned about the main flow, i’d like to focus on other features in the future, such as implementing a feature where users are able to track orders and see the status of the shipment through the platform, adding notifications for when followed artists release album preorders, and creating a review system to build trust among users and to see user-based information about albums.  </p>
                         

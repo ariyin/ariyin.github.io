@@ -19,7 +19,7 @@ function Home() {
                 <div></div>
             </div>
 
-            <img className = "background-image" style = {{ transform: 'translateX(-50%) translateY(-52%)' }} alt = "toro emoticons" src = {toroinoue} /> 
+            <img className = "background-image" alt = "toro emoticons" src = {toroinoue} /> 
 
             {/* <Tilt 
                 // style = {{transformStyle: "preserve-3d"}}

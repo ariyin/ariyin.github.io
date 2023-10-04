@@ -16,14 +16,14 @@ import o_12 from "../assets/o_12.png"
 
 function Olyverse() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-left">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginRight: 100 + 'px'}}>
                 <h1> olyverse </h1>
                 <h3> a digital experience to engage with fans on all things ancillary to the LA28 games </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{marginRight: 100 + 'px', width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> design an app that allows users to interact with LA28 athletes and get a fuller LA28 experience. </p>
 
@@ -43,7 +43,7 @@ function Olyverse() {
                     <p> although we didn’t win, i learned a lot through this challenge and got to make some unforgettable memories. </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginRight: 100 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> ui/ux </p>
@@ -59,30 +59,32 @@ function Olyverse() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 300 + 'px', width: 240 + 'px', marginTop: 50 + 'px' }} alt = "kuro cheers" src = {cheers} />
+                    <img style = {{ width: 200 + 'px', marginTop: 50 + 'px' }} alt = "kuro cheers" src = {cheers} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <h2> mockups </h2>
                 <p> see prototype for more screens. </p>
-                <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
-                    <img className = "mobile-proto" alt = "login" src = {o_1} />
-                    <img className = "mobile-proto" alt = "follow athletes" src = {o_2} />
-                    <img className = "mobile-proto" alt = "home" src = {o_3} />
-                    <img className = "mobile-proto" alt = "explore" src = {o_4} />
-                    <img className = "mobile-proto" alt = "team" src = {o_5} />
-                    <img className = "mobile-proto" alt = "shop" src = {o_6} />
-                    <img className = "mobile-proto" alt = "lottery" src = {o_7} />
-                    <img className = "mobile-proto" alt = "stream" src = {o_8} />
-                    <img className = "mobile-proto" alt = "watch party" src = {o_9} />
-                    <img className = "mobile-proto" alt = "fantasy olympics" src = {o_10} />
-                    <img className = "mobile-proto" alt = "leaderboard" src = {o_11} />
-                    <img className = "mobile-proto" alt = "results" src = {o_12} />
+                <div className = "margin-right">
+                    <div className = "flex-box-3" style = {{ marginTop: 30 + 'px'}}> 
+                        <img className = "mobile-proto" alt = "login" src = {o_1} />
+                        <img className = "mobile-proto" alt = "follow athletes" src = {o_2} />
+                        <img className = "mobile-proto" alt = "home" src = {o_3} />
+                        <img className = "mobile-proto" alt = "explore" src = {o_4} />
+                        <img className = "mobile-proto" alt = "team" src = {o_5} />
+                        <img className = "mobile-proto" alt = "shop" src = {o_6} />
+                        <img className = "mobile-proto" alt = "lottery" src = {o_7} />
+                        <img className = "mobile-proto" alt = "stream" src = {o_8} />
+                        <img className = "mobile-proto" alt = "watch party" src = {o_9} />
+                        <img className = "mobile-proto" alt = "fantasy olympics" src = {o_10} />
+                        <img className = "mobile-proto" alt = "leaderboard" src = {o_11} />
+                        <img className = "mobile-proto" alt = "results" src = {o_12} />
+                    </div>
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 200 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro racecar" src = {racecar} />
+                    <img style = {{ height: 160 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro racecar" src = {racecar} />
                     <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
                         <h2> next steps </h2>
                         <p> let this idea die since i don't think the olympics committee or whoever was in charge of the challenge was super interested. </p>

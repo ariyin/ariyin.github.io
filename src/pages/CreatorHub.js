@@ -7,14 +7,14 @@ import c_4 from "../assets/c_4.png"
 
 function CreatorHub() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1 style = {{maxInlineSize: 500 + 'px', wordWrap: "break-word"}}> creator&shy;hub </h1>
                 <h3> a platform to connect brands with content creators for advertisement </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> design the screens for the creatorhub mvp. </p>
 
@@ -30,7 +30,7 @@ function CreatorHub() {
                     <p> contact me if you want to see more i guess (but only if you have good intentions). </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> ui/ux intern </p>
@@ -43,13 +43,13 @@ function CreatorHub() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 300 + 'px', marginTop: 50 + 'px'}} alt = "sora sitting" src = {sit} />
+                    <img style = {{ width: 180 + 'px', marginTop: 50 + 'px'}} alt = "sora sitting" src = {sit} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{ marginBottom: 100 + 'px' }}>
                 <h2> mockups </h2>
-                <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
+                <div className = "flex-box-3" style = {{ marginTop: 30 + 'px'}}> 
                     <img className = "web-proto" alt = "home" src = {c_1} />
                     <img className = "web-proto" alt = "sign up" src = {c_2} />
                     <img className = "web-proto" alt = "profile" src = {c_3} />
@@ -57,8 +57,8 @@ function CreatorHub() {
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ width: 300 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro chatting" src = {chat} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <img style = {{ width: 250 + 'px', marginTop: 100 + 'px' }} alt = "toro and kuro chatting" src = {chat} />
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> since this was a summer internship, i don’t have a lot of notes about personal next steps. but i think there are always ways to improve and reiterate pre-existing designs. </p>
                         

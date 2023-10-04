@@ -22,9 +22,9 @@ function App() {
       <img id = "top-border" alt = "top border" src = {border} />
 
       <div id = "navigation">
-          <div class = "underline"> <NavLink to="/"> home </NavLink> </div>
-          <div class = "underline"> <NavLink to="/about"> about </NavLink> </div>
-          <div class = "underline"> <NavLink to="/projects"> projects </NavLink> </div>
+          <div class = "underline" style = {{ marginRight: 40 + 'px'}}> <NavLink to="/"> home </NavLink> </div>
+          <div class = "underline" style = {{ marginRight: 40 + 'px'}}> <NavLink to="/about"> about </NavLink> </div>
+          <div class = "underline" style = {{ marginRight: 40 + 'px'}}> <NavLink to="/projects"> projects </NavLink> </div>
           <div class = "underline"> <a href = "Wang_Jenna_Resume.pdf" target="_blank" rel="noopener noreferrer"> resume </a> </div>
       </div>
 

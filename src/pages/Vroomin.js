@@ -12,26 +12,14 @@ import v_8 from "../assets/v_8.png"
 
 function Vroomin() {
     return (
-        <div>
-            {/* <div className = "side-nav" style = {{marginTop: 150 + 'px', marginLeft: 50 + 'px'}}>
-                <a href = "#goal"> goal </a>
-                <br/>
-                <a href = "#background"> background </a>
-                <br/>
-                <a href = "#mockups"> mockups </a>
-                <br/>
-                <a href = "#nextsteps"> next steps </a>
-                <br/>
-                <a href = "#conclusion"> conclusion </a>
-            </div> */}
-
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1> vroomin </h1>
                 <h3> a user experience designed to help facilitate campus ridesharing </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> design an app/website that will allow college students to find other people going the same places. </p>
 
@@ -45,7 +33,7 @@ function Vroomin() {
                     <p> this takes us to vroomin (whose name i derived from the meme “they see us ridin’, they hatin’” except it’s now “they see us vroomin’, they hatin’”). i went for a minimal design inspired by uber’s concept and added some n.flying references (my favorite band).  </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> everything </p>
@@ -61,14 +49,14 @@ function Vroomin() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 380 + 'px', marginTop: 50 + 'px'}} alt = "toro thinking" src = {think} />
+                    <img style = {{ width: 180 + 'px', marginTop: 50 + 'px'}} alt = "toro thinking" src = {think} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <h2> mockups </h2>
                 <p> see prototype for more screens. </p>
-                <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
+                <div className = "flex-box-3" style = {{ marginTop: 30 + 'px'}}> 
                     <img className = "mobile-proto" alt = "home" src = {v_1} />
                     <img className = "mobile-proto" alt = "choose a ride" src = {v_2} />
                     <img className = "mobile-proto" alt = "ride information" src = {v_3} />
@@ -80,8 +68,8 @@ function Vroomin() {
                 </div>
 
                 <div className = "flex-box-3"> 
-                    <img style = {{ width: 350 + 'px', marginTop: 100 + 'px' }} alt = "kuro laying down" src = {laying} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <img style = {{ width: 300 + 'px', marginTop: 100 + 'px' }} alt = "kuro laying down" src = {laying} />
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> what i have are merely designs for the main flow. other features i’d like to explore include messaging, notifications, and a profile. i’d also like to think of a way to reward users for successfully reducing their carbon footprint. </p>
                         

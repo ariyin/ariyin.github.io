@@ -7,14 +7,14 @@ import l_4 from "../assets/l_4.png"
 
 function Loocator() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1> loocator </h1>
                 <h3> an app designed to help you locate toilets close to you in your darkest hour </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> participate in la hacks 2023 and learn new technologies while coding with friends. </p>
 
@@ -28,7 +28,7 @@ function Loocator() {
                     <p> i’m very proud of our team for coding and completing as much as we did! (though i'm not sure staying up until 5am was worth it.) </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> see devpost </p>
@@ -52,13 +52,13 @@ function Loocator() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 200 + 'px', marginTop: 50 + 'px' }} alt = "ricky carrying stuff" src = {wood} />
+                    <img style = {{ height: 180 + 'px', marginTop: 50 + 'px' }} alt = "ricky carrying stuff" src = {wood} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <h2> gallery </h2>
-                <div className = "flex-box-3" style = {{ marginRight: 100 + 'px', marginTop: 30 + 'px'}}> 
+                <div className = "flex-box-3" style = {{marginTop: 30 + 'px'}}> 
                     <img className = "mobile-proto" alt = "login" src = {l_1} />
                     <img className = "mobile-proto" alt = "loading screen" src = {l_2} />
                     <img className = "mobile-proto" alt = "home" src = {l_3} />
@@ -67,7 +67,7 @@ function Loocator() {
 
                 <div className = "flex-box-3"> 
                     <img style = {{ height: 300 + 'px', marginTop: 100 + 'px' }} alt = "kuro waving" src = {hi} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> if this were an actual app, some features i'd like to include would be: a social aspect, leaderboard, explore page, bookmarking system, and the actual review system this app is dependent upon.  </p>
                         

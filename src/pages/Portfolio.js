@@ -3,14 +3,14 @@ import recieve from "../assets/ti_recieve.webp"
 
 function Portfolio() {
     return (
-        <div>
-            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+        <div className = "margin-sides">
+            <div style = {{width: 60 + 'vw', marginTop: 150 + 'px'}}>
                 <h1> portfolio </h1>
                 <h3> this website aka what you are looking at right now :3 </h3>        
             </div>
             
             <div className = "flex-box-2">
-                <div style = {{marginLeft: 100 + 'px', marginRight: 100 + 'px', width: 500 + 'px'}}>
+                <div style = {{width: 500 + 'px'}}>
                     <h2> goal </h2>
                     <p> design a website that introduces myself to whoever's looking and display my skills in a tangible format. </p>
 
@@ -30,7 +30,7 @@ function Portfolio() {
                     <p> in the end though, i hope this portfolio is satisfactory and might be able to convey what i wish to convey. </p>
                 </div>
 
-                <div className = "flex-box-5" style = {{marginTop : 50 + 'px', marginLeft: 100 + 'px', marginRight: 100 + 'px'}}>
+                <div className = "flex-box-5" style = {{marginTop : 50 + 'px'}}>
                     <div>
                         <h3> role </h3>
                         <p> everything </p>
@@ -52,14 +52,14 @@ function Portfolio() {
                         <br/>
                     </div>
 
-                    <img style = {{ height: 300 + 'px', marginTop: 50 + 'px' }} alt = "pierre calling" src = {call} />
+                    <img style = {{ height: 280 + 'px', marginTop: 50 + 'px' }} alt = "pierre calling" src = {call} />
                 </div>
             </div>
 
-            <div style = {{marginLeft: 100 + 'px', marginBottom: 100 + 'px' }}>
+            <div style = {{marginBottom: 100 + 'px' }}>
                 <div className = "flex-box-3"> 
-                    <img style = {{ height: 300 + 'px', marginTop: 100 + 'px' }} alt = "jun recieving the call" src = {recieve} />
-                    <div style = {{width: 500 + 'px', marginRight: 100 + 'px'}}>
+                    <img style = {{ height: 250 + 'px', marginTop: 100 + 'px' }} alt = "jun recieving the call" src = {recieve} />
+                    <div style = {{width: 500 + 'px'}}>
                         <h2> next steps </h2>
                         <p> some small changes i want to make are qol changes in the project pages and more animation/css where applicable. but the biggest change i'd like to see someday is the existence of different themes.</p>
                         <br/> 

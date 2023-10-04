@@ -42,7 +42,7 @@ function About() {
                 </div>
             </div>
 
-            <img id = "newspaper" alt = "toro reading newspaper" style = {{ marginLeft: 100 + 'px', marginBottom: 100 + 'px' }} src = {newspaper} />
+            <img id = "newspaper" alt = "toro reading newspaper" src = {newspaper} />
         </div>
     )
 }

@@ -109,6 +109,16 @@ p {
   text-decoration: none;
 }
 
+#navigation a.active::after {
+  content: "";
+  position: absolute;
+  background-color: var(--ti-brown);
+  height: 2.5px;
+  width: 100%;
+  left: 0;
+  bottom: -2px;
+}
+
 .underline {
   display: inline-block;
   position: relative;

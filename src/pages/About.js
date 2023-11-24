@@ -1,6 +1,6 @@
 import React from 'react';
-import mail from '../assets/mail.png';
-import linkedin from '../assets/linkedin.png';
+import mail from '../assets/email.svg';
+import linkedin from '../assets/linkedin.svg';
 import newspaper from '../assets/newspaper.png';
 import { LastFMData } from './LastFMData';
 

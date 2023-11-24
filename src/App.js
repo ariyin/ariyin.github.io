@@ -11,7 +11,7 @@ import Kalah from './pages/Kalah';
 import Olyverse from './pages/Olyverse';
 import Loocator from './pages/Loocator';
 import NamCap from './pages/NamCap';
-import border from './assets/border.png';
+import border from './assets/border.svg';
 
 // npm install react-router-dom
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom"

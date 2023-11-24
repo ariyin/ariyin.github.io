@@ -1,7 +1,7 @@
 import React from 'react';
 // import Tilt from 'react-parallax-tilt';
-import toroinoue from '../assets/ti.png';
-import border from '../assets/border.png';
+import toroinoue from '../assets/ti.svg';
+import border from '../assets/border.svg';
 
 function Home() {
     return (

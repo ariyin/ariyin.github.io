@@ -131,6 +131,37 @@ p {
   width: 100%;
 }
 
+.underline-highlight {
+  display: inline-block;
+  position: relative;
+  width: min-content;
+}
+
+.underline-highlight p {
+  position: relative; 
+  z-index: 1; 
+}
+
+.underline-highlight p:after {
+  content: "";
+  position: absolute;
+  background-color: #EFBAB0;
+  height: 2.5px;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+  z-index: -1;
+  width: calc(100% + 6px); 
+  left: -3px; 
+
+}
+
+.underline-highlight p:hover:after 
+{
+  height: 15px;
+}
+
 #name {
   color: #4D2601;
   text-align: center;
@@ -174,7 +205,7 @@ p {
   margin-top: 150px;
 }
 
-.icon-text {
+.icon-text span {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -184,11 +215,6 @@ p {
   width: 30px;
   height: 30px;
   align-content: center;
-  transition: all 0.2s ease-in-out;
-}
-
-.icon:hover {
-  scale: 1.05;
 }
 
 .background-image {
@@ -418,9 +444,8 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
-  width: 300px;
-  object-fit: contain;
-  max-inline-size: 100%;
+  width: 250px;
+  max-width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -452,6 +477,14 @@ p {
 
   .width-scale {
     max-width: 300px;
+  }
+
+  #newspaper {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    width: 250px;
+    max-width: 100%;
   }
 
   /* #navigation {

@@ -1,6 +1,6 @@
 import React from 'react';
-import mail from '../assets/email.svg';
-import linkedin from '../assets/linkedin.svg';
+import mail from '../assets/airplane.svg';
+import linkedin from '../assets/world.svg';
 import newspaper from '../assets/newspaper.png';
 import { LastFMData } from './LastFMData';
 
@@ -12,7 +12,7 @@ function About() {
 
                 <h3> hello! </h3>
 
-                <p style = {{marginTop: 15 + 'px', marginBottom: 25 + 'px', maxWidth: 600 + 'px'}}> i'm a second year cs major at ucla, interested in full stack (mostly front-end), ui/ux, and ui development! in my spare time, i enjoy playing video games, reading manhwas and novels, listening to kpop albums i've never heard before, and exploring whatever my latest interest might be. </p>  
+                <p style = {{marginTop: 15 + 'px', marginBottom: 25 + 'px', maxWidth: 600 + 'px'}}> i'm a second year cs major at ucla, interested in full stack (mostly front-end), ui/ux, and ui development! in my spare time, i enjoy playing video games, reading manhwas and novels, and exploring different kpop albums. </p>  
 
                 <LastFMData
                     username = {'j00101010'}
@@ -34,7 +34,7 @@ function About() {
                         <span>
                             <img className = "icon" alt = "linkedin icon" src = {linkedin} /> 
                             <a className = "underline-highlight" href = "https://www.linkedin.com/in/jyw42/" target="_blank" rel="noopener noreferrer">
-                                <p> /jyw42 </p>
+                                <p> in/jyw42 </p>
                             </a>
                         </span>
 

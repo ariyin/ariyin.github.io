@@ -1,0 +1,23 @@
+.flex-music {
+    display: flex;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
+}
+
+#newspaper {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: 250px;
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {
+    #newspaper {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        width: 250px;
+        max-width: 100%;
+    }
+}

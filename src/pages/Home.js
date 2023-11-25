@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 // import Tilt from 'react-parallax-tilt';
 import toroinoue from '../assets/ti.svg';
 import border from '../assets/border.svg';

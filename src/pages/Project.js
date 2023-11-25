@@ -1,4 +1,5 @@
 import React from 'react'
+import './Project.css'
 
 export default function Project({ name, date, description, uix, code, image, link }) {
     return (

@@ -1,8 +1,10 @@
 import React from 'react';
+import './About.css';
 import mail from '../assets/airplane.svg';
 import linkedin from '../assets/world.svg';
 import newspaper from '../assets/newspaper.png';
-import { LastFMData } from './LastFMData';
+import music from '../assets/music.svg';
+import { LastFMData } from '../components/LastFMData';
 
 function About() {
     return (
@@ -14,12 +16,14 @@ function About() {
 
                 <p style = {{marginTop: 15 + 'px', marginBottom: 25 + 'px', maxWidth: 600 + 'px'}}> i'm a second year cs major at ucla, interested in full stack (mostly front-end), ui/ux, and ui development! in my spare time, i enjoy playing video games, reading manhwas and novels, and exploring different kpop albums. </p>  
 
-                <LastFMData
-                    username = {'j00101010'}
-                    apiKey = {'2e9538854d56a1ff4ca740d44ce38ab7'}
-                />
+                <div className = "icon-text" style = {{ maxWidth: 600 }}> 
+                    <span style = {{ gap: 15 }}>
+                        <img className="icon" alt="mail icon" src={music} /> 
+                        <h3 className = "flex-music"> last played: &nbsp; <span> <LastFMData username = {'j00101010'} apiKey = {'2e9538854d56a1ff4ca740d44ce38ab7'} /> </span> </h3>
+                    </span>
+                </div>
 
-                <h1 style = {{marginTop: 30 + 'px'}}> contact </h1>
+                <h1 style = {{marginTop: 50 + 'px'}}> contact </h1>
 
                     <div className = "icon-text" style = {{marginBottom: 15 + 'px'}}> 
                         <span> 
@@ -37,8 +41,7 @@ function About() {
                                 <p> in/jyw42 </p>
                             </a>
                         </span>
-
-                </div>
+                    </div>
             </div>
 
             <img id = "newspaper" alt = "toro reading newspaper" src = {newspaper} />

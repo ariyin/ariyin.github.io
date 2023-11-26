@@ -4,7 +4,7 @@ import mail from '../assets/airplane.svg';
 import linkedin from '../assets/world.svg';
 import newspaper from '../assets/newspaper.png';
 import music from '../assets/music.svg';
-import { LastFMData } from '../components/LastFMData';
+import { LastFmSong } from '../components/LastFmSong';
 
 function About() {
     return (
@@ -18,8 +18,8 @@ function About() {
 
                 <div className = "icon-text" style = {{ maxWidth: 600 }}> 
                     <span style = {{ gap: 15 }}>
-                        <img className="icon" alt="mail icon" src={music} /> 
-                        <h3 className = "flex-music"> last played: &nbsp; <span> <LastFMData username = {'j00101010'} apiKey = {'2e9538854d56a1ff4ca740d44ce38ab7'} /> </span> </h3>
+                        <img className="icon-shadow" alt="mail icon" src={music} /> 
+                        <h3 className = "flex-music"> last played: &nbsp; <span> <LastFmSong username = {'j00101010'} apiKey = {'2e9538854d56a1ff4ca740d44ce38ab7'} /> </span> </h3>
                     </span>
                 </div>
 
@@ -27,7 +27,7 @@ function About() {
 
                     <div className = "icon-text" style = {{marginBottom: 15 + 'px'}}> 
                         <span> 
-                            <img className = "icon" alt = "mail icon" src = {mail} /> 
+                            <img className = "icon-shadow" alt = "mail icon" src = {mail} /> 
                             <a className = "underline-highlight" href = "mailto:jenna2004@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <p> jenna2004@gmail.com </p> 
                             </a>
@@ -36,7 +36,7 @@ function About() {
 
                     <div className = "icon-text" style = {{marginBottom: 15 + 'px'}}> 
                         <span>
-                            <img className = "icon" alt = "linkedin icon" src = {linkedin} /> 
+                            <img className = "icon-shadow" alt = "linkedin icon" src = {linkedin} /> 
                             <a className = "underline-highlight" href = "https://www.linkedin.com/in/jyw42/" target="_blank" rel="noopener noreferrer">
                                 <p> in/jyw42 </p>
                             </a>

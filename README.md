@@ -1,5 +1,5 @@
 # jenna wang's portfolio
-this portfolio is powered by vite and deployed via github pages
+this portfolio is powered by [vite](https://vitejs.dev/) and deployed via [github pages](https://pages.github.com/). the code was written using: html, css, javascript, react, and markdown (for this readme lol).
 
 ## commands
 - to start: `npm start`
@@ -8,13 +8,13 @@ this portfolio is powered by vite and deployed via github pages
 ## pages
 
 ### home
-toro inoue world domination! featuring a design like a nintendo game console and many toro inoue reactions.
+toro inoue world domination! featuring a design like a game console and many toro inoue emoticons.
 
 ### about
 the usual college introduction that's like name, year, major and a short blurb about my professional and personal interests. you also get to check out my very good music taste and see how you can contact me (spoiler: there are not that many ways, but if you like discord you may also message me @jayenay).
 
 ### projects
-since i'm interested in both coding and ui/ux / design, i kind of have to feature different projects that demonstrate my skills in either aspect.
+since i'm interested in both coding and ui/ux and/or design, i kind of have to feature different projects that demonstrate my skills in either aspect.
 
 for a quick reference of projects i've worked on:
 - [this portfolio](ariyin.github.io) (you are here right now)
@@ -33,7 +33,7 @@ not an actual page, but links to my most recently updated resume! for those who 
 aka some of my future plans for this site. i have a lot of things i want to do, but very little time (college classes eat away most of my time unfortunately)...
 - revamping projects (quality over quantity)
     - content
-    - using react chips
+    - using react chips (if i even need those tags...)
     - navigation within the project page
     - how they're displayed (kind of lame right now)
 - more game references, such as:

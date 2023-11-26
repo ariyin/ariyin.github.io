@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-export const LastFMData = ({ username, apiKey }) => {
-    const [LFMData, updateLFMData] = useState({});
+export const LastFmSong = ({ username, apiKey }) => {
+    const [data, updateData] = useState({});
     useEffect(() => {
         fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${username}&api_key=${apiKey}&limit=1&nowplaying=true&format=json`)
             .then(response => {
@@ -10,15 +10,15 @@ export const LastFMData = ({ username, apiKey }) => {
                 }
                 throw new Error('error');
             })
-            .then(data => updateLFMData(data))
+            .then(data => updateData(data))
             .catch(() =>
-                updateLFMData({ error: 'whoops! something went wrong with last.fm' })
+                updateData({ error: 'whoops! something went wrong with last.fm' })
             );
     }, []);
 
-    const buildLastFMData = () => {
-        const { error } = LFMData;
-        const track = LFMData?.recenttracks?.track;
+    const buildData = () => {
+        const { error } = data;
+        const track = data?.recenttracks?.track;
 
         if(error) {
             return <p style={{ fontWeight: '400' }}> {error} </p>;
@@ -35,5 +35,5 @@ export const LastFMData = ({ username, apiKey }) => {
                 </a>;
     };
 
-    return buildLastFMData();
+    return buildData();
 };

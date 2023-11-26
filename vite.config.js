@@ -5,6 +5,8 @@ import path from 'path';
 
 export default defineConfig(() => {
   return {
+    mode: 'development',
+    "type": "module",
     server: {
         open: true,
     },
@@ -17,7 +19,9 @@ export default defineConfig(() => {
       outDir: 'build',
     },
     plugins: [
-        react(),
+        react({
+          include: "**/*.jsx",
+        }),
         svgr({ svgrOptions: { icon: true } }),
     ],
   };

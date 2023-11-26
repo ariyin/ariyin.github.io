@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function DateTimeDisplay() {
+function DateTime() {
   const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -35,4 +35,4 @@ function DateTimeDisplay() {
   );
 }
 
-export default DateTimeDisplay;
+export default DateTime;

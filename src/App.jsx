@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-
+import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -13,7 +13,6 @@ import Kalah from './pages/Kalah';
 import Olyverse from './pages/Olyverse';
 import Loocator from './pages/Loocator';
 import NamCap from './pages/NamCap';
-import NavBar from './components/NavBar';
 
 function App() {
   return (

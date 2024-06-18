@@ -93,11 +93,13 @@ function Vroomin() {
       <div style={{ marginBottom: 100 + "px" }}>
         <h2> mockups </h2>
         <p> see prototype for more screens. </p>
-        <div className="flex-box-3" style={{ marginTop: 30 + "px" }}>
+        <div className="mobile-grid" style={{ marginTop: 30 + "px" }}>
           <img className="mobile-proto" alt="home" src={v_1} />
           <img className="mobile-proto" alt="choose a ride" src={v_2} />
           <img className="mobile-proto" alt="ride information" src={v_3} />
           <img className="mobile-proto" alt="ride requested" src={v_4} />
+        </div>
+        <div className="web-grid">      
           <img className="web-proto" alt="home" src={v_5} />
           <img className="web-proto" alt="choose a ride" src={v_6} />
           <img className="web-proto" alt="ride information" src={v_7} />

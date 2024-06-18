@@ -147,8 +147,9 @@ p {
 .flex-box {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .flex-box-2 {
@@ -178,6 +179,20 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.web-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  width: 100%;
+  justify-items: center;
+}
+
+.mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
 }
 
 .margin-sides {
@@ -216,6 +231,14 @@ p {
 
   .width-scale {
     max-width: 310px;
+  }
+
+  .ch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .v-grid {
+    grid-template-columns: 1fr;
   }
 }
 

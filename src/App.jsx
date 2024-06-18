@@ -12,7 +12,7 @@ import Olyverse from "./pages/Olyverse";
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/ariyin.github.io">
       <NavBar />
       <div>
         <Routes>

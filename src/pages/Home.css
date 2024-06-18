@@ -3,10 +3,6 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-
-  /* -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2)); */
-
   text-align: center;
 }
 
@@ -14,7 +10,7 @@
   color: #4d2601;
   text-align: center;
   font-family: "Grand Wilson Sans";
-  font-size: 95px;
+  font-size: 6.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -24,13 +20,13 @@
 
 #name-w {
   user-select: none;
-  letter-spacing: -25px;
+  letter-spacing: -1.5vw;
 }
 
 #bottom-border {
   position: fixed;
   bottom: 0px;
-  height: 140px;
+  width: 100vw;
   -webkit-filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
 }
@@ -47,6 +43,10 @@
   object-position: center 75%;
 
   animation: toroMoveUp 1.5s ease-out;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes toroMoveUp {
@@ -185,5 +185,12 @@
   .triangles div:nth-child(8),
   .triangles div:nth-child(10) {
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  #bottom-border {
+    height: 140px;
+    width: auto;
   }
 }

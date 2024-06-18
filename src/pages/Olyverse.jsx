@@ -124,7 +124,7 @@ function Olyverse() {
       <div style={{ marginBottom: 100 + "px" }}>
         <h2> mockups </h2>
         <p> see prototype for more screens. </p>
-        <div className="flex-box-3" style={{ marginTop: 30 + "px" }}>
+        <div className="mobile-grid" style={{ marginTop: 30 + "px" }}>
           <img className="mobile-proto" alt="login" src={o_1} />
           <img className="mobile-proto" alt="follow athletes" src={o_2} />
           <img className="mobile-proto" alt="home" src={o_3} />

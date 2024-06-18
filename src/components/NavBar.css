@@ -60,7 +60,7 @@
   position: fixed;
   top: 0px;
   transform: rotate(180deg);
-  height: 140px;
+  width: 100vw;
   z-index: 2;
   -webkit-filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
@@ -101,5 +101,12 @@
 
   .flex-side {
     display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  #top-border {
+    height: 140px;
+    width: auto;
   }
 }

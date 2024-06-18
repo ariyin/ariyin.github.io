@@ -18,13 +18,13 @@
 
 .mobile-proto {
   max-inline-size: 100%;
-  width: 270px;
+  /* width: 100%; */
   margin-bottom: 50px;
 }
 
 .web-proto {
   max-inline-size: 100%;
-  width: 600px;
+  width: 100%;
   margin-bottom: 50px;
 }
 
@@ -95,7 +95,7 @@
   position: absolute;
 }
 
-.css-6od3lo-MuiChip-label {
+.MuiChip-label {
   color: var(--ti-bg);
   font-family: "Fakt Soft";
   font-size: 18px;

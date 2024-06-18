@@ -51,8 +51,7 @@ function CreatorHub() {
           </p>
           <br />
           <p>
-            contact me if you want to see more i guess (but only if you have
-            good intentions).
+            contact me if you want to see more!
           </p>
         </div>
 
@@ -79,7 +78,7 @@ function CreatorHub() {
 
       <div style={{ marginBottom: 100 + "px" }}>
         <h2> mockups </h2>
-        <div className="flex-box-3" style={{ marginTop: 30 + "px" }}>
+        <div className="web-grid" style={{ marginTop: 30 + "px" }}>
           <img className="web-proto" alt="home" src={c_1} />
           <img className="web-proto" alt="sign up" src={c_2} />
           <img className="web-proto" alt="profile" src={c_3} />

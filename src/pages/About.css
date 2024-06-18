@@ -1,23 +1,87 @@
 .flex-music {
-    display: flex;
-    flex-direction: horizontal;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #newspaper {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    width: 250px;
-    max-width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.dialogue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.flex-dialogue {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  max-width: 310px;
+}
+
+.headliner {
+  font-size: 20px;
+  z-index: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: headlinerTyping 2s steps(40);
+}
+
+.action {
+  font-size: 20px;
+  z-index: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation: actionTyping 2s steps(30) 2s forwards;
+}
+
+@keyframes headlinerTyping {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes actionTyping {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bubble {
+  position: relative;
+  animation: bubbleMoveUp 0.4s ease-out;
+}
+
+@keyframes bubbleMoveUp {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @media (max-width: 800px) {
-    #newspaper {
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 100px;
-        width: 250px;
-        max-width: 100%;
-    }
+  #newspaper {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    width: 250px;
+    max-width: 100%;
+  }
 }

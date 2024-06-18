@@ -4,29 +4,29 @@
 */
 
 :root {
-  --ti-brown: #4D2601;
-  --ti-bg: #F7F6E8;
+  --ti-brown: #4d2601;
+  --ti-bg: #f7f6e8;
 }
 
 /* Fakt Soft */
 @font-face {
-  font-family: 'Fakt Soft'; 
-  src: url('fonts/fakt-soft-nor.ttf') format('truetype');
+  font-family: "Fakt Soft";
+  src: url("fonts/fakt-soft-nor.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Fakt Soft'; 
-  src: url('fonts/fakt-soft-smbd.ttf') format('truetype');
+  font-family: "Fakt Soft";
+  src: url("fonts/fakt-soft-smbd.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 /* Grand Wilson Sans */
 @font-face {
-  font-family: 'Grand Wilson Sans'; 
-  src: url('fonts/grand-wilson-sans.otf') format('opentype');
+  font-family: "Grand Wilson Sans";
+  src: url("fonts/grand-wilson-sans.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
@@ -42,7 +42,7 @@ a:visited {
 }
 
 .project-link {
-  font-family: 'Fakt Soft';
+  font-family: "Fakt Soft";
   font-weight: 400;
   font-size: 18px;
   color: var(--ti-brown);
@@ -50,7 +50,7 @@ a:visited {
 }
 
 h1 {
-  font-family: 'Grand Wilson Sans';
+  font-family: "Grand Wilson Sans";
   font-weight: 400;
   font-size: 48px;
   color: var(--ti-brown);
@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Grand Wilson Sans';
+  font-family: "Grand Wilson Sans";
   font-weight: 400;
   font-size: 36px;
   color: var(--ti-brown);
@@ -67,7 +67,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Fakt Soft';
+  font-family: "Fakt Soft";
   font-weight: 600;
   font-size: 18px;
   color: var(--ti-brown);
@@ -75,7 +75,7 @@ h3 {
 }
 
 p {
-  font-family: 'Fakt Soft';
+  font-family: "Fakt Soft";
   font-weight: 400;
   font-size: 18px;
   color: var(--ti-brown);
@@ -88,33 +88,35 @@ p {
 }
 
 .underline-highlight p {
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
 }
 
 .underline-highlight p:after {
   content: "";
   position: absolute;
-  background-color: #EFBAB0;
+  background-color: #efbab0;
   height: 2.5px;
   width: 100%;
   left: 0;
   bottom: -5px;
   transition: 0.3s;
   z-index: -1;
-  width: calc(100% + 6px); 
-  left: -3px; 
-
+  width: calc(100% + 6px);
+  left: -3px;
 }
 
-.underline-highlight p:hover:after 
-{
+.underline-highlight p:hover:after {
   height: 15px;
 }
 
 .box {
   margin: 100px;
   margin-top: 145px;
+}
+
+.box-2 {
+  margin: 0px 100px;
 }
 
 .icon-text span {
@@ -137,9 +139,13 @@ p {
   filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
 }
 
+.drop-shadow {
+  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
+}
+
 .flex-box {
   display: flex;
-  flex-direction: horizontal;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
@@ -147,7 +153,6 @@ p {
 
 .flex-box-2 {
   display: flex;
-  flex-direction: horizontal;
   justify-content: space-between;
   align-items: space-between;
   column-gap: 100px;
@@ -156,7 +161,6 @@ p {
 
 .flex-box-3 {
   display: flex;
-  flex-direction: horizontal;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
@@ -182,11 +186,9 @@ p {
 }
 
 .component-scale {
+  display: flex;
+  width: fit-content;
   padding-bottom: 15px;
-}
-
-.width-scale {
-  max-width: 340px;
 }
 
 @media (max-width: 800px) {
@@ -202,6 +204,10 @@ p {
     margin-top: 150px;
   }
 
+  .flex-box {
+    justify-content: center;
+  }
+
   .component-scale {
     transform: scale(0.9);
     transform-origin: top left;
@@ -209,7 +215,7 @@ p {
   }
 
   .width-scale {
-    max-width: 300px;
+    max-width: 310px;
   }
 }
 
@@ -218,7 +224,11 @@ p {
   color: var(--ti-bg);
 }
 
-html, body {
+html,
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   background-color: var(--ti-bg);
 }

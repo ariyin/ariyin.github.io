@@ -14,17 +14,15 @@ function App() {
   return (
     <Router basename="/">
       <NavBar />
-      <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/vroomin" element={<Vroomin />} />
-          <Route path="/kalbum" element={<Kalbum />} />
-          <Route path="/creatorhub" element={<CreatorHub />} />
-          <Route path="/olyverse" element={<Olyverse />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/vroomin" element={<Vroomin />} />
+        <Route path="/kalbum" element={<Kalbum />} />
+        <Route path="/creatorhub" element={<CreatorHub />} />
+        <Route path="/olyverse" element={<Olyverse />} />
+      </Routes>
     </Router>
   );
 }

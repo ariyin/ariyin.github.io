@@ -1,3 +1,30 @@
+.bg-text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 50px;
+  height: 100vh;
+  user-select: none;
+
+}
+
+.bg-text-top {
+  color: var(--ti-beige);
+  font-size: 15vw;
+  font-weight: 600;
+  margin-right: 170px;
+  margin-bottom: -30px;
+  margin-top: 100px;
+}
+
+.bg-text-bottom {
+  color: var(--ti-beige);
+  font-size: 15vw;
+  font-weight: 600;
+}
+
 .flex-music {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +35,7 @@
   margin-right: 100px;
   width: 250px;
   max-width: 100%;
+  z-index: 1;
 }
 
 .dialogue {
@@ -75,12 +103,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
   #newspaper {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 100px;
-    width: 250px;
-    max-width: 100%;
+    margin-bottom: 100px; 
+  }
+
+  .bg-text {
+    display: none;
   }
 }

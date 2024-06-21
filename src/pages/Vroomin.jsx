@@ -1,4 +1,4 @@
-import think from "../assets/ti_think.webp";
+import peekaboo from "../assets/ti_peekaboo.webp";
 import laying from "../assets/ti_laying.png";
 import v_1 from "../assets/v_1.png";
 import v_2 from "../assets/v_2.png";
@@ -11,8 +11,8 @@ import v_8 from "../assets/v_8.png";
 
 function Vroomin() {
   return (
-    <div className="margin-sides">
-      <div style={{ width: 60 + "vw", marginTop: 150 + "px" }}>
+    <div className="project-container">
+      <div style={{ width: 60 + "vw" }}>
         <h1> vroomin </h1>
         <h3>
           a user experience designed to help facilitate campus ridesharing
@@ -21,7 +21,7 @@ function Vroomin() {
 
       <div className="flex-box-2">
         <div style={{ width: 500 + "px" }}>
-          <h2> goal </h2>
+          <h2 style={{ margin: 0 }}> goal </h2>
           <p>
             design an app/website that will allow college students to find other
             people going the same places.
@@ -58,7 +58,7 @@ function Vroomin() {
           </p>
         </div>
 
-        <div className="flex-box-5" style={{ marginTop: 50 + "px" }}>
+        <div className="flex-box-5">
           <div>
             <h3> role </h3>
             <p> everything </p>
@@ -83,28 +83,30 @@ function Vroomin() {
           </div>
 
           <img
-            style={{ width: 180 + "px", marginTop: 50 + "px" }}
-            alt="toro thinking"
-            src={think}
+            style={{ width: 250 + "px", marginTop: 50 + "px" }}
+            alt="toro peekaboo"
+            src={peekaboo}
           />
         </div>
       </div>
 
-      <div style={{ marginBottom: 100 + "px" }}>
-        <h2> mockups </h2>
-        <p> see prototype for more screens. </p>
-        <div className="mobile-grid" style={{ marginTop: 30 + "px" }}>
-          <img className="mobile-proto" alt="home" src={v_1} />
-          <img className="mobile-proto" alt="choose a ride" src={v_2} />
-          <img className="mobile-proto" alt="ride information" src={v_3} />
-          <img className="mobile-proto" alt="ride requested" src={v_4} />
-        </div>
-        <div className="web-grid">      
-          <img className="web-proto" alt="home" src={v_5} />
-          <img className="web-proto" alt="choose a ride" src={v_6} />
-          <img className="web-proto" alt="ride information" src={v_7} />
-          <img className="web-proto" alt="ride requested" src={v_8} />
-        </div>
+      <div>
+        <section className="beige-bg">
+          <h2> mockups </h2>
+          <p> see prototype for more screens. </p>
+          <div className="mobile-grid">
+            <img className="mobile-proto" alt="home" src={v_1} />
+            <img className="mobile-proto" alt="choose a ride" src={v_2} />
+            <img className="mobile-proto" alt="ride information" src={v_3} />
+            <img className="mobile-proto" alt="ride requested" src={v_4} />
+          </div>
+          <div className="web-grid">
+            <img className="web-proto" alt="home" src={v_5} />
+            <img className="web-proto" alt="choose a ride" src={v_6} />
+            <img className="web-proto" alt="ride information" src={v_7} />
+            <img className="web-proto" alt="ride requested" src={v_8} />
+          </div>
+        </section>
 
         <div className="flex-box-3">
           <img

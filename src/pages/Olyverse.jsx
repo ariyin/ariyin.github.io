@@ -15,12 +15,10 @@ import o_12 from "../assets/o_12.png";
 
 function Olyverse() {
   return (
-    <div className="margin-sides">
+    <div className="project-container">
       <div
         style={{
           width: 60 + "vw",
-          marginTop: 150 + "px",
-          marginRight: 100 + "px",
         }}
       >
         <h1 style={{ maxInlineSize: 500 + "px", wordWrap: "break-word" }}>
@@ -33,8 +31,8 @@ function Olyverse() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ marginRight: 100 + "px", width: 500 + "px" }}>
-          <h2> goal </h2>
+        <div style={{ width: 500 + "px" }}>
+          <h2 style={{ margin: 0 }}> goal </h2>
           <p>
             design an app that allows users to interact with LA28 athletes and
             get a fuller LA28 experience.
@@ -89,7 +87,7 @@ function Olyverse() {
           </p>
         </div>
 
-        <div className="flex-box-5" style={{ marginTop: 50 + "px" }}>
+        <div className="flex-box-5">
           <div>
             <h3> role </h3>
             <p> ui/ux </p>
@@ -121,23 +119,25 @@ function Olyverse() {
         </div>
       </div>
 
-      <div style={{ marginBottom: 100 + "px" }}>
-        <h2> mockups </h2>
-        <p> see prototype for more screens. </p>
-        <div className="mobile-grid" style={{ marginTop: 30 + "px" }}>
-          <img className="mobile-proto" alt="login" src={o_1} />
-          <img className="mobile-proto" alt="follow athletes" src={o_2} />
-          <img className="mobile-proto" alt="home" src={o_3} />
-          <img className="mobile-proto" alt="explore" src={o_4} />
-          <img className="mobile-proto" alt="team" src={o_5} />
-          <img className="mobile-proto" alt="shop" src={o_6} />
-          <img className="mobile-proto" alt="lottery" src={o_7} />
-          <img className="mobile-proto" alt="stream" src={o_8} />
-          <img className="mobile-proto" alt="watch party" src={o_9} />
-          <img className="mobile-proto" alt="fantasy olympics" src={o_10} />
-          <img className="mobile-proto" alt="leaderboard" src={o_11} />
-          <img className="mobile-proto" alt="results" src={o_12} />
-        </div>
+      <div>
+        <section className="beige-bg">
+          <h2> mockups </h2>
+          <p> see prototype for more screens. </p>
+          <div className="mobile-grid">
+            <img className="mobile-proto" alt="login" src={o_1} />
+            <img className="mobile-proto" alt="follow athletes" src={o_2} />
+            <img className="mobile-proto" alt="home" src={o_3} />
+            <img className="mobile-proto" alt="explore" src={o_4} />
+            <img className="mobile-proto" alt="team" src={o_5} />
+            <img className="mobile-proto" alt="shop" src={o_6} />
+            <img className="mobile-proto" alt="lottery" src={o_7} />
+            <img className="mobile-proto" alt="stream" src={o_8} />
+            <img className="mobile-proto" alt="watch party" src={o_9} />
+            <img className="mobile-proto" alt="fantasy olympics" src={o_10} />
+            <img className="mobile-proto" alt="leaderboard" src={o_11} />
+            <img className="mobile-proto" alt="results" src={o_12} />
+          </div>
+        </section>
 
         <div className="flex-box-3">
           <img

@@ -39,7 +39,11 @@ export default function CodeProject({
       style={{ transform: `rotate(${rotate}deg) translateY(${shift}px)` }}
     >
       <div style={{ display: "flex", alignItems: "center" }}>
-        <img src={isChecked ? checkedbox : checkbox} className="checkbox" />
+        <img
+          src={isChecked ? checkedbox : checkbox}
+          className="checkbox"
+          loading="lazy"
+        />
         <h3 className="label"> {name} </h3>
       </div>
 

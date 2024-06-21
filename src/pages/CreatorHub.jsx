@@ -7,8 +7,8 @@ import c_4 from "../assets/c_4.png";
 
 function CreatorHub() {
   return (
-    <div className="margin-sides">
-      <div style={{ width: 60 + "vw", marginTop: 150 + "px" }}>
+    <div className="project-container">
+      <div style={{ width: 60 + "vw" }}>
         <h1 style={{ maxInlineSize: 500 + "px", wordWrap: "break-word" }}>
           crea&shy;tor&shy;hub
         </h1>
@@ -19,7 +19,7 @@ function CreatorHub() {
 
       <div className="flex-box-2">
         <div style={{ width: 500 + "px" }}>
-          <h2> goal </h2>
+          <h2 style={{ margin: 0 }}> goal </h2>
           <p> design the screens for the creatorhub mvp. </p>
 
           <h2> thoughts </h2>
@@ -50,12 +50,10 @@ function CreatorHub() {
             prototype), but i'd still like to show a few of my favorite screens.
           </p>
           <br />
-          <p>
-            contact me if you want to see more!
-          </p>
+          <p>contact me if you want to see more!</p>
         </div>
 
-        <div className="flex-box-5" style={{ marginTop: 50 + "px" }}>
+        <div className="flex-box-5">
           <div>
             <h3> role </h3>
             <p> ui/ux intern </p>
@@ -76,18 +74,20 @@ function CreatorHub() {
         </div>
       </div>
 
-      <div style={{ marginBottom: 100 + "px" }}>
-        <h2> mockups </h2>
-        <div className="web-grid" style={{ marginTop: 30 + "px" }}>
-          <img className="web-proto" alt="home" src={c_1} />
-          <img className="web-proto" alt="sign up" src={c_2} />
-          <img className="web-proto" alt="profile" src={c_3} />
-          <img className="web-proto" alt="analytics" src={c_4} />
-        </div>
+      <div>
+        <section className="beige-bg">
+          <h2> mockups </h2>
+          <div className="web-grid">
+            <img className="web-proto" alt="home" src={c_1} />
+            <img className="web-proto" alt="sign up" src={c_2} />
+            <img className="web-proto" alt="profile" src={c_3} />
+            <img className="web-proto" alt="analytics" src={c_4} />
+          </div>
+        </section>
 
         <div className="flex-box-3">
           <img
-            style={{ width: 250 + "px", marginTop: 100 + "px" }}
+            style={{ width: 250 + "px" }}
             alt="toro and kuro chatting"
             src={chat}
           />

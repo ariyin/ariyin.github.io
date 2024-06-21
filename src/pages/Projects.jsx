@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CodeProject from "../components/CodeProject";
 import UIProject from "../components/UIProject";
-import "./Project.css";
+import "./Projects.css";
 
 import saga from "../assets/saga.png";
 import sagabw from "../assets/sagabw.png";
@@ -21,11 +21,14 @@ import olyverse from "../assets/olyverse.png";
 import olyversebw from "../assets/olyversebw.png";
 import namcap from "../assets/namcap.png";
 import namcapbw from "../assets/namcapbw.png";
+import pattern from "../assets/pattern.svg";
+import clock from "../assets/clock.gif";
 
 const codeProjects = [
   {
     name: "SAGA",
-    description: "an educational website that teaches computer graphics with ai",
+    description:
+      "an educational website that teaches computer graphics with ai",
     image: saga,
     bwimage: sagabw,
     link: "https://teach-saga.netlify.app/",
@@ -45,7 +48,8 @@ const codeProjects = [
   },
   {
     name: "SoundsRight",
-    description: "an app to share songs with friends so they know how great your music taste is",
+    description:
+      "an app to share songs with friends so they know how great your music taste is",
     image: soundsright,
     bwimage: soundsrightbw,
     link: "https://github.com/uclaacm/stackschool-demo-w24",
@@ -98,7 +102,8 @@ const uiProjects = [
   },
   {
     name: "CreatorHub",
-    description: "a platform to connect brands with content creators for advertisement",
+    description:
+      "a platform to connect brands with content creators for advertisement",
     image: creatorhub,
     bwimage: creatorhubbw,
     link: "/creatorhub",
@@ -118,42 +123,58 @@ const uiProjects = [
 ];
 
 function Projects() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4500);
+  }, []);
+
   return (
-    <div className="box">
-      <h1> projects </h1>
-      <div className="project-flex">
-        {codeProjects.map((projects) => (
-          <CodeProject
-            key={projects.name}
-            name={projects.name}
-            date={projects.date}
-            description={projects.description}
-            image={projects.image}
-            bwimage={projects.bwimage}
-            link={projects.link}
-            skills={projects.skills}
-            rotate={projects.rotate}
-            shift={projects.shift}
-          />
-        ))}
+    <>
+      <div className={loading ? "loading" : "hide"}></div>
+      <img src={clock} className={loading ? "clock" : "hide"} />
+      <div className={loading ? "mask" : "mask-hide"}>
+        <img src={pattern} className="pattern" />
+        <div className="box">
+          <h1> projects </h1>
+          <div className="project-flex">
+            {codeProjects.map((projects) => (
+              <CodeProject
+                key={projects.name}
+                name={projects.name}
+                date={projects.date}
+                description={projects.description}
+                image={projects.image}
+                bwimage={projects.bwimage}
+                link={projects.link}
+                skills={projects.skills}
+                rotate={projects.rotate}
+                shift={projects.shift}
+              />
+            ))}
+          </div>
+          <h1 style={{ marginTop: 100 }}> hifis </h1>
+          <div className="project-flex">
+            {uiProjects.map((projects) => (
+              <UIProject
+                key={projects.name}
+                name={projects.name}
+                date={projects.date}
+                description={projects.description}
+                image={projects.image}
+                bwimage={projects.bwimage}
+                link={projects.link}
+                rotate={projects.rotate}
+                shift={projects.shift}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-      <h1 style={{ marginTop: 100 }}> hifis </h1>
-      <div className="project-flex">
-        {uiProjects.map((projects) => (
-          <UIProject
-            key={projects.name}
-            name={projects.name}
-            date={projects.date}
-            description={projects.description}
-            image={projects.image}
-            bwimage={projects.bwimage}
-            link={projects.link}
-            rotate={projects.rotate}
-            shift={projects.shift}
-          />
-        ))}
-      </div>
-    </div>
+      {/* <Loading /> */}
+    </>
   );
 }
 

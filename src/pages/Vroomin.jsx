@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import peekaboo from "../assets/ti_peekaboo.webp";
 import laying from "../assets/ti_laying.png";
 import v_1 from "../assets/v_1.png";
@@ -10,6 +12,12 @@ import v_7 from "../assets/v_7.png";
 import v_8 from "../assets/v_8.png";
 
 function Vroomin() {
+  let offset = 50;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="project-container">
       <div style={{ width: 60 + "vw" }}>
@@ -22,40 +30,52 @@ function Vroomin() {
       <div className="flex-box-2">
         <div style={{ width: 500 + "px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
-          <p>
-            design an app/website that will allow college students to find other
-            people going the same places.
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              design an app/website that will allow college students to find
+              other people going the same places.
+            </p>
+          </ScrollAnimation>
 
           <h2> thoughts </h2>
-          <p>
-            i've often wanted to go to events, places, or concerts in la.
-            however, with a lack of access to a car, no desire to ride public
-            transportation for more than an hour to arrive at my destination,
-            and an unfortunately empty wallet, i found it hard to go to places.
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              i've often wanted to go to events, places, or concerts in la.
+              however, with a lack of access to a car, no desire to ride public
+              transportation for more than an hour to arrive at my destination,
+              and an unfortunately empty wallet, i found it hard to go to
+              places.
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>
-            while thinking of prompts for coursera's google ux design
-            certificate course, which emphasized designing a user experience for
-            social good, i thought of a ridesharing platform for college
-            students. not only would it make students' lives more convenient,
-            but you would be able to reduce individual carbon footprints.
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              while thinking of prompts for coursera's google ux design
+              certificate course, which emphasized designing a user experience
+              for social good, i thought of a ridesharing platform for college
+              students. not only would it make students' lives more convenient,
+              but you would be able to reduce individual carbon footprints.
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>
-            i've seen this idea multiple times, namely for hackathons, but those
-            projects were done from a swe's perspective (so more thought behind
-            the coding and not really the design). i thought i could come up
-            with an idea that was not only practical, but also good looking.
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              i've seen this idea multiple times, namely for hackathons, but
+              those projects were done from a swe's perspective (so more thought
+              behind the coding and not really the design). i thought i could
+              come up with an idea that was not only practical, but also good
+              looking.
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>
-            this takes us to vroomin (whose name i derived from the meme “they
-            see us ridin', they hatin'” except it's now “they see us vroomin',
-            they hatin'”). i went for a minimal design inspired by uber's
-            concept and added some n.flying references (my favorite band).
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              this takes us to vroomin (whose name i derived from the meme “they
+              see us ridin', they hatin'” except it's now “they see us vroomin',
+              they hatin'”). i went for a minimal design inspired by uber's
+              concept and added some n.flying references (my favorite band).
+            </p>
+          </ScrollAnimation>
         </div>
 
         <div className="flex-box-5">
@@ -70,7 +90,7 @@ function Vroomin() {
             <p> august 2023 </p>
             <br />
             <h3> link </h3>
-            <div class="project-link">
+            <div className="project-link">
               <a
                 href="https://www.figma.com/proto/fcOewlDV3eUSCCBXPx1ZJv/vroomin?page-id=0%3A1&type=design&node-id=37-3516&viewport=21%2C361%2C0.36&t=M6PgGAB2WC8J0DwX-1&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design"
                 target="_blank"
@@ -94,18 +114,26 @@ function Vroomin() {
         <section className="beige-bg">
           <h2> mockups </h2>
           <p> see prototype for more screens. </p>
-          <div className="mobile-grid">
+          <ScrollAnimation
+            animateIn="fadeIn"
+            offset={offset}
+            className="mobile-grid"
+          >
             <img className="mobile-proto" alt="home" src={v_1} />
             <img className="mobile-proto" alt="choose a ride" src={v_2} />
             <img className="mobile-proto" alt="ride information" src={v_3} />
             <img className="mobile-proto" alt="ride requested" src={v_4} />
-          </div>
-          <div className="web-grid">
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            offset={offset}
+            className="web-grid"
+          >
             <img className="web-proto" alt="home" src={v_5} />
             <img className="web-proto" alt="choose a ride" src={v_6} />
             <img className="web-proto" alt="ride information" src={v_7} />
             <img className="web-proto" alt="ride requested" src={v_8} />
-          </div>
+          </ScrollAnimation>
         </section>
 
         <div className="flex-box-3">
@@ -116,26 +144,32 @@ function Vroomin() {
           />
           <div style={{ width: 500 + "px" }}>
             <h2> next steps </h2>
-            <p>
-              what i have are merely designs for the main flow. other features
-              i'd like to explore include messaging, notifications, and a
-              profile. i'd also like to think of a way to reward users for
-              successfully reducing their carbon footprint.
-            </p>
-
+            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+              <p>
+                what i have are merely designs for the main flow. other features
+                i'd like to explore include messaging, notifications, and a
+                profile. i'd also like to think of a way to reward users for
+                successfully reducing their carbon footprint.
+              </p>
+            </ScrollAnimation>
             <h2> conclusion </h2>
-            <p>
-              i enjoyed working on this project since it's something i wish
-              existed right now.
-            </p>
+            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+              <p>
+                i enjoyed working on this project since it's something i wish
+                existed right now.
+              </p>
+            </ScrollAnimation>
             <br />
-            <p>
-              although this is only a design (for now), hopefully it'll be a
-              project that has some code and a userbase to go with it as well.
-            </p>
+            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+              <p>
+                although this is only a design (for now), hopefully it'll be a
+                project that has some code and a userbase to go with it as well.
+              </p>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
+      <script src="../observer.jsx"></script>
     </div>
   );
 }

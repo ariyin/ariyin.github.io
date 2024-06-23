@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CodeProject from "../components/CodeProject";
 import UIProject from "../components/UIProject";
 import "./Projects.css";
-
 import saga from "../assets/saga.png";
 import sagabw from "../assets/sagabw.png";
 import cuberunner from "../assets/cuberunner.png";
@@ -126,14 +125,18 @@ function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    window.scrollTo(0, 0);
+
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 4500);
+    }, 1750);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
-      <div className={loading ? "loading" : "hide"}></div>
+      <div className={loading ? "loading" : "hide"} />
       <img src={clock} className={loading ? "clock" : "hide"} />
       <div className={loading ? "mask" : "mask-hide"}>
         <img src={pattern} className="pattern" />
@@ -173,7 +176,6 @@ function Projects() {
           </div>
         </div>
       </div>
-      {/* <Loading /> */}
     </>
   );
 }

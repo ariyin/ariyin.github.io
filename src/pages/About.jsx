@@ -84,12 +84,12 @@ function About() {
                 width="350"
                 draggable="false"
               />
-              <p className="flex-dialogue">
+              <div className="flex-dialogue">
                 <LastFmArtist
                   username={import.meta.env.VITE_LASTFM_USERNAME}
                   apiKey={import.meta.env.VITE_LASTFM_API_KEY}
                 />
-              </p>
+              </div>
             </div>
             <img
               id="newspaper"

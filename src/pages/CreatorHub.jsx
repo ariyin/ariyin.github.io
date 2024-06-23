@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import sit from "../assets/ti_sit.webp";
 import chat from "../assets/ti_chat.webp";
 import c_1 from "../assets/c_1.png";
@@ -6,6 +8,12 @@ import c_3 from "../assets/c_3.png";
 import c_4 from "../assets/c_4.png";
 
 function CreatorHub() {
+  let offset = 50;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="project-container">
       <div style={{ width: 60 + "vw" }}>
@@ -23,34 +31,47 @@ function CreatorHub() {
           <p> design the screens for the creatorhub mvp. </p>
 
           <h2> thoughts </h2>
-          <p>
-            i am a gamer through and through (though not as much anymore). while
-            looking for internships for summer 2023, i saw that creatorhub (a
-            ucla startup that has to do with games) was looking for ui/ux
-            interns. i applied, and lo and behold, got my summer internship.
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              i am a gamer through and through (though not as much anymore).
+              while looking for internships for summer 2023, i saw that
+              creatorhub (a ucla startup that has to do with games) was looking
+              for ui/ux interns. i applied, and lo and behold, got my summer
+              internship.
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>
-            i like games, i like the color pink, what more could i ask for?
-            (though admittedly i'm a light mode user, not a dark mode user, but
-            i do like the color black.)
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              i like games, i like the color pink, what more could i ask for?
+              (though admittedly i'm a light mode user, not a dark mode user,
+              but i do like the color black.)
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>
-            the design for this site was inspired by the original designs
-            provided and by other modern gaming sites. dark mode and pink is
-            very trendy among gamers right now, trust. the voxel-styled artwork
-            is the cherry on top and completes the design swellingly (imho).
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              the design for this site was inspired by the original designs
+              provided and by other modern gaming sites. dark mode and pink is
+              very trendy among gamers right now, trust. the voxel-styled
+              artwork is the cherry on top and completes the design swellingly
+              (imho).
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>
-            with direction and guidance from my fellow creatorhubers, i was able
-            to complete 18 screens for the mvp. i don't think it's the best idea
-            to show everything (so there's no link to the very classified
-            prototype), but i'd still like to show a few of my favorite screens.
-          </p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>
+              with direction and guidance from my fellow creatorhubers, i was
+              able to complete 18 screens for the mvp. i don't think it's the
+              best idea to show everything (so there's no link to the very
+              classified prototype), but i'd still like to show a few of my
+              favorite screens.
+            </p>
+          </ScrollAnimation>
           <br />
-          <p>contact me if you want to see more!</p>
+          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+            <p>contact me if you want to see more!</p>
+          </ScrollAnimation>
         </div>
 
         <div className="flex-box-5">
@@ -77,12 +98,16 @@ function CreatorHub() {
       <div>
         <section className="beige-bg">
           <h2> mockups </h2>
-          <div className="web-grid">
+          <ScrollAnimation
+            animateIn="fadeIn"
+            offset={offset}
+            className="web-grid"
+          >
             <img className="web-proto" alt="home" src={c_1} />
             <img className="web-proto" alt="sign up" src={c_2} />
             <img className="web-proto" alt="profile" src={c_3} />
             <img className="web-proto" alt="analytics" src={c_4} />
-          </div>
+          </ScrollAnimation>
         </section>
 
         <div className="flex-box-3">
@@ -93,14 +118,18 @@ function CreatorHub() {
           />
           <div style={{ width: 500 + "px" }}>
             <h2> next steps </h2>
-            <p>
-              since this was a summer internship, i don't have a lot of notes
-              about personal next steps. but i think there are always ways to
-              improve and reiterate pre-existing designs.
-            </p>
+            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+              <p>
+                since this was a summer internship, i don't have a lot of notes
+                about personal next steps. but i think there are always ways to
+                improve and reiterate pre-existing designs.
+              </p>
+            </ScrollAnimation>
 
             <h2> conclusion </h2>
-            <p> i have successfully completed a summer internship! </p>
+            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
+              <p> i have successfully completed a summer internship! </p>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

@@ -34,15 +34,10 @@ export const LastFmArtist = ({ username, apiKey }) => {
 
     return (
       <>
-        <p className="headliner">
-          this week's headliner is... hmm...
-        </p>
-        <p className="action"> 
-            <span style={{ fontWeight: 600 }}>
-            {" "}
-            {artistName.toLowerCase()}
-          </span>!
-          check them out! 
+        <p className="headliner">this week's headliner is... hmm...</p>
+        <p className="action">
+          <span style={{ fontWeight: 600 }}> {artistName.toLowerCase()}</span>!
+          check them out!
         </p>
       </>
     );

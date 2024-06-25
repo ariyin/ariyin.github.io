@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Chip } from "@mui/material";
 import pointer from "../assets/pointer.svg";
 import checkbox from "../assets/checkbox.svg";
 import checkedbox from "../assets/checkedbox.svg";

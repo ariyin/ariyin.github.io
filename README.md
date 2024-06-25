@@ -29,13 +29,8 @@ not an actual page, but links to my most recently updated resume! for those who 
 
 aka some of my future plans for this site. i have a lot of things i want to do, but very little time (college classes eat away most of my time unfortunately)...
 
-- revamping projects (quality over quantity)
-  - content
-  - navigation within the project page
-- more game references, such as:
-  - background music (that you can turn off of course)
+- revamping projects (quality over quantity) and content
 - better background designs (plain beige isn't cutting it anymore)
-- maybe a custom cursor?
 - an art dump!
 - website themes (in the far future when i become a real pro, for example toro inoue is one theme, and another theme could be y2k)
 

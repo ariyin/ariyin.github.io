@@ -3,7 +3,6 @@ import DateTime from "./DateTime";
 import BGM from "./BGM";
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-
 import border from "../assets/border.svg";
 import home from "../assets/home.svg";
 import homefilled from "../assets/home-filled.svg";

@@ -7,7 +7,6 @@
   right: 50px;
   height: 100vh;
   user-select: none;
-
 }
 
 .bg-text-top {
@@ -105,7 +104,7 @@
 
 @media (max-width: 1300px) {
   #newspaper {
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
   }
 
   .bg-text {

@@ -11,10 +11,12 @@ const ProjectNav = ({
   const navigate = useNavigate();
 
   const handlePreviousNavigation = () => {
+    localStorage.setItem(previousName, true);
     navigate(previousLink);
   };
 
   const handleNextNavigation = () => {
+    localStorage.setItem(nextName, true);
     navigate(nextLink);
   };
 

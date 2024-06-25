@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import ProjectNav from "../components/ProjectNav";
 import ScrollAnimation from "react-animate-on-scroll";
 import peekaboo from "../assets/ti_peekaboo.webp";
 import laying from "../assets/ti_laying.png";
@@ -169,7 +170,12 @@ function Vroomin() {
           </div>
         </div>
       </div>
-      <script src="../observer.jsx"></script>
+      <ProjectNav
+        previous={false}
+        next={true}
+        nextName="CreatorHub"
+        nextLink="/creatorhub"
+      />
     </div>
   );
 }

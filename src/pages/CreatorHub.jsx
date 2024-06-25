@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import ProjectNav from "../components/ProjectNav";
 import ScrollAnimation from "react-animate-on-scroll";
 import sit from "../assets/ti_sit.webp";
 import chat from "../assets/ti_chat.webp";
@@ -133,6 +134,14 @@ function CreatorHub() {
           </div>
         </div>
       </div>
+      <ProjectNav
+        previous={true}
+        previousName="vroomin"
+        previousLink="/vroomin"
+        next={true}
+        nextName="Olyverse"
+        nextLink="/olyverse"
+      />
     </div>
   );
 }

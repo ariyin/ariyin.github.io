@@ -1,7 +1,8 @@
 import "./NavBar.css";
 import DateTime from "./DateTime";
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import BGM from "./BGM";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 import border from "../assets/border.svg";
 import home from "../assets/home.svg";
@@ -15,9 +16,34 @@ import network from "../assets/online.svg";
 import battery from "../assets/battery.svg";
 
 function NavBar() {
-  const [homeIcon, setHomeIcon] = useState();
-  const [aboutIcon, setAboutIcon] = useState();
-  const [projectsIcon, setProjectsIcon] = useState();
+  const location = useLocation();
+  const [homeIcon, setHomeIcon] = useState(home);
+  const [aboutIcon, setAboutIcon] = useState(about);
+  const [projectsIcon, setProjectsIcon] = useState(projects);
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/":
+        setHomeIcon(homefilled);
+        setAboutIcon(about);
+        setProjectsIcon(projects);
+        break;
+      case "/about":
+        setHomeIcon(home);
+        setAboutIcon(aboutfilled);
+        setProjectsIcon(projects);
+        break;
+      case "/projects":
+        setHomeIcon(home);
+        setAboutIcon(about);
+        setProjectsIcon(projectsfilled);
+        break;
+      default:
+        setHomeIcon(home);
+        setAboutIcon(about);
+        setProjectsIcon(projects);
+    }
+  }, [location.pathname]);
 
   return (
     <>
@@ -52,34 +78,17 @@ function NavBar() {
           </div>
 
           <div className="nav-icons">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? setHomeIcon(homefilled) : setHomeIcon(home)
-              }
-            >
+            <NavLink to="/">
               <img className="icon" alt="home icon" src={homeIcon} />
             </NavLink>
           </div>
           <div className="nav-icons">
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? setAboutIcon(aboutfilled) : setAboutIcon(about)
-              }
-            >
+            <NavLink to="/about">
               <img className="icon" alt="about icon" src={aboutIcon} />
             </NavLink>
           </div>
           <div className="nav-icons">
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive
-                  ? setProjectsIcon(projectsfilled)
-                  : setProjectsIcon(projects)
-              }
-            >
+            <NavLink to="/projects">
               <img className="icon" alt="projects icon" src={projectsIcon} />
             </NavLink>
           </div>
@@ -96,6 +105,7 @@ function NavBar() {
 
         <span className="flex-side" style={{ marginRight: 50 }}>
           <DateTime />
+          <BGM />
           <img className="icon" alt="battery icon" src={battery} />
         </span>
       </div>

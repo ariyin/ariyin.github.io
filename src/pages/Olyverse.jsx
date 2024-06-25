@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import ProjectNav from "../components/ProjectNav";
 import ScrollAnimation from "react-animate-on-scroll";
 import cheers from "../assets/ti_cheers.webp";
 import racecar from "../assets/ti_racecar.webp";
@@ -197,6 +198,12 @@ function Olyverse() {
           </div>
         </div>
       </div>
+      <ProjectNav
+        previous={true}
+        previousName="CreatorHub"
+        previousLink="/creatorhub"
+        next={false}
+      />
     </div>
   );
 }

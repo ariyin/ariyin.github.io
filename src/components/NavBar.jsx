@@ -68,7 +68,7 @@ function NavBar() {
           </div>
           <div className="underline">
             <a
-              href="Wang_Jenna_Resume.pdf"
+              href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -93,7 +93,7 @@ function NavBar() {
           </div>
           <div className="nav-icons">
             <a
-              href="Wang_Jenna_Resume.pdf"
+              href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

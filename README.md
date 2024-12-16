@@ -4,6 +4,7 @@ this portfolio is powered by [vite](https://vitejs.dev/) and deployed via [githu
 
 ## commands
 
+- to install packages: `npm i`
 - to start: `npm start`
 - to update gh-pages: `yarn deploy`
 
@@ -15,7 +16,7 @@ toro inoue world domination! featuring a design like a game console and many tor
 
 ### about
 
-the usual college introduction that's like name, year, major and a short blurb about my professional and personal interests. you also get to check out my very good music taste and see how you can contact me (spoiler: there are not that many ways, but if you like discord you may also message me @jayenay).
+the usual college introduction that's like name, year, major and a short blurb about my professional and personal interests. you also get to check out my very good music taste and see how you can contact me.
 
 ### projects
 

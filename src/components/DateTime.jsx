@@ -24,11 +24,11 @@ function DateTime() {
   };
 
   const formattedDate = new Intl.DateTimeFormat("en-US", dateOptions).format(
-    dateTime
+    dateTime,
   );
 
   const formattedTime = new Intl.DateTimeFormat("en-US", timeOptions).format(
-    dateTime
+    dateTime,
   );
   const modifiedTime = formattedTime
     .replace(/^24/, "00")

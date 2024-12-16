@@ -1,11 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/icon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Start Single Page Apps for GitHub Pages -->
+    <!-- Preload Items -->
+    <link rel="preload" href="/src/assets/ti.svg" as="image" />
+    <link rel="preload" href="/src/assets/loading.svg" as="image" />
+    <link rel="preload" href="/src/assets/torohead.svg" as="image" />
+    <link rel="preload" href="/src/assets/clock.gif" as="image" />
+    <link rel="preload" href="/src/App.css" as="style" />
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -17,18 +25,23 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
-    <!-- End Single Page Apps for GitHub Pages -->
     <title>jenna wang</title>
   </head>
   <body>

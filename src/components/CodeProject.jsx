@@ -44,7 +44,7 @@ export default function CodeProject({
           className="checkbox"
           loading="lazy"
         />
-        <h3 className="label"> {name} </h3>
+        <h3 className="label">{name}</h3>
       </div>
 
       {isHovered && <img src={pointer} className="pointer" />}

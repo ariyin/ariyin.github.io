@@ -1,10 +1,20 @@
 # jenna wang's portfolio
 
-this portfolio is powered by [vite](https://vitejs.dev/) and deployed via [github pages](https://pages.github.com/). the code was written using: html, css, javascript, react, and markdown (for this readme lol).
+this portfolio is powered by [vite](https://vitejs.dev/), deployed via [github pages](https://pages.github.com/), and utilizes html, css, javascript, and react.
+
+## setup
+
+install the necessary packages: `npm i`
+
+create a `.env` file and fill out the following:
+
+```
+VITE_LASTFM_USERNAME=
+VITE_LASTFM_API_KEY=
+```
 
 ## commands
 
-- to install packages: `npm i`
 - to start: `npm start`
 - to update gh-pages: `yarn deploy`
 

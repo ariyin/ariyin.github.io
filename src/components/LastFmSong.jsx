@@ -4,7 +4,7 @@ export const LastFmSong = ({ username, apiKey }) => {
   const [data, updateData] = useState({});
   useEffect(() => {
     fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${username}&api_key=${apiKey}&limit=1&nowplaying=true&format=json`
+      `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${username}&api_key=${apiKey}&limit=1&nowplaying=true&format=json`,
     )
       .then((response) => {
         if (response.ok) {
@@ -14,7 +14,7 @@ export const LastFmSong = ({ username, apiKey }) => {
       })
       .then((data) => updateData(data))
       .catch(() =>
-        updateData({ error: "whoops! something went wrong with last.fm." })
+        updateData({ error: "whoops! something went wrong with last.fm." }),
       );
   }, []);
 

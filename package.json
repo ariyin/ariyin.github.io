@@ -23,7 +23,8 @@
     "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
+    "prettier": "^3.4.2",
     "vite": "^5.0.2",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.2.1"

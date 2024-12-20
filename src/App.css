@@ -113,8 +113,7 @@ p {
 
 .box {
   position: relative;
-  margin: 100px;
-  margin-top: 145px;
+  padding: 145px 100px 100px 100px;
 }
 
 .box-2 {
@@ -131,6 +130,9 @@ p {
   width: 30px;
   height: 30px;
   align-content: center;
+
+  user-select: none;
+  pointer-events: none;
 }
 
 .icon-shadow {
@@ -139,6 +141,9 @@ p {
   align-content: center;
   -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
+
+  user-select: none;
+  pointer-events: none;
 }
 
 .drop-shadow {
@@ -218,10 +223,8 @@ p {
   }
 
   .box {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 100px;
-    margin-top: 150px;
+    /* top, right, bottom, left */
+    padding: 150px 50px 100px 50px;
   }
 
   .flex-box {

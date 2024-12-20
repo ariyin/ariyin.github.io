@@ -20,7 +20,12 @@ function Home() {
         <div></div>
       </div>
 
-      <img className="background-image" alt="toro emoticons" src={toroinoue} />
+      <img
+        className="background-image"
+        alt="toro emoticons"
+        src={toroinoue}
+        fetchpriority="high"
+      />
 
       <div className="home-text">
         {/* <img src = {name} width = '500' /> */}

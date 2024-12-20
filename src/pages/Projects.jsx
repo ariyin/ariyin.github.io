@@ -137,7 +137,11 @@ function Projects() {
   return (
     <>
       <div className={loading ? "loading" : "hide"} />
-      <img src={clock} className={loading ? "clock" : "hide"} />
+      <img
+        src={clock}
+        className={loading ? "clock" : "hide"}
+        fetchpriority="high"
+      />
       <div className={loading ? "mask" : "mask-hide"}>
         <img src={pattern} className="pattern" />
         <div className="box">

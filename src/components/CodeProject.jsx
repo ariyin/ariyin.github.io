@@ -55,6 +55,7 @@ export default function CodeProject({
           rel="noopener noreferrer"
           className="image-frame"
         >
+          {/* <div className="project-image-wrapper"> */}
           <img
             className="project-image"
             src={isChecked ? image : bwimage}
@@ -64,6 +65,7 @@ export default function CodeProject({
             onMouseLeave={() => setIsHovered(false)}
             onClick={handleCheckboxClick}
           />
+          {/* </div> */}
         </Link>
         <div className="skill">
           {skills.map((skill, index) => (

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,13 +7,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Preload Items -->
-    <link rel="preload" href="/src/assets/ti.svg" as="image" />
-    <link rel="preload" href="/src/assets/loading.svg" as="image" />
-    <link rel="preload" href="/src/assets/torohead.svg" as="image" />
-    <link rel="preload" href="/src/assets/clock.gif" as="image" />
-    <link rel="preload" href="/src/App.css" as="style" />
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -47,5 +42,9 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+.gallery {
+  /* center container */
+  margin: 0 auto;
+}
+
+.gallery-image {
+  margin-bottom: 32px;
+}
+
+.gallery-image img {
+  pointer-events: none;
+  width: 500px;
+  margin-bottom: 10px;
+}

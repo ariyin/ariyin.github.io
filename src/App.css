@@ -32,6 +32,16 @@
   font-style: normal;
 }
 
+[data-aos="light-fade-up"] {
+  transform: translateY(36px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 a:link {
   text-decoration: none;
   color: var(--ti-brown);
@@ -200,10 +210,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding: 150px 100px 100px 100px;
 }
 
 .component-scale {
@@ -218,12 +225,11 @@ p {
 
 @media (max-width: 800px) {
   .project-container {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .box {
-    /* top, right, bottom, left */
     padding: 150px 50px 100px 50px;
   }
 

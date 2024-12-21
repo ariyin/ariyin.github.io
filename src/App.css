@@ -213,12 +213,6 @@ p {
   padding: 150px 100px 100px 100px;
 }
 
-.component-scale {
-  display: flex;
-  width: fit-content;
-  padding-bottom: 15px;
-}
-
 .hide {
   display: none;
 }
@@ -235,12 +229,6 @@ p {
 
   .flex-box {
     justify-content: center;
-  }
-
-  .component-scale {
-    transform: scale(0.9);
-    transform-origin: top left;
-    padding-bottom: 0px;
   }
 
   .width-scale {

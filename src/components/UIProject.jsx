@@ -37,13 +37,14 @@ export default function UIProject({
       className="project"
       style={{ transform: `rotate(${rotate}deg) translateY(${shift}px)` }}
     >
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <img
+      <div className="name-tag">
+        <AsyncImage
           src={isChecked ? checkedbox : checkbox}
           className="checkbox"
-          loading="lazy"
+          style={{ width: "30px", height: "auto", aspectRatio: 1 / 1 }}
+          loader={<div style={{ background: "#f9f8cc" }} />}
         />
-        <h3 className="label"> {name} </h3>
+        <h3 className="label">{name}</h3>
       </div>
 
       {isHovered && <img src={pointer} className="pointer" />}
@@ -53,7 +54,7 @@ export default function UIProject({
             src={isChecked ? image : bwimage}
             className="project-image"
             style={{ width: "100%", height: "auto", aspectRatio: 17 / 10 }}
-            loader={<div style={{ background: "#888" }} />}
+            loader={<div style={{ background: "var(--ti-beige)" }} />}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={handleCheckboxClick}

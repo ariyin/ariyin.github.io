@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Chip } from "@mui/material";
+import { AsyncImage } from "loadable-image";
 import pointer from "../assets/pointer.svg";
 import checkbox from "../assets/checkbox.svg";
 import checkedbox from "../assets/checkedbox.svg";
@@ -55,17 +56,15 @@ export default function CodeProject({
           rel="noopener noreferrer"
           className="image-frame"
         >
-          {/* <div className="project-image-wrapper"> */}
-          <img
-            className="project-image"
+          <AsyncImage
             src={isChecked ? image : bwimage}
-            alt="project thumbnail"
-            loading="lazy"
+            className="project-image"
+            style={{ width: "100%", height: "auto", aspectRatio: 17 / 10 }}
+            loader={<div style={{ background: "#888" }} />}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={handleCheckboxClick}
           />
-          {/* </div> */}
         </Link>
         <div className="skill">
           {skills.map((skill, index) => (

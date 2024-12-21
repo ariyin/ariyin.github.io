@@ -1,10 +1,13 @@
 import React from "react";
+import useTitle from "../components/useTitle";
 import "./Home.css";
 import toroinoue from "../assets/ti.svg";
 import border from "../assets/border.svg";
 // import name from "../assets/name.png";
 
 function Home() {
+  useTitle("");
+
   return (
     <>
       <div className="triangles">

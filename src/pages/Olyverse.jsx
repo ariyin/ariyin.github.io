@@ -24,10 +24,10 @@ function Olyverse() {
     <div className="project-container">
       <div
         style={{
-          width: 60 + "vw",
+          width: "60vw",
         }}
       >
-        <h1 style={{ maxInlineSize: 500 + "px", wordWrap: "break-word" }}>
+        <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
           oly&shy;verse
         </h1>
         <h3>
@@ -37,7 +37,7 @@ function Olyverse() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: 500 + "px" }}>
+        <div style={{ width: "500px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
           <p>
             design an app that allows users to interact with LA28 athletes and
@@ -121,7 +121,7 @@ function Olyverse() {
           </div>
 
           <img
-            style={{ width: 200 + "px", marginTop: 50 + "px" }}
+            style={{ width: "200px", marginTop: "50px" }}
             alt="kuro cheers"
             src={cheers}
           />
@@ -150,11 +150,11 @@ function Olyverse() {
 
         <div className="flex-box-3">
           <img
-            style={{ height: 160 + "px", marginTop: 100 + "px" }}
+            style={{ height: "160px", marginTop: "100px" }}
             alt="toro and kuro racecar"
             src={racecar}
           />
-          <div style={{ width: 500 + "px" }}>
+          <div style={{ width: "500px" }}>
             <h2> next steps </h2>
             <p data-aos="light-fade-up">
               let this idea die since i don't think the olympics committee or

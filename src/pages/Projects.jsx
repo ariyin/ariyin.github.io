@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CodeProject from "../components/CodeProject";
 import UIProject from "../components/UIProject";
+import useTitle from "../components/useTitle";
 import "./Projects.css";
 import saga from "../assets/saga.png";
 import sagabw from "../assets/sagabw.png";
@@ -20,7 +21,6 @@ import olyverse from "../assets/olyverse.png";
 import olyversebw from "../assets/olyversebw.png";
 import namcap from "../assets/namcap.png";
 import namcapbw from "../assets/namcapbw.png";
-import pattern from "../assets/pattern.svg";
 import clock from "../assets/clock.gif";
 
 const codeProjects = [
@@ -122,6 +122,8 @@ const uiProjects = [
 ];
 
 function Projects() {
+  useTitle("projects - ");
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -143,7 +145,6 @@ function Projects() {
         fetchpriority="high"
       />
       <div className={loading ? "mask" : "mask-hide"}>
-        <img src={pattern} className="pattern" />
         <div className="box">
           <h1> projects </h1>
           <div className="project-flex">

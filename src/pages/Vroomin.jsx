@@ -18,7 +18,7 @@ function Vroomin() {
 
   return (
     <div className="project-container">
-      <div style={{ width: 60 + "vw" }}>
+      <div style={{ width: "60vw" }}>
         <h1> vroomin </h1>
         <h3>
           a user experience designed to help facilitate campus ridesharing
@@ -26,7 +26,7 @@ function Vroomin() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: 500 + "px" }}>
+        <div style={{ width: "500px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
           <p data-aos="light-fade-up">
             design an app/website that will allow college students to find other
@@ -89,7 +89,7 @@ function Vroomin() {
           </div>
 
           <img
-            style={{ width: 250 + "px", marginTop: 50 + "px" }}
+            style={{ width: "250px", marginTop: "50px" }}
             alt="toro peekaboo"
             src={peekaboo}
           />
@@ -116,11 +116,11 @@ function Vroomin() {
 
         <div className="flex-box-3">
           <img
-            style={{ width: 300 + "px", marginTop: 100 + "px" }}
+            style={{ width: "300px", marginTop: "100px" }}
             alt="kuro laying down"
             src={laying}
           />
-          <div style={{ width: 500 + "px" }}>
+          <div style={{ width: "500px" }}>
             <h2> next steps </h2>
             <p data-aos="light-fade-up">
               what i have are merely designs for the main flow. other features

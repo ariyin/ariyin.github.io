@@ -14,8 +14,8 @@ function CreatorHub() {
 
   return (
     <div className="project-container">
-      <div style={{ width: 60 + "vw" }}>
-        <h1 style={{ maxInlineSize: 500 + "px", wordWrap: "break-word" }}>
+      <div style={{ width: "60vw" }}>
+        <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
           crea&shy;tor&shy;hub
         </h1>
         <h3>
@@ -24,7 +24,7 @@ function CreatorHub() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: 500 + "px" }}>
+        <div style={{ width: "500px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
           <p> design the screens for the creatorhub mvp. </p>
 
@@ -73,7 +73,7 @@ function CreatorHub() {
           </div>
 
           <img
-            style={{ width: 180 + "px", marginTop: 50 + "px" }}
+            style={{ width: "180px", marginTop: "50px" }}
             alt="sora sitting"
             src={sit}
           />
@@ -93,11 +93,11 @@ function CreatorHub() {
 
         <div className="flex-box-3">
           <img
-            style={{ width: 250 + "px" }}
+            style={{ width: "250px" }}
             alt="toro and kuro chatting"
             src={chat}
           />
-          <div style={{ width: 500 + "px" }}>
+          <div style={{ width: "500px" }}>
             <h2> next steps </h2>
             <p data-aos="light-fade-up">
               since this was a summer internship, i don't have a lot of notes

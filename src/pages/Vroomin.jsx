@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import ScrollAnimation from "react-animate-on-scroll";
 import peekaboo from "../assets/ti_peekaboo.webp";
 import laying from "../assets/ti_laying.png";
 import v_1 from "../assets/v_1.png";
@@ -13,15 +12,13 @@ import v_7 from "../assets/v_7.png";
 import v_8 from "../assets/v_8.png";
 
 function Vroomin() {
-  let offset = 50;
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="project-container">
-      <div style={{ width: 60 + "vw" }}>
+      <div style={{ width: "60vw" }}>
         <h1> vroomin </h1>
         <h3>
           a user experience designed to help facilitate campus ridesharing
@@ -29,54 +26,42 @@ function Vroomin() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: 500 + "px" }}>
+        <div style={{ width: "500px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              design an app/website that will allow college students to find
-              other people going the same places.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            design an app/website that will allow college students to find other
+            people going the same places.
+          </p>
 
           <h2> thoughts </h2>
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              i've often wanted to go to events, places, or concerts in la.
-              however, with a lack of access to a car, no desire to ride public
-              transportation for more than an hour to arrive at my destination,
-              and an unfortunately empty wallet, i found it hard to go to
-              places.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            i've often wanted to go to events, places, or concerts in la.
+            however, with a lack of access to a car, no desire to ride public
+            transportation for more than an hour to arrive at my destination,
+            and an unfortunately empty wallet, i found it hard to go to places.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              while thinking of prompts for coursera's google ux design
-              certificate course, which emphasized designing a user experience
-              for social good, i thought of a ridesharing platform for college
-              students. not only would it make students' lives more convenient,
-              but you would be able to reduce individual carbon footprints.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            while thinking of prompts for coursera's google ux design
+            certificate course, which emphasized designing a user experience for
+            social good, i thought of a ridesharing platform for college
+            students. not only would it make students' lives more convenient,
+            but you would be able to reduce individual carbon footprints.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              i've seen this idea multiple times, namely for hackathons, but
-              those projects were done from a swe's perspective (so more thought
-              behind the coding and not really the design). i thought i could
-              come up with an idea that was not only practical, but also good
-              looking.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            i've seen this idea multiple times, namely for hackathons, but those
+            projects were done from a swe's perspective (so more thought behind
+            the coding and not really the design). i thought i could come up
+            with an idea that was not only practical, but also good looking.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              this takes us to vroomin (whose name i derived from the meme “they
-              see us ridin', they hatin'” except it's now “they see us vroomin',
-              they hatin'”). i went for a minimal design inspired by uber's
-              concept and added some n.flying references (my favorite band).
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            this takes us to vroomin (whose name i derived from the meme “they
+            see us ridin', they hatin'” except it's now “they see us vroomin',
+            they hatin'”). i went for a minimal design inspired by uber's
+            concept and added some n.flying references (my favorite band).
+          </p>
         </div>
 
         <div className="flex-box-5">
@@ -104,7 +89,7 @@ function Vroomin() {
           </div>
 
           <img
-            style={{ width: 250 + "px", marginTop: 50 + "px" }}
+            style={{ width: "250px", marginTop: "50px" }}
             alt="toro peekaboo"
             src={peekaboo}
           />
@@ -115,58 +100,44 @@ function Vroomin() {
         <section className="beige-bg">
           <h2> mockups </h2>
           <p> see prototype for more screens. </p>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            offset={offset}
-            className="mobile-grid"
-          >
+          <div className="mobile-grid" data-aos="fade-in">
             <img className="mobile-proto" alt="home" src={v_1} />
             <img className="mobile-proto" alt="choose a ride" src={v_2} />
             <img className="mobile-proto" alt="ride information" src={v_3} />
             <img className="mobile-proto" alt="ride requested" src={v_4} />
-          </ScrollAnimation>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            offset={offset}
-            className="web-grid"
-          >
+          </div>
+          <div className="web-grid" data-aos="fade-in">
             <img className="web-proto" alt="home" src={v_5} />
             <img className="web-proto" alt="choose a ride" src={v_6} />
             <img className="web-proto" alt="ride information" src={v_7} />
             <img className="web-proto" alt="ride requested" src={v_8} />
-          </ScrollAnimation>
+          </div>
         </section>
 
         <div className="flex-box-3">
           <img
-            style={{ width: 300 + "px", marginTop: 100 + "px" }}
+            style={{ width: "300px", marginTop: "100px" }}
             alt="kuro laying down"
             src={laying}
           />
-          <div style={{ width: 500 + "px" }}>
+          <div style={{ width: "500px" }}>
             <h2> next steps </h2>
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                what i have are merely designs for the main flow. other features
-                i'd like to explore include messaging, notifications, and a
-                profile. i'd also like to think of a way to reward users for
-                successfully reducing their carbon footprint.
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              what i have are merely designs for the main flow. other features
+              i'd like to explore include messaging, notifications, and a
+              profile. i'd also like to think of a way to reward users for
+              successfully reducing their carbon footprint.
+            </p>
             <h2> conclusion </h2>
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                i enjoyed working on this project since it's something i wish
-                existed right now.
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              i enjoyed working on this project since it's something i wish
+              existed right now.
+            </p>
             <br />
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                although this is only a design (for now), hopefully it'll be a
-                project that has some code and a userbase to go with it as well.
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              although this is only a design (for now), hopefully it'll be a
+              project that has some code and a userbase to go with it as well.
+            </p>
           </div>
         </div>
       </div>

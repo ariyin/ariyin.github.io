@@ -1,0 +1,8 @@
+.gallery {
+  /* center container */
+  margin: 0 auto;
+}
+
+.gallery-image {
+  margin-bottom: 32px;
+}

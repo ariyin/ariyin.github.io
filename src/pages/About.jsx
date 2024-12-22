@@ -1,4 +1,5 @@
 import React from "react";
+import useTitle from "../components/useTitle";
 import "./About.css";
 import mail from "../assets/airplane.svg";
 import clinkedin from "../assets/clinkedin.svg";
@@ -9,6 +10,8 @@ import { LastFmSong } from "../components/LastFmSong";
 import { LastFmArtist } from "../components/LastFmArtist";
 
 function About() {
+  useTitle("about - ");
+
   return (
     <>
       <div className="bg-text">
@@ -21,9 +24,9 @@ function About() {
           <h3> hello! </h3>
           <p
             style={{
-              marginTop: 15 + "px",
-              marginBottom: 25 + "px",
-              maxWidth: 600 + "px",
+              marginTop: "15px",
+              marginBottom: "25px",
+              maxWidth: "600px",
             }}
           >
             i'm a third year cs major at ucla, interested in full stack (mostly
@@ -43,8 +46,8 @@ function About() {
               </h3>
             </span>
           </div>
-          <h1 style={{ marginTop: 50 + "px" }}> contact </h1>
-          <div className="icon-text" style={{ marginBottom: 15 + "px" }}>
+          <h1 style={{ marginTop: "50px" }}> contact </h1>
+          <div className="icon-text" style={{ marginBottom: "15px" }}>
             <span>
               <img className="icon-shadow" alt="mail icon" src={mail} />
               <a
@@ -57,7 +60,7 @@ function About() {
               </a>
             </span>
           </div>
-          <div className="icon-text" style={{ marginBottom: 15 + "px" }}>
+          <div className="icon-text" style={{ marginBottom: "15px" }}>
             <span>
               <img
                 className="icon-shadow"

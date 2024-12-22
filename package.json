@@ -11,8 +11,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^6.0.0",
+    "imagesloaded": "^5.0.0",
+    "loadable-image": "^3.2.6",
+    "masonry-layout": "^4.2.2",
     "react": "^18.2.0",
-    "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
     "react-router-dom": "^6.15.0",
@@ -23,7 +25,8 @@
     "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
+    "prettier": "^3.4.2",
     "vite": "^5.0.2",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.2.1"

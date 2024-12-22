@@ -29,20 +29,21 @@
   width: 100vw;
   -webkit-filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
+  user-select: none;
+  pointer-events: none;
 }
 
 .background-image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-
+  width: 85%;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
-  transform: translateX(-50%) translateY(-52%);
-  object-position: center 75%;
+  transform: translate(-50%, -50%);
 
   animation: toroMoveUp 1.5s ease-out;
+
+  user-select: none;
+  pointer-events: none;
 }
 
 ::-webkit-scrollbar {
@@ -54,11 +55,11 @@
     transform: translateX(-50%) translateY(-10%);
   }
   100% {
-    transform: translateX(-50%) translateY(-52%);
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 
-.triangles {
+.squares {
   position: absolute;
   top: 0;
   left: 0;
@@ -81,7 +82,7 @@
   }
 }
 
-.triangles div {
+.squares div {
   position: absolute;
   display: block;
   width: 20px;
@@ -91,14 +92,14 @@
   animation: animate 25s linear infinite;
 }
 
-.triangles div:nth-child(1) {
+.squares div:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
 
-.triangles div:nth-child(2) {
+.squares div:nth-child(2) {
   left: 10%;
   width: 60px;
   height: 60px;
@@ -106,14 +107,14 @@
   animation-duration: 12s;
 }
 
-.triangles div:nth-child(3) {
+.squares div:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
 
-.triangles div:nth-child(4) {
+.squares div:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
@@ -121,28 +122,28 @@
   animation-duration: 18s;
 }
 
-.triangles div:nth-child(5) {
+.squares div:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
 
-.triangles div:nth-child(6) {
+.squares div:nth-child(6) {
   left: 75%;
   width: 80px;
   height: 80px;
   animation-delay: 3s;
 }
 
-.triangles div:nth-child(7) {
+.squares div:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 7s;
 }
 
-.triangles div:nth-child(8) {
+.squares div:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
@@ -150,7 +151,7 @@
   animation-duration: 45s;
 }
 
-.triangles div:nth-child(9) {
+.squares div:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
@@ -158,7 +159,7 @@
   animation-duration: 35s;
 }
 
-.triangles div:nth-child(10) {
+.squares div:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;
@@ -175,15 +176,11 @@
     letter-spacing: -20px;
   }
 
-  .background-image {
-    width: 120%;
-  }
-
-  .triangles div:nth-child(4),
-  .triangles div:nth-child(5),
-  .triangles div:nth-child(7),
-  .triangles div:nth-child(8),
-  .triangles div:nth-child(10) {
+  .squares div:nth-child(4),
+  .squares div:nth-child(5),
+  .squares div:nth-child(7),
+  .squares div:nth-child(8),
+  .squares div:nth-child(10) {
     display: none;
   }
 }

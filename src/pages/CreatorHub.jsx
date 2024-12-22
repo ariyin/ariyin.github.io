@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import ScrollAnimation from "react-animate-on-scroll";
 import sit from "../assets/ti_sit.webp";
 import chat from "../assets/ti_chat.webp";
 import c_1 from "../assets/c_1.png";
@@ -9,16 +8,14 @@ import c_3 from "../assets/c_3.png";
 import c_4 from "../assets/c_4.png";
 
 function CreatorHub() {
-  let offset = 50;
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="project-container">
-      <div style={{ width: 60 + "vw" }}>
-        <h1 style={{ maxInlineSize: 500 + "px", wordWrap: "break-word" }}>
+      <div style={{ width: "60vw" }}>
+        <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
           crea&shy;tor&shy;hub
         </h1>
         <h3>
@@ -27,52 +24,39 @@ function CreatorHub() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: 500 + "px" }}>
+        <div style={{ width: "500px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
           <p> design the screens for the creatorhub mvp. </p>
 
           <h2> thoughts </h2>
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              i am a gamer through and through (though not as much anymore).
-              while looking for internships for summer 2023, i saw that
-              creatorhub (a ucla startup that has to do with games) was looking
-              for ui/ux interns. i applied, and lo and behold, got my summer
-              internship.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            i am a gamer through and through (though not as much anymore). while
+            looking for internships for summer 2023, i saw that creatorhub (a
+            ucla startup that has to do with games) was looking for ui/ux
+            interns. i applied, and lo and behold, got my summer internship.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              i like games, i like the color pink, what more could i ask for?
-              (though admittedly i'm a light mode user, not a dark mode user,
-              but i do like the color black.)
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            i like games, i like the color pink, what more could i ask for?
+            (though admittedly i'm a light mode user, not a dark mode user, but
+            i do like the color black.)
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              the design for this site was inspired by the original designs
-              provided and by other modern gaming sites. dark mode and pink is
-              very trendy among gamers right now, trust. the voxel-styled
-              artwork is the cherry on top and completes the design swellingly
-              (imho).
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            the design for this site was inspired by the original designs
+            provided and by other modern gaming sites. dark mode and pink is
+            very trendy among gamers right now, trust. the voxel-styled artwork
+            is the cherry on top and completes the design swellingly (imho).
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              with direction and guidance from my fellow creatorhubers, i was
-              able to complete 18 screens for the mvp. i don't think it's the
-              best idea to show everything (so there's no link to the very
-              classified prototype), but i'd still like to show a few of my
-              favorite screens.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            with direction and guidance from my fellow creatorhubers, i was able
+            to complete 18 screens for the mvp. i don't think it's the best idea
+            to show everything (so there's no link to the very classified
+            prototype), but i'd still like to show a few of my favorite screens.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>contact me if you want to see more!</p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">contact me if you want to see more!</p>
         </div>
 
         <div className="flex-box-5">
@@ -89,7 +73,7 @@ function CreatorHub() {
           </div>
 
           <img
-            style={{ width: 180 + "px", marginTop: 50 + "px" }}
+            style={{ width: "180px", marginTop: "50px" }}
             alt="sora sitting"
             src={sit}
           />
@@ -99,38 +83,32 @@ function CreatorHub() {
       <div>
         <section className="beige-bg">
           <h2> mockups </h2>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            offset={offset}
-            className="web-grid"
-          >
+          <div className="web-grid" data-aos="fade-in">
             <img className="web-proto" alt="home" src={c_1} />
             <img className="web-proto" alt="sign up" src={c_2} />
             <img className="web-proto" alt="profile" src={c_3} />
             <img className="web-proto" alt="analytics" src={c_4} />
-          </ScrollAnimation>
+          </div>
         </section>
 
         <div className="flex-box-3">
           <img
-            style={{ width: 250 + "px" }}
+            style={{ width: "250px" }}
             alt="toro and kuro chatting"
             src={chat}
           />
-          <div style={{ width: 500 + "px" }}>
+          <div style={{ width: "500px" }}>
             <h2> next steps </h2>
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                since this was a summer internship, i don't have a lot of notes
-                about personal next steps. but i think there are always ways to
-                improve and reiterate pre-existing designs.
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              since this was a summer internship, i don't have a lot of notes
+              about personal next steps. but i think there are always ways to
+              improve and reiterate pre-existing designs.
+            </p>
 
             <h2> conclusion </h2>
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p> i have successfully completed a summer internship! </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              i have successfully completed a summer internship!
+            </p>
           </div>
         </div>
       </div>

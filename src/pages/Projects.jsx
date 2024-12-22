@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import CodeProject from "../components/CodeProject";
 import UIProject from "../components/UIProject";
+import useTitle from "../components/useTitle";
 import "./Projects.css";
 import saga from "../assets/saga.png";
 import sagabw from "../assets/sagabw.png";
@@ -21,7 +22,6 @@ import olyversebw from "../assets/olyversebw.png";
 import namcap from "../assets/namcap.png";
 import namcapbw from "../assets/namcapbw.png";
 import pattern from "../assets/pattern.svg";
-import clock from "../assets/clock.gif";
 
 const codeProjects = [
   {
@@ -122,61 +122,52 @@ const uiProjects = [
 ];
 
 function Projects() {
-  const [loading, setLoading] = useState(true);
+  useTitle("projects - ");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1750);
-
-    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <>
-      <div className={loading ? "loading" : "hide"} />
-      <img src={clock} className={loading ? "clock" : "hide"} />
-      <div className={loading ? "mask" : "mask-hide"}>
-        <img src={pattern} className="pattern" />
-        <div className="box">
-          <h1> projects </h1>
-          <div className="project-flex">
-            {codeProjects.map((projects) => (
-              <CodeProject
-                key={projects.name}
-                name={projects.name}
-                date={projects.date}
-                description={projects.description}
-                image={projects.image}
-                bwimage={projects.bwimage}
-                link={projects.link}
-                skills={projects.skills}
-                rotate={projects.rotate}
-                shift={projects.shift}
-              />
-            ))}
-          </div>
-          <h1 style={{ marginTop: 100 }}> hifis </h1>
-          <div className="project-flex">
-            {uiProjects.map((projects) => (
-              <UIProject
-                key={projects.name}
-                name={projects.name}
-                date={projects.date}
-                description={projects.description}
-                image={projects.image}
-                bwimage={projects.bwimage}
-                link={projects.link}
-                rotate={projects.rotate}
-                shift={projects.shift}
-              />
-            ))}
-          </div>
+    <div className="pattern">
+      {/* FASTER BG IMAGE LOAD HOPEFULLY */}
+      <img src={pattern} style={{ display: "none" }} />
+      <div className="box">
+        <h1> projects </h1>
+        <div className="project-flex">
+          {codeProjects.map((projects) => (
+            <CodeProject
+              key={projects.name}
+              name={projects.name}
+              date={projects.date}
+              description={projects.description}
+              image={projects.image}
+              bwimage={projects.bwimage}
+              link={projects.link}
+              skills={projects.skills}
+              rotate={projects.rotate}
+              shift={projects.shift}
+            />
+          ))}
+        </div>
+        <h1 style={{ marginTop: 100 }}> hifis </h1>
+        <div className="project-flex">
+          {uiProjects.map((projects) => (
+            <UIProject
+              key={projects.name}
+              name={projects.name}
+              date={projects.date}
+              description={projects.description}
+              image={projects.image}
+              bwimage={projects.bwimage}
+              link={projects.link}
+              rotate={projects.rotate}
+              shift={projects.shift}
+            />
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

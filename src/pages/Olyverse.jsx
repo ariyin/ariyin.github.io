@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import ScrollAnimation from "react-animate-on-scroll";
 import cheers from "../assets/ti_cheers.webp";
 import racecar from "../assets/ti_racecar.webp";
 import o_1 from "../assets/o_1.png";
@@ -17,8 +16,6 @@ import o_11 from "../assets/o_11.png";
 import o_12 from "../assets/o_12.png";
 
 function Olyverse() {
-  let offset = 50;
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -27,10 +24,10 @@ function Olyverse() {
     <div className="project-container">
       <div
         style={{
-          width: 60 + "vw",
+          width: "60vw",
         }}
       >
-        <h1 style={{ maxInlineSize: 500 + "px", wordWrap: "break-word" }}>
+        <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
           oly&shy;verse
         </h1>
         <h3>
@@ -40,7 +37,7 @@ function Olyverse() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: 500 + "px" }}>
+        <div style={{ width: "500px" }}>
           <h2 style={{ margin: 0 }}> goal </h2>
           <p>
             design an app that allows users to interact with LA28 athletes and
@@ -48,66 +45,55 @@ function Olyverse() {
           </p>
 
           <h2> thoughts </h2>
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p> “ucla, aws, & slalom innovation challenge” </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            {" "}
+            “ucla, aws, & slalom innovation challenge”{" "}
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              wouldn't that name motivate you to join and see what it's about?
-              well it definitely encouraged me. and encouraged the 36 screens i
-              made in the span of one month.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            wouldn't that name motivate you to join and see what it's about?
+            well it definitely encouraged me. and encouraged the 36 screens i
+            made in the span of one month.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              the prompt we were given was: “create a digital experience to
-              engage with fans on all things ancillary to the LA28 games -
-              access to athletes, special events, discounts, partner offers,
-              merchandise, gamification (e.g., fantasy olympics, lotteries,
-              etc.), social media, loyalty, personalized/premium digital
-              content/media, fundraising”
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            the prompt we were given was: “create a digital experience to engage
+            with fans on all things ancillary to the LA28 games - access to
+            athletes, special events, discounts, partner offers, merchandise,
+            gamification (e.g., fantasy olympics, lotteries, etc.), social
+            media, loyalty, personalized/premium digital content/media,
+            fundraising”
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              so, inspired by similar apps used for kpop idols, we created
-              olyverse. the idea is that during the olympics, you would use this
-              app to interact with athletes, buy LA28 gear with exclusive
-              discounts and earn tickets for the chance to try and win signed
-              athlete merchandise, watch the olympics streams with the
-              opportunity to join watch parties, play fantasy olympics, and see
-              the olympics results.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            so, inspired by similar apps used for kpop idols, we created
+            olyverse. the idea is that during the olympics, you would use this
+            app to interact with athletes, buy LA28 gear with exclusive
+            discounts and earn tickets for the chance to try and win signed
+            athlete merchandise, watch the olympics streams with the opportunity
+            to join watch parties, play fantasy olympics, and see the olympics
+            results.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              you may say, “wow! that's a lot of features. and it's all on one
-              app?” that's right, bucko. that's why i think this would be kind
-              of like the ultimate app for the olympics. if this was reality,
-              all the important features pertaining to the olympics would be
-              conveniently accessible with one app.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            you may say, “wow! that's a lot of features. and it's all on one
+            app?” that's right, bucko. that's why i think this would be kind of
+            like the ultimate app for the olympics. if this was reality, all the
+            important features pertaining to the olympics would be conveniently
+            accessible with one app.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              unfortunately the judges didn't think the same (so we didn't win
-              the challenge), but i still think this idea holds potential. and
-              certainly opened my eyes to my personal potential, seeing as this
-              was basically the second time i ever used figma in my life.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            unfortunately the judges didn't think the same (so we didn't win the
+            challenge), but i still think this idea holds potential. and
+            certainly opened my eyes to my personal potential, seeing as this
+            was basically the second time i ever used figma in my life.
+          </p>
           <br />
-          <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-            <p>
-              although we didn't win, i learned a lot through this challenge and
-              got to make some unforgettable memories.
-            </p>
-          </ScrollAnimation>
+          <p data-aos="light-fade-up">
+            although we didn't win, i learned a lot through this challenge and
+            got to make some unforgettable memories.
+          </p>
         </div>
 
         <div className="flex-box-5">
@@ -135,7 +121,7 @@ function Olyverse() {
           </div>
 
           <img
-            style={{ width: 200 + "px", marginTop: 50 + "px" }}
+            style={{ width: "200px", marginTop: "50px" }}
             alt="kuro cheers"
             src={cheers}
           />
@@ -146,11 +132,7 @@ function Olyverse() {
         <section className="beige-bg">
           <h2> mockups </h2>
           <p> see prototype for more screens. </p>
-          <ScrollAnimation
-            animateIn="fadeIn"
-            offset={offset}
-            className="mobile-grid"
-          >
+          <div className="mobile-grid" data-aos="fade-in">
             <img className="mobile-proto" alt="login" src={o_1} />
             <img className="mobile-proto" alt="follow athletes" src={o_2} />
             <img className="mobile-proto" alt="home" src={o_3} />
@@ -163,38 +145,31 @@ function Olyverse() {
             <img className="mobile-proto" alt="fantasy olympics" src={o_10} />
             <img className="mobile-proto" alt="leaderboard" src={o_11} />
             <img className="mobile-proto" alt="results" src={o_12} />
-          </ScrollAnimation>
+          </div>
         </section>
 
         <div className="flex-box-3">
           <img
-            style={{ height: 160 + "px", marginTop: 100 + "px" }}
+            style={{ height: "160px", marginTop: "100px" }}
             alt="toro and kuro racecar"
             src={racecar}
           />
-          <div style={{ width: 500 + "px" }}>
+          <div style={{ width: "500px" }}>
             <h2> next steps </h2>
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                let this idea die since i don't think the olympics committee or
-                whoever was in charge of the challenge was super interested.
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              let this idea die since i don't think the olympics committee or
+              whoever was in charge of the challenge was super interested.
+            </p>
             <br />
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                but this idea can still be used for a lot of different
-                industries, so if anyone else is interested in it, please hire
-                me.
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              but this idea can still be used for a lot of different industries,
+              so if anyone else is interested in it, please hire me.
+            </p>
             <h2> conclusion </h2>
-            <ScrollAnimation animateIn="fadeInUp" offset={offset}>
-              <p>
-                i learned a lot about figma and its functions. the olympics
-                would be based if this app existed (not biased review at all).
-              </p>
-            </ScrollAnimation>
+            <p data-aos="light-fade-up">
+              i learned a lot about figma and its functions. the olympics would
+              be based if this app existed (not biased review at all).
+            </p>
           </div>
         </div>
       </div>

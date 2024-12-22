@@ -1,56 +1,6 @@
 .pattern {
-  position: absolute;
-  height: 100%;
-  z-index: 0;
-  user-select: none;
-}
-
-.mask {
-  position: fixed;
-  background-color: var(--ti-bg);
-  mask-image: url(../assets/torohead.svg);
-  -webkit-mask-image: url(../assets/torohead.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-size: 0%;
-  -webkit-mask-size: 0%;
-  mask-position: center 100%;
-  -webkit-mask-position: center 100%;
-  animation: maskTransition 1.25s 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    forwards;
-  will-change: -webkit-mask-size, mask-size;
-}
-
-@keyframes maskTransition {
-  from {
-    mask-size: 60%;
-    -webkit-mask-size: 60%;
-  }
-  to {
-    mask-size: 150%;
-    -webkit-mask-size: 150%;
-  }
-}
-
-.mask-hide {
-  position: absolute;
-  mask-image: none;
-  -webkit-mask-image: none;
-}
-
-.loading {
-  background-image: url("../assets/loading.svg");
+  background-image: url("../assets/pattern.svg");
   background-size: cover;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-}
-
-.clock {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 75px;
 }
 
 .project-flex {
@@ -89,47 +39,51 @@
 }
 
 .project-image {
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 10px solid white;
   -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
 }
 
+.image-tag {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
 .image-tag:hover {
-  transform: scale(0.95);
+  transform: scale(1.05);
+}
+
+.name-tag {
+  display: flex;
+  align-items: center;
+  background-color: #f9f8cc;
+  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
 }
 
 .label {
-  width: fit-content;
-  background-color: #f9f8cc;
   font-size: 20px;
   font-family: "Grand Wilson Sans";
   font-weight: 400;
-  padding-top: 10px;
-  padding-bottom: 7px;
-  padding-left: 70px;
-  padding-right: 55px;
-  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
+  padding: 10px 45px 5px 40px;
+}
+
+.checkbox {
+  margin-left: 5px;
 }
 
 .pointer {
   position: absolute;
   top: 30px;
-  right: -25px;
+  right: -20px;
   width: 50px;
   z-index: 1;
   -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-}
-
-.checkbox {
-  width: 30px;
-  position: absolute;
-  margin-left: 5px;
-  z-index: 1;
 }
 
 .width-scale {
@@ -145,23 +99,16 @@
 .skill {
   display: flex;
   gap: 10px;
-  left: 10px;
-  bottom: 30px;
+  left: 20px;
+  bottom: 40px;
   position: absolute;
 }
 
 .MuiChip-label {
   color: var(--ti-bg);
   font-family: "Fakt Soft";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-}
-
-.image-tag {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transform: scale(0.9);
 }
 
 .project-nav {
@@ -199,10 +146,6 @@
 @media (max-width: 1200px) {
   .project-flex {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .mask {
-    mask-image: none;
   }
 }
 

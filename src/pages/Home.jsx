@@ -1,13 +1,16 @@
 import React from "react";
+import { AsyncImage } from "loadable-image";
+import useTitle from "../components/useTitle";
 import "./Home.css";
-import toroinoue from "../assets/ti.svg";
+import toroinoue from "../assets/ti.png";
 import border from "../assets/border.svg";
-// import name from "../assets/name.png";
 
 function Home() {
+  useTitle("");
+
   return (
     <>
-      <div className="triangles">
+      <div className="squares">
         <div></div>
         <div></div>
         <div></div>
@@ -19,18 +22,20 @@ function Home() {
         <div></div>
         <div></div>
       </div>
-
-      <img className="background-image" alt="toro emoticons" src={toroinoue} />
-
+      <div className="background-image">
+        <AsyncImage
+          src={toroinoue}
+          style={{ width: "100%", height: "auto", aspectRatio: 177 / 40 }}
+          loader={<div style={{ background: "var(--ti-bg)" }} />}
+        />
+      </div>
       <div className="home-text">
-        {/* <img src = {name} width = '500' /> */}
         <div id="name">
           jenna
           <br />
           <span id="name-w"> w </span> ang
         </div>
       </div>
-
       <img id="bottom-border" alt="bottom border" src={border} />
     </>
   );

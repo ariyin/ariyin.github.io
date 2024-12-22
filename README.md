@@ -66,6 +66,14 @@ thank you to all the kind people who developed these packages! this website coul
 - `loadable-image` for lazy loading images
 - `prettier` for making the code prettier
 
+### tools
+
+helpful websites that i used!
+
+- [flaticon.com](flaticon.com): icons
+- [aspect-ratio.dev](aspect-ratio.dev): calculating aspect ratios for lazy loading
+- [tinypng.com](tinypng.com): shrinking image sizes
+
 ## got feedback?
 
 if you have any feedback about anything about this repo or site, please let me know! whether that's ways i can optimize the code, git gud at design, or include better content. i am open to any constructive criticism that lets me improve :3

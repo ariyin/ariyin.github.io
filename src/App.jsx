@@ -9,6 +9,7 @@ import Gallery from "./pages/Gallery";
 import Vroomin from "./pages/Vroomin";
 import CreatorHub from "./pages/CreatorHub";
 import Olyverse from "./pages/Olyverse";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/vroomin" element={<Vroomin />} />
         <Route path="/creatorhub" element={<CreatorHub />} />
         <Route path="/olyverse" element={<Olyverse />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );

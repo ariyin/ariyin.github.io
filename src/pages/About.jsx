@@ -32,7 +32,7 @@ function About() {
             i'm a third year cs major at ucla, interested in full stack (mostly
             front-end), ui/ux, and ui development! in my spare time, i enjoy
             playing video games, reading manhwas and novels, and exploring
-            different kpop albums.
+            different albums.
           </p>
           <div className="icon-text" style={{ maxWidth: 600 }}>
             <span style={{ gap: 15 }}>

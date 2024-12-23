@@ -93,6 +93,25 @@ p {
   margin: 0;
 }
 
+button {
+  background-color: var(--ti-beige);
+  color: var(--ti-brown);
+  font-family: "Fakt Soft";
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 20px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--ti-brown);
+  color: white;
+}
+
 .underline-highlight {
   display: inline-block;
   position: relative;
@@ -213,8 +232,25 @@ p {
   padding: 150px 100px 100px 100px;
 }
 
-.hide {
-  display: none;
+.pnf-flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.pnf-box-2 {
+  margin: 20px 80px;
+}
+
+.pnf-description {
+  max-inline-size: 460px;
 }
 
 @media (max-width: 800px) {
@@ -238,6 +274,12 @@ p {
   .mobile-grid,
   .web-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pnf-description {
+    display: none;
   }
 }
 

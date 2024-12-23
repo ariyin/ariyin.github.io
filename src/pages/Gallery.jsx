@@ -21,6 +21,7 @@ import cupofgrapesandpear from "../assets/gallery/cupofgrapesandpear.png";
 import banana from "../assets/gallery/banana.png";
 import parakeet from "../assets/gallery/parakeet.png";
 import cloth from "../assets/gallery/cloth.png";
+import someone from "../assets/gallery/someone.png";
 
 const images = [
   {
@@ -47,6 +48,11 @@ const images = [
     title: "xiao, 2021",
     src: xiao,
     aspectRatio: 58 / 41,
+  },
+  {
+    title: "someone, 2019",
+    src: someone,
+    aspectRatio: 4 / 3,
   },
   {
     title: "blue rose, 2019",

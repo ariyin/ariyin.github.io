@@ -70,9 +70,9 @@ thank you to all the kind people who developed these packages! this website coul
 
 helpful websites that i used!
 
-- [flaticon.com](flaticon.com): icons
-- [aspect-ratio.dev](aspect-ratio.dev): calculating aspect ratios for lazy loading
-- [tinypng.com](tinypng.com): shrinking image sizes
+- [flaticon.com](https://www.flaticon.com/): icons
+- [aspect-ratio.dev](https://aspect-ratio.dev/): calculating aspect ratios for lazy loading
+- [tinypng.com](https://tinypng.com/): shrinking image sizes
 
 ## got feedback?
 

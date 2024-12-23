@@ -144,12 +144,9 @@ function Gallery() {
           <div className="gallery-image" data-aos="fade-in">
             <AsyncImage
               src={image.src}
+              className="gallery-async-image"
               style={{
-                width: "500px",
-                height: "auto",
                 aspectRatio: `${image.aspectRatio}`,
-                pointerEvents: "none",
-                marginBottom: "10px",
               }}
               loader={<div style={{ background: "var(--ti-beige)" }} />}
             />

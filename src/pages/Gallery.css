@@ -6,3 +6,16 @@
 .gallery-image {
   margin-bottom: 32px;
 }
+
+.gallery-async-image {
+  width: 500px;
+  height: auto;
+  pointer-events: none;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .gallery-async-image {
+    width: calc(100vw - 100px);
+  }
+}

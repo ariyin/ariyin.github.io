@@ -50,7 +50,11 @@ export default function CodeProject({
       </div>
 
       {isHovered && <img src={pointer} className="pointer" />}
-      <div className="image-tag">
+      <div
+        className="image-tag"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <Link
           to={link}
           target="_blank"
@@ -62,8 +66,6 @@ export default function CodeProject({
             className="project-image"
             style={{ width: "100%", height: "auto", aspectRatio: 17 / 10 }}
             loader={<div style={{ background: "var(--ti-beige)" }} />}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
             onClick={handleCheckboxClick}
           />
         </Link>
@@ -81,7 +83,7 @@ export default function CodeProject({
         </div>
       </div>
 
-      <p className="width-scale"> {description} </p>
+      <p className="width-scale">{description}</p>
     </div>
   );
 }

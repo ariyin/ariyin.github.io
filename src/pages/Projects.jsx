@@ -129,9 +129,18 @@ function Projects() {
   }, []);
 
   return (
-    <div className="pattern">
-      {/* FASTER BG IMAGE LOAD HOPEFULLY */}
-      <img src={pattern} style={{ display: "none" }} />
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1280 167"
+        preserveAspectRatio="none"
+        className="divider"
+      >
+        <path
+          d="M114.513 163.574L44.5328 156.509L0 167H1280V0L1261.5 17.5H1233.5L1145.5 49.5L1099.5 30.5L1051 44.5L993.718 21.6244L903.5 59L872 49.5L777.5 90.5L724.5 65L633 90.5L564.294 79.8603L509.5 111.5L414.5 134L304.5 121.824L244.93 144.733H200.398L163.499 156.509H134.235L114.513 163.574Z"
+          fill="#E7E7D7"
+        />
+      </svg>
       <div className="box">
         <h1> projects </h1>
         <div className="project-flex">

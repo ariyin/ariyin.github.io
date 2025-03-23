@@ -15,13 +15,13 @@ function About() {
   return (
     <>
       <div className="bg-text">
-        <p className="bg-text-top"> 井上 </p>
-        <p className="bg-text-bottom"> トロ </p>
+        <p className="bg-text-top">井上</p>
+        <p className="bg-text-bottom">トロ</p>
       </div>
       <div className="flex-box">
         <div className="box">
-          <h1> about me </h1>
-          <h3> hello! </h3>
+          <h1>about me</h1>
+          <h3>hello!</h3>
           <p
             style={{
               marginTop: "15px",
@@ -56,7 +56,7 @@ function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p> jenna2004@gmail.com </p>
+                <p>jenna2004@gmail.com</p>
               </a>
             </span>
           </div>
@@ -73,7 +73,7 @@ function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p> in/jyw42 </p>
+                <p>in/jyw42</p>
               </a>
             </span>
           </div>

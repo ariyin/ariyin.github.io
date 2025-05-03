@@ -23,7 +23,7 @@ export default function LastFmArtist({ username, apiKey }) {
     const artist = data?.topartists?.artist;
 
     if (error) {
-      return <p style={{ fontSize: 20 }}> {error} </p>;
+      return <p className="text-xl"> {error} </p>;
     }
 
     if (!artist) {
@@ -36,7 +36,7 @@ export default function LastFmArtist({ username, apiKey }) {
       <>
         <p className="headliner">this week's headliner is... hmm...</p>
         <p className="action">
-          <span style={{ fontWeight: 600 }}> {artistName.toLowerCase()}</span>!
+          <span className="font-semibold"> {artistName.toLowerCase()}</span>!
           check them out!
         </p>
       </>

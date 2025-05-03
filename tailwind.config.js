@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     container: {
       screens: {
-        "max-lg": { max: "800px" },
+        "max-sm": { max: "600px" },
+        "max-md": { max: "800px" },
         "max-xl": { max: "1200px" },
         "max-2xl": { max: "1500px" },
       },

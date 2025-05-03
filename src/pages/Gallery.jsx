@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import useTitle from "../components/useTitle";
-import "./Gallery.css";
 import Masonry from "masonry-layout";
 import imagesLoaded from "imagesloaded";
 import { AsyncImage } from "loadable-image";
@@ -140,11 +139,11 @@ function Gallery() {
         <p>a collection of my works over the years!</p>
       </div>
       <div className="gallery">
-        {images.map((image) => (
-          <div className="gallery-image" data-aos="fade-in">
+        {images.map((image, index) => (
+          <div className="gallery-image" data-aos="fade-in" key={index}>
             <AsyncImage
               src={image.src}
-              className="gallery-async-image"
+              className="gallery-async-image pointer-events-none mb-2.5 h-auto w-lg"
               style={{
                 aspectRatio: `${image.aspectRatio}`,
               }}

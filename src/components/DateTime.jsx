@@ -35,5 +35,5 @@ export default function DateTime() {
     .replace(/:/g, "\u00A0");
   const modifiedDateTime = `${formattedDate} \u00A0 ${modifiedTime}`;
 
-  return <p id="date-time">{modifiedDateTime}</p>;
+  return <p>{modifiedDateTime}</p>;
 }

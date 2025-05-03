@@ -40,9 +40,8 @@ export default function UIProject({
       <div className="name-tag">
         <AsyncImage
           src={isChecked ? checkedbox : checkbox}
-          className="checkbox"
-          style={{ width: "30px", height: "auto", aspectRatio: 1 / 1 }}
-          loader={<div style={{ background: "#f9f8cc" }} />}
+          className="checkbox aspect-square h-auto w-8"
+          loader={<div className="bg-(--ti-yellow)" />}
         />
         <h3 className="label">{name}</h3>
       </div>
@@ -52,9 +51,8 @@ export default function UIProject({
         <Link to={link} className="image-frame">
           <AsyncImage
             src={isChecked ? image : bwimage}
-            className="project-image"
-            style={{ width: "100%", height: "auto", aspectRatio: 17 / 10 }}
-            loader={<div style={{ background: "var(--ti-beige)" }} />}
+            className="project-image aspect-17/10 h-auto w-full"
+            loader={<div className="bg-(--ti-beige)" />}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={handleCheckboxClick}
@@ -62,7 +60,7 @@ export default function UIProject({
         </Link>
       </div>
 
-      <p className="width-scale"> {description} </p>
+      <p className="width-scale">{description}</p>
     </div>
   );
 }

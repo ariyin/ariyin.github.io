@@ -21,15 +21,21 @@ export default function ProjectNav({
   };
 
   return (
-    <div className="project-nav">
+    <div className="relative flex w-full justify-between pt-12">
       {previous && (
-        <div className="nav-left" onClick={handlePreviousNavigation}>
+        <div
+          className="absolute left-0 flex cursor-pointer items-center gap-2.5"
+          onClick={handlePreviousNavigation}
+        >
           <p className="project-button">L1</p>
           <h3>{previousName}</h3>
         </div>
       )}
       {next && (
-        <div className="nav-right" onClick={handleNextNavigation}>
+        <div
+          className="absolute right-0 flex cursor-pointer items-center gap-2.5"
+          onClick={handleNextNavigation}
+        >
           <h3>{nextName}</h3>
           <p className="project-button">R1</p>
         </div>

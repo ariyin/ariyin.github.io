@@ -75,7 +75,7 @@ function CreatorHub() {
           <img
             alt="chasing"
             src={chase}
-            className="mt-12 w-72 max-lg:mb-12 max-lg:w-64"
+            className="mt-12 w-72 max-md:mb-12 max-md:w-64"
           />
         </div>
       </div>
@@ -95,7 +95,7 @@ function CreatorHub() {
           <img
             alt="toro and kuro chatting"
             src={chat}
-            className="w-64 max-lg:mt-12 max-lg:w-48"
+            className="w-64 max-md:mt-12 max-md:w-48"
           />
           <div className="w-lg">
             <h2>next steps</h2>

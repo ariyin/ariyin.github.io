@@ -42,13 +42,11 @@ export default function CodeProject({
       <div className="name-tag">
         <AsyncImage
           src={isChecked ? checkedbox : checkbox}
-          className="checkbox"
-          style={{ width: "30px", height: "auto", aspectRatio: 1 / 1 }}
-          loader={<div style={{ background: "#f9f8cc" }} />}
+          className="checkbox aspect-square h-auto w-8"
+          loader={<div className="bg-(--ti-yellow)" />}
         />
         <h3 className="label">{name}</h3>
       </div>
-
       {isHovered && <img src={pointer} className="pointer" />}
       <div
         className="image-tag"
@@ -63,13 +61,12 @@ export default function CodeProject({
         >
           <AsyncImage
             src={isChecked ? image : bwimage}
-            className="project-image"
-            style={{ width: "100%", height: "auto", aspectRatio: 17 / 10 }}
-            loader={<div style={{ background: "var(--ti-beige)" }} />}
+            className="project-image aspect-17/10 h-auto w-full"
+            loader={<div className="bg-(--ti-beige)" />}
             onClick={handleCheckboxClick}
           />
         </Link>
-        <div className="skill">
+        <div className="absolute bottom-10 left-5 flex gap-2.5">
           {skills.map((skill, index) => (
             <Chip
               key={index}
@@ -82,7 +79,6 @@ export default function CodeProject({
           ))}
         </div>
       </div>
-
       <p className="width-scale">{description}</p>
     </div>
   );

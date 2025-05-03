@@ -23,11 +23,11 @@ export default function LastFmSong({ username, apiKey }) {
     const track = data?.recenttracks?.track;
 
     if (error) {
-      return <p style={{ fontWeight: "400" }}> {error} </p>;
+      return <p className="font-normal"> {error} </p>;
     }
 
     if (!track) {
-      return <p style={{ fontWeight: "400" }}> loading... </p>;
+      return <p className="font-normal"> loading... </p>;
     }
 
     const [{ name: songName, artist: { "#text": artistName } = {}, url } = {}] =
@@ -40,7 +40,7 @@ export default function LastFmSong({ username, apiKey }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p style={{ fontWeight: "400", zIndex: 0 }}>
+        <p className="z-0 font-normal">
           {songName.toLowerCase()} - {artistName.toLowerCase()}
         </p>
       </a>

@@ -5,7 +5,9 @@
   --ti-bg: #f7f6e8;
   --ti-beige: #e7e7d7;
   --ti-pink: #efbab0;
+  --ti-yellow: #f9f8cc;
   --ds: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  --ds-2: 0px 2px 1.5px rgba(0, 0, 0, 0.2);
 }
 
 [data-aos="light-fade-up"] {
@@ -20,6 +22,7 @@
 
 @theme {
   --font-fakt: "Fakt Soft", "sans-serif";
+  --font-gws: "Grand Wilson Sans", "sans-serif";
 }
 
 @layer base {
@@ -111,6 +114,7 @@
     font-family: "Fakt Soft";
     font-weight: 400;
     font-size: 18px;
+    border: solid var(--ti-brown) 2px;
     border-radius: 8px;
     cursor: pointer;
     padding: 8px 20px;
@@ -256,25 +260,70 @@
   padding: 150px 100px 100px 100px;
 }
 
-.pnf-flex-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  width: 100vw;
-  height: 100vh;
-
-  padding: 100px;
-  box-sizing: border-box;
-}
-
-.pnf-box-2 {
-  margin: 20px 80px;
-}
-
 .pnf-description {
   max-inline-size: 460px;
+}
+
+/* === PROJECTS === */
+
+.project {
+  @apply relative flex w-full flex-col items-center;
+}
+
+.name-tag {
+  @apply flex items-center bg-(--ti-yellow) drop-shadow-(--ds-2);
+}
+
+.checkbox {
+  @apply ml-2;
+}
+
+.label {
+  @apply font-gws pt-2.5 pr-11 pb-1 pl-10 text-xl font-normal;
+}
+
+.pointer {
+  @apply absolute top-6 -right-9 z-10 w-12 drop-shadow-(--ds-2);
+}
+
+.image-tag {
+  @apply relative flex w-full flex-col hover:scale-105;
+}
+
+.image-frame {
+  @apply flex justify-center;
+}
+
+.MuiChip-label {
+  @apply font-fakt text-base font-semibold text-(--ti-bg);
+}
+
+.project-button {
+  @apply bg-(--ti-brown) px-5 py-1 text-white max-md:px-4;
+}
+
+.beige-bg {
+  @apply -mx-24 my-0 bg-(--ti-beige) px-24 py-1;
+}
+
+.project-image {
+  @apply my-5 border-10 border-solid border-white drop-shadow-(--ds-2);
+}
+
+/* === GALLERY === */
+
+.gallery {
+  @apply mx-auto my-0; /* center container */
+}
+
+.gallery-image {
+  @apply mb-8;
+}
+
+@media (max-width: 600px) {
+  .gallery-async-image {
+    width: calc(100vw - 100px);
+  }
 }
 
 @media (max-width: 800px) {

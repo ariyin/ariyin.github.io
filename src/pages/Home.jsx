@@ -30,10 +30,10 @@ function Home() {
         />
       </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-        <div className="name text-center text-[6.5vw] leading-[normal] font-normal text-(--ti-brown) not-italic select-none max-lg:text-[80px]">
+        <div className="name text-center text-[6.5vw] leading-[normal] font-normal text-(--ti-brown) not-italic select-none max-md:text-[80px]">
           jenna
           <br />
-          <span className="tracking-[-1.5vw] select-none max-lg:tracking-[-20px]">
+          <span className="tracking-[-1.5vw] select-none max-md:tracking-[-20px]">
             {" "}
             w{" "}
           </span>{" "}

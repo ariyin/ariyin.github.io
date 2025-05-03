@@ -8,17 +8,6 @@
   margin: 30px 0px;
 }
 
-.project {
-  @apply relative flex w-full flex-col items-center;
-}
-
-.beige-bg {
-  background-color: var(--ti-beige);
-  margin: 0px -100px;
-  padding: 5px 100px;
-  /* @apply bg-(--ti-beige) my-0 -mx-24 py-1 px-24; */
-}
-
 .mobile-proto {
   max-inline-size: 100%;
   margin-bottom: 50px;
@@ -30,109 +19,9 @@
   margin-bottom: 50px;
 }
 
-.project-image {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 10px solid white;
-  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-}
-
-.image-tag {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-}
-
-.image-tag:hover {
-  transform: scale(1.05);
-}
-
-.name-tag {
-  display: flex;
-  align-items: center;
-  background-color: #f9f8cc;
-  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-}
-
-.label {
-  font-size: 20px;
-  font-family: "Grand Wilson Sans";
-  font-weight: 400;
-  padding: 10px 45px 5px 40px;
-}
-
-.checkbox {
-  margin-left: 5px;
-}
-
-.pointer {
-  position: absolute;
-  top: 25px;
-  right: -35px;
-  width: 50px;
-  z-index: 1;
-  -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.2));
-}
-
 .width-scale {
   text-align: center;
   max-width: 340px;
-}
-
-.image-frame {
-  display: flex;
-  justify-content: center;
-}
-
-.skill {
-  display: flex;
-  gap: 10px;
-  left: 20px;
-  bottom: 40px;
-  position: absolute;
-}
-
-.MuiChip-label {
-  color: var(--ti-bg);
-  font-family: "Fakt Soft";
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.project-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 50px;
-}
-
-.nav-left {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  left: 0;
-}
-
-.nav-right {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  right: 0;
-}
-
-.project-button {
-  background: var(--ti-brown);
-  color: white;
-  padding: 5px 20px;
 }
 
 @media (max-width: 1200px) {
@@ -144,9 +33,5 @@
 @media (max-width: 800px) {
   .project-flex {
     grid-template-columns: auto;
-  }
-
-  .project-button {
-    padding: 3px 15px;
   }
 }

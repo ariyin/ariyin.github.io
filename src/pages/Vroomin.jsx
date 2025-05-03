@@ -91,7 +91,7 @@ function Vroomin() {
           <img
             alt="toro peekaboo"
             src={peekaboo}
-            className="mt-12 w-60 max-lg:mb-12 max-lg:w-48"
+            className="mt-12 w-60 max-md:mb-12 max-md:w-48"
           />
         </div>
       </div>
@@ -118,7 +118,7 @@ function Vroomin() {
           <img
             alt="kuro laying down"
             src={laying}
-            className="mt-24 w-72 max-lg:w-48"
+            className="mt-24 w-72 max-md:w-48"
           />
           <div className="w-lg">
             <h2>next steps</h2>

@@ -118,7 +118,7 @@ function Olyverse() {
           <img
             alt="kuro cheers"
             src={cheers}
-            className="mt-12 w-48 max-lg:mb-12 max-lg:w-36"
+            className="mt-12 w-48 max-md:mb-12 max-md:w-36"
           />
         </div>
       </div>

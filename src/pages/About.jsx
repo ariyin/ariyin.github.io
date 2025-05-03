@@ -6,8 +6,8 @@ import clinkedin from "../assets/clinkedin.svg";
 import newspaper from "../assets/newspaper.png";
 import music from "../assets/music.svg";
 import bubble from "../assets/bubble.svg";
-import { LastFmSong } from "../components/LastFmSong";
-import { LastFmArtist } from "../components/LastFmArtist";
+import LastFmSong from "../components/LastFmSong.jsx";
+import LastFmArtist from "../components/LastFmArtist.jsx";
 
 function About() {
   useTitle("about - ");

@@ -16,7 +16,7 @@ import resume from "../assets/resume.svg";
 import network from "../assets/online.svg";
 import battery from "../assets/battery.svg";
 
-function NavBar() {
+export default function NavBar() {
   const location = useLocation();
   const [homeIcon, setHomeIcon] = useState(home);
   const [aboutIcon, setAboutIcon] = useState(about);
@@ -124,5 +124,3 @@ function NavBar() {
     </>
   );
 }
-
-export default NavBar;

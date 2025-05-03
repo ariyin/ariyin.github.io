@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export const LastFmArtist = ({ username, apiKey }) => {
+export default function LastFmArtist({ username, apiKey }) {
   const [data, updateData] = useState({});
   useEffect(() => {
     fetch(
@@ -44,4 +44,4 @@ export const LastFmArtist = ({ username, apiKey }) => {
   };
 
   return buildData();
-};
+}

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function DateTime() {
+export default function DateTime() {
   const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -24,11 +24,11 @@ function DateTime() {
   };
 
   const formattedDate = new Intl.DateTimeFormat("en-US", dateOptions).format(
-    dateTime,
+    dateTime
   );
 
   const formattedTime = new Intl.DateTimeFormat("en-US", timeOptions).format(
-    dateTime,
+    dateTime
   );
   const modifiedTime = formattedTime
     .replace(/^24/, "00")
@@ -37,5 +37,3 @@ function DateTime() {
 
   return <p id="date-time">{modifiedDateTime}</p>;
 }
-
-export default DateTime;

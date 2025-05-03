@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-const ProjectNav = ({
+export default function ProjectNav({
   previous,
   previousName,
   previousLink,
   next,
   nextName,
   nextLink,
-}) => {
+}) {
   const navigate = useNavigate();
 
   const handlePreviousNavigation = () => {
@@ -36,6 +36,4 @@ const ProjectNav = ({
       )}
     </div>
   );
-};
-
-export default ProjectNav;
+}

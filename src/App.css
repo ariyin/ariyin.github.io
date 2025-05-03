@@ -7,6 +7,7 @@
   --ti-brown: hsl(29, 97%, 15%);
   --ti-bg: #f7f6e8;
   --ti-beige: #e7e7d7;
+  --ti-pink: #efbab0;
 }
 
 /* Fakt Soft */
@@ -125,7 +126,7 @@ button:hover {
 .underline-highlight p:after {
   content: "";
   position: absolute;
-  background-color: #efbab0;
+  background-color: var(--ti-pink);
   height: 2.5px;
   width: 100%;
   left: 0;

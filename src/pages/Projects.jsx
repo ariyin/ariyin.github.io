@@ -21,7 +21,8 @@ import olyverse from "../assets/olyverse.png";
 import olyversebw from "../assets/olyversebw.png";
 import namcap from "../assets/namcap.png";
 import namcapbw from "../assets/namcapbw.png";
-import pattern from "../assets/pattern.svg";
+import draw from "../assets/ti-draw.webp";
+import tv from "../assets/ti-tv.webp";
 
 const codeProjects = [
   {
@@ -130,19 +131,11 @@ function Projects() {
 
   return (
     <div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1280 167"
-        preserveAspectRatio="none"
-        className="divider"
-      >
-        <path
-          d="M114.513 163.574L44.5328 156.509L0 167H1280V0L1261.5 17.5H1233.5L1145.5 49.5L1099.5 30.5L1051 44.5L993.718 21.6244L903.5 59L872 49.5L777.5 90.5L724.5 65L633 90.5L564.294 79.8603L509.5 111.5L414.5 134L304.5 121.824L244.93 144.733H200.398L163.499 156.509H134.235L114.513 163.574Z"
-          fill="#E7E7D7"
-        />
-      </svg>
-      <div className="box">
-        <h1> projects </h1>
+      <div className="code-project">
+        <div className="projects-header">
+          <h1>projects</h1>
+          <img src={draw} height={110} className="header-img" />
+        </div>
         <div className="project-flex">
           {codeProjects.map((projects) => (
             <CodeProject
@@ -159,7 +152,14 @@ function Projects() {
             />
           ))}
         </div>
-        <h1 style={{ marginTop: 100 }}> hifis </h1>
+      </div>
+      <section className="ui-project">
+        <div className="hifis-header">
+          <img src={tv} height={200} className="header-img" />
+          <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
+            proto&shy;types
+          </h1>
+        </div>
         <div className="project-flex">
           {uiProjects.map((projects) => (
             <UIProject
@@ -175,7 +175,8 @@ function Projects() {
             />
           ))}
         </div>
-      </div>
+      </section>
+      <h3 className="footer">... and more to come! ^^</h3>
     </div>
   );
 }

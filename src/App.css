@@ -255,6 +255,10 @@ button:hover {
 }
 
 @media (max-width: 800px) {
+  h1 {
+    font-size: 44px;
+  }
+
   .project-container {
     padding-left: 50px;
     padding-right: 50px;

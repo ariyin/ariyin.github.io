@@ -1,9 +1,64 @@
-.divider {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.code-project {
+  padding: 145px 100px 25px 100px;
+}
+
+.ui-project {
+  padding: 0 100px 0 100px;
+}
+
+.projects-header {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+.projects-header h1 {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.projects-header h1:after {
+  content: "";
+  position: absolute;
+  background-color: var(--ti-beige);
+  height: 15px;
   width: 100%;
-  overflow: hidden;
+  bottom: 10px;
+  z-index: -1;
+  width: calc(100% + 6px);
+  left: -3px;
+}
+
+.hifis-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.hifis-header h1 {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.hifis-header h1:after {
+  content: "";
+  position: absolute;
+  background-color: var(--ti-beige);
+  height: 15px;
+  width: 100%;
+  right: -3px;
+  bottom: 10px;
+  z-index: -1;
+  width: calc(100% + 6px);
+}
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 100px 0;
 }
 
 .project-flex {
@@ -150,19 +205,22 @@
   .project-flex {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .divider {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    height: 20vh;
-    width: auto;
-  }
 }
 
 @media (max-width: 800px) {
   .project-flex {
     grid-template-columns: auto;
+  }
+
+  .code-project {
+    padding: 145px 50px 75px 50px;
+  }
+
+  .ui-project {
+    padding: 0 50px 0 50px;
+  }
+
+  .header-img {
+    display: none;
   }
 }

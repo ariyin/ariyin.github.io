@@ -19,7 +19,7 @@ function Vroomin() {
   return (
     <div className="project-container">
       <div style={{ width: "60vw" }}>
-        <h1> vroomin </h1>
+        <h1>vroomin</h1>
         <h3>
           a user experience designed to help facilitate campus ridesharing
         </h3>
@@ -88,11 +88,7 @@ function Vroomin() {
             <br />
           </div>
 
-          <img
-            style={{ width: "250px", marginTop: "50px" }}
-            alt="toro peekaboo"
-            src={peekaboo}
-          />
+          <img alt="toro peekaboo" src={peekaboo} className="peekaboo" />
         </div>
       </div>
 
@@ -115,11 +111,7 @@ function Vroomin() {
         </section>
 
         <div className="flex-box-3">
-          <img
-            style={{ width: "300px", marginTop: "100px" }}
-            alt="kuro laying down"
-            src={laying}
-          />
+          <img alt="kuro laying down" src={laying} className="kuro" />
           <div style={{ width: "500px" }}>
             <h2> next steps </h2>
             <p data-aos="light-fade-up">

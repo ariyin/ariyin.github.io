@@ -46,7 +46,7 @@ function About() {
               </h3>
             </span>
           </div>
-          <h1 style={{ marginTop: "50px" }}> contact </h1>
+          <h1 style={{ marginTop: "50px" }}>contact</h1>
           <div className="icon-text" style={{ marginBottom: "15px" }}>
             <span>
               <img className="icon-shadow" alt="mail icon" src={mail} />

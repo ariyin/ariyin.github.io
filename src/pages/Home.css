@@ -183,6 +183,10 @@
   .squares div:nth-child(10) {
     display: none;
   }
+
+  .background-image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {

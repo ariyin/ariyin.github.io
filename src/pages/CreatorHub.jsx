@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import sit from "../assets/ti_sit.webp";
 import chat from "../assets/ti_chat.webp";
+import chase from "../assets/ti_chase.webp";
 import c_1 from "../assets/c_1.png";
 import c_2 from "../assets/c_2.png";
 import c_3 from "../assets/c_3.png";
@@ -72,11 +72,7 @@ function CreatorHub() {
             <br />
           </div>
 
-          <img
-            style={{ width: "180px", marginTop: "50px" }}
-            alt="sora sitting"
-            src={sit}
-          />
+          <img alt="chasing" src={chase} className="chase" />
         </div>
       </div>
 
@@ -92,11 +88,7 @@ function CreatorHub() {
         </section>
 
         <div className="flex-box-3">
-          <img
-            style={{ width: "250px" }}
-            alt="toro and kuro chatting"
-            src={chat}
-          />
+          <img alt="toro and kuro chatting" src={chat} className="chat" />
           <div style={{ width: "500px" }}>
             <h2> next steps </h2>
             <p data-aos="light-fade-up">

@@ -46,8 +46,7 @@ function Olyverse() {
 
           <h2> thoughts </h2>
           <p data-aos="light-fade-up">
-            {" "}
-            “ucla, aws, & slalom innovation challenge”{" "}
+            “ucla, aws, & slalom innovation challenge”
           </p>
           <br />
           <p data-aos="light-fade-up">
@@ -120,11 +119,7 @@ function Olyverse() {
             <br />
           </div>
 
-          <img
-            style={{ width: "200px", marginTop: "50px" }}
-            alt="kuro cheers"
-            src={cheers}
-          />
+          <img alt="kuro cheers" src={cheers} className="cheers" />
         </div>
       </div>
 

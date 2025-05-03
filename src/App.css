@@ -67,6 +67,22 @@ h1 {
   font-size: 48px;
   color: var(--ti-brown);
   margin: 0;
+
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  background-color: var(--ti-beige);
+  height: 15px;
+  width: 100%;
+  bottom: 10px;
+  z-index: -1;
+  width: calc(100% + 6px);
+  left: -3px;
 }
 
 h2 {

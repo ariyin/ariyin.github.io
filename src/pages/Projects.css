@@ -12,46 +12,10 @@
   gap: 20px;
 }
 
-.projects-header h1 {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-
-.projects-header h1:after {
-  content: "";
-  position: absolute;
-  background-color: var(--ti-beige);
-  height: 15px;
-  width: 100%;
-  bottom: 10px;
-  z-index: -1;
-  width: calc(100% + 6px);
-  left: -3px;
-}
-
 .hifis-header {
   display: flex;
   align-items: end;
   justify-content: space-between;
-}
-
-.hifis-header h1 {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-
-.hifis-header h1:after {
-  content: "";
-  position: absolute;
-  background-color: var(--ti-beige);
-  height: 15px;
-  width: 100%;
-  right: -3px;
-  bottom: 10px;
-  z-index: -1;
-  width: calc(100% + 6px);
 }
 
 .footer {
@@ -201,6 +165,30 @@
   padding: 5px 20px;
 }
 
+.peekaboo {
+  width: 250px;
+  margin-top: 50px;
+}
+
+.kuro {
+  width: 300px;
+  margin-top: 100px;
+}
+
+.chase {
+  width: 300px;
+  margin-top: 50px;
+}
+
+.chat {
+  width: 250px;
+}
+
+.cheers {
+  width: 200px;
+  margin-top: 50px;
+}
+
 @media (max-width: 1200px) {
   .project-flex {
     grid-template-columns: repeat(2, 1fr);
@@ -222,5 +210,33 @@
 
   .header-img {
     display: none;
+  }
+
+  .peekaboo {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+  .kuro {
+    width: 200px;
+  }
+
+  .chase {
+    width: 250px;
+    margin-bottom: 50px;
+  }
+
+  .chat {
+    width: 200px;
+    margin-top: 50px;
+  }
+
+  .project-button {
+    padding: 3px 15px;
+  }
+
+  .cheers {
+    width: 150px;
+    margin-bottom: 50px;
   }
 }

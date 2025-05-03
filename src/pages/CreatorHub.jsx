@@ -14,7 +14,7 @@ function CreatorHub() {
 
   return (
     <div className="project-container">
-      <div style={{ width: "60vw" }}>
+      <div className="w-[60vw]">
         <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
           crea&shy;tor&shy;hub
         </h1>
@@ -24,11 +24,11 @@ function CreatorHub() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: "500px" }}>
-          <h2 style={{ margin: 0 }}> goal </h2>
-          <p> design the screens for the creatorhub mvp. </p>
+        <div className="w-lg">
+          <h2 className="m-0">goal</h2>
+          <p>design the screens for the creatorhub mvp.</p>
 
-          <h2> thoughts </h2>
+          <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             i am a gamer through and through (though not as much anymore). while
             looking for internships for summer 2023, i saw that creatorhub (a
@@ -61,24 +61,28 @@ function CreatorHub() {
 
         <div className="flex-box-5">
           <div>
-            <h3> role </h3>
-            <p> ui/ux intern </p>
+            <h3>role</h3>
+            <p>ui/ux intern</p>
             <br />
-            <h3> for </h3>
-            <p> creatorhub </p>
+            <h3>for</h3>
+            <p>creatorhub</p>
             <br />
-            <h3> date </h3>
-            <p> june 2023 - august 2023 </p>
+            <h3>date</h3>
+            <p>june 2023 - august 2023</p>
             <br />
           </div>
 
-          <img alt="chasing" src={chase} className="chase" />
+          <img
+            alt="chasing"
+            src={chase}
+            className="mt-12 w-72 max-lg:mb-12 max-lg:w-64"
+          />
         </div>
       </div>
 
       <div>
         <section className="beige-bg">
-          <h2> mockups </h2>
+          <h2>mockups</h2>
           <div className="web-grid" data-aos="fade-in">
             <img className="web-proto" alt="home" src={c_1} />
             <img className="web-proto" alt="sign up" src={c_2} />
@@ -88,16 +92,20 @@ function CreatorHub() {
         </section>
 
         <div className="flex-box-3">
-          <img alt="toro and kuro chatting" src={chat} className="chat" />
-          <div style={{ width: "500px" }}>
-            <h2> next steps </h2>
+          <img
+            alt="toro and kuro chatting"
+            src={chat}
+            className="w-64 max-lg:mt-12 max-lg:w-48"
+          />
+          <div className="w-lg">
+            <h2>next steps</h2>
             <p data-aos="light-fade-up">
               since this was a summer internship, i don't have a lot of notes
               about personal next steps. but i think there are always ways to
               improve and reiterate pre-existing designs.
             </p>
 
-            <h2> conclusion </h2>
+            <h2>conclusion</h2>
             <p data-aos="light-fade-up">
               i have successfully completed a summer internship!
             </p>

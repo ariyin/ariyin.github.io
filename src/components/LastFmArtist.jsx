@@ -4,7 +4,7 @@ export default function LastFmArtist({ username, apiKey }) {
   const [data, updateData] = useState({});
   useEffect(() => {
     fetch(
-      `https://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=${username}&api_key=${apiKey}&period=7day&limit=1&format=json`
+      `https://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user=${username}&api_key=${apiKey}&period=7day&limit=1&format=json`,
     )
       .then((response) => {
         if (response.ok) {
@@ -14,7 +14,7 @@ export default function LastFmArtist({ username, apiKey }) {
       })
       .then((data) => updateData(data))
       .catch(() =>
-        updateData({ error: "whoops! something went wrong with last.fm." })
+        updateData({ error: "whoops! something went wrong with last.fm." }),
       );
   }, []);
 

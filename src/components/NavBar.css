@@ -1,21 +1,5 @@
-#navigation {
-  color: var(--ti-brown);
-  font-family: "Fakt Soft";
-  font-weight: 600;
-  text-align: center;
-  position: fixed;
-
-  padding-top: 25px;
-  z-index: 2;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-#navigation a:link,
-#navigation a:visited {
+.navigation a:link,
+.navigation a:visited {
   color: var(--ti-brown);
   text-decoration: none;
 }
@@ -59,53 +43,7 @@
   margin-right: 40px;
 }
 
-#top-border {
-  position: fixed;
-  top: 0px;
-  transform: rotate(180deg);
-  width: 100vw;
-  z-index: 2;
-  -webkit-filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
-  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.2));
-
-  user-select: none;
-  pointer-events: none;
-}
-
-.middle-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#data-box {
-  padding-left: 50px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-#settings {
-  padding-right: 50px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  word-spacing: 0px;
-}
-
-#internet-box {
-  border: 2px solid white;
-  background-color: var(--ti-brown);
-  border-radius: 8px;
-  width: 140px;
-  height: 25px;
-}
-
 @media (max-width: 1200px) {
-  #navigation {
-    justify-content: center;
-  }
-
   .underline {
     display: none;
   }
@@ -116,20 +54,5 @@
 
   .nav-icons:not(:last-child) {
     margin-right: 40px;
-  }
-
-  #data-box {
-    display: none;
-  }
-
-  #settings {
-    display: none;
-  }
-}
-
-@media (max-width: 1500px) {
-  #top-border {
-    height: 140px;
-    width: auto;
   }
 }

@@ -22,11 +22,7 @@ function Olyverse() {
 
   return (
     <div className="project-container">
-      <div
-        style={{
-          width: "60vw",
-        }}
-      >
+      <div className="w-[60vw]">
         <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
           oly&shy;verse
         </h1>
@@ -37,14 +33,14 @@ function Olyverse() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: "500px" }}>
-          <h2 style={{ margin: 0 }}> goal </h2>
+        <div className="w-lg">
+          <h2 className="m-0">goal</h2>
           <p>
             design an app that allows users to interact with LA28 athletes and
             get a fuller LA28 experience.
           </p>
 
-          <h2> thoughts </h2>
+          <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             “ucla, aws, & slalom innovation challenge”
           </p>
@@ -97,16 +93,16 @@ function Olyverse() {
 
         <div className="flex-box-5">
           <div>
-            <h3> role </h3>
-            <p> ui/ux </p>
+            <h3>role</h3>
+            <p>ui/ux</p>
             <br />
-            <h3> for </h3>
-            <p> ucla, aws, & slalom innovation challenge </p>
+            <h3>for</h3>
+            <p>ucla, aws, & slalom innovation challenge</p>
             <br />
-            <h3> date </h3>
-            <p> april 2023 - may 2023 </p>
+            <h3>date</h3>
+            <p>april 2023 - may 2023</p>
             <br />
-            <h3> link </h3>
+            <h3>link</h3>
             <div className="project-link">
               <a
                 href="https://www.figma.com/proto/j0SvxjCB04E5bt2lMVlHmr/olyverse?page-id=0%3A1&type=design&node-id=175-2489&viewport=262%2C620%2C0.4&t=FbPHlckLynHC7iYL-1&scaling=scale-down&starting-point-node-id=175%3A2489&mode=design"
@@ -119,14 +115,18 @@ function Olyverse() {
             <br />
           </div>
 
-          <img alt="kuro cheers" src={cheers} className="cheers" />
+          <img
+            alt="kuro cheers"
+            src={cheers}
+            className="mt-12 w-48 max-lg:mb-12 max-lg:w-36"
+          />
         </div>
       </div>
 
       <div>
         <section className="beige-bg">
-          <h2> mockups </h2>
-          <p> see prototype for more screens. </p>
+          <h2>mockups</h2>
+          <p>see prototype for more screens.</p>
           <div className="mobile-grid" data-aos="fade-in">
             <img className="mobile-proto" alt="login" src={o_1} />
             <img className="mobile-proto" alt="follow athletes" src={o_2} />
@@ -145,12 +145,12 @@ function Olyverse() {
 
         <div className="flex-box-3">
           <img
-            style={{ height: "160px", marginTop: "100px" }}
             alt="toro and kuro racecar"
             src={racecar}
+            className="mt-24 h-40"
           />
-          <div style={{ width: "500px" }}>
-            <h2> next steps </h2>
+          <div className="w-lg">
+            <h2>next steps</h2>
             <p data-aos="light-fade-up">
               let this idea die since i don't think the olympics committee or
               whoever was in charge of the challenge was super interested.
@@ -160,7 +160,7 @@ function Olyverse() {
               but this idea can still be used for a lot of different industries,
               so if anyone else is interested in it, please hire me.
             </p>
-            <h2> conclusion </h2>
+            <h2>conclusion</h2>
             <p data-aos="light-fade-up">
               i learned a lot about figma and its functions. the olympics would
               be based if this app existed (not biased review at all).

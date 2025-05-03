@@ -18,7 +18,7 @@ function Vroomin() {
 
   return (
     <div className="project-container">
-      <div style={{ width: "60vw" }}>
+      <div className="w-[60vw]">
         <h1>vroomin</h1>
         <h3>
           a user experience designed to help facilitate campus ridesharing
@@ -26,14 +26,14 @@ function Vroomin() {
       </div>
 
       <div className="flex-box-2">
-        <div style={{ width: "500px" }}>
-          <h2 style={{ margin: 0 }}> goal </h2>
+        <div className="w-lg">
+          <h2 className="m-0">goal</h2>
           <p data-aos="light-fade-up">
             design an app/website that will allow college students to find other
             people going the same places.
           </p>
 
-          <h2> thoughts </h2>
+          <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             i've often wanted to go to events, places, or concerts in la.
             however, with a lack of access to a car, no desire to ride public
@@ -66,16 +66,16 @@ function Vroomin() {
 
         <div className="flex-box-5">
           <div>
-            <h3> role </h3>
-            <p> everything </p>
+            <h3>role</h3>
+            <p>everything</p>
             <br />
-            <h3> for </h3>
-            <p> google ux design certificate </p>
+            <h3>for</h3>
+            <p>google ux design certificate</p>
             <br />
-            <h3> date </h3>
-            <p> august 2023 </p>
+            <h3>date</h3>
+            <p>august 2023</p>
             <br />
-            <h3> link </h3>
+            <h3>link</h3>
             <div className="project-link">
               <a
                 href="https://www.figma.com/proto/fcOewlDV3eUSCCBXPx1ZJv/vroomin?page-id=0%3A1&type=design&node-id=37-3516&viewport=21%2C361%2C0.36&t=M6PgGAB2WC8J0DwX-1&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1&mode=design"
@@ -88,14 +88,18 @@ function Vroomin() {
             <br />
           </div>
 
-          <img alt="toro peekaboo" src={peekaboo} className="peekaboo" />
+          <img
+            alt="toro peekaboo"
+            src={peekaboo}
+            className="mt-12 w-60 max-lg:mb-12 max-lg:w-48"
+          />
         </div>
       </div>
 
       <div>
         <section className="beige-bg">
-          <h2> mockups </h2>
-          <p> see prototype for more screens. </p>
+          <h2>mockups</h2>
+          <p>see prototype for more screens.</p>
           <div className="mobile-grid" data-aos="fade-in">
             <img className="mobile-proto" alt="home" src={v_1} />
             <img className="mobile-proto" alt="choose a ride" src={v_2} />
@@ -111,16 +115,20 @@ function Vroomin() {
         </section>
 
         <div className="flex-box-3">
-          <img alt="kuro laying down" src={laying} className="kuro" />
-          <div style={{ width: "500px" }}>
-            <h2> next steps </h2>
+          <img
+            alt="kuro laying down"
+            src={laying}
+            className="mt-24 w-72 max-lg:w-48"
+          />
+          <div className="w-lg">
+            <h2>next steps</h2>
             <p data-aos="light-fade-up">
               what i have are merely designs for the main flow. other features
               i'd like to explore include messaging, notifications, and a
               profile. i'd also like to think of a way to reward users for
               successfully reducing their carbon footprint.
             </p>
-            <h2> conclusion </h2>
+            <h2>conclusion</h2>
             <p data-aos="light-fade-up">
               i enjoyed working on this project since it's something i wish
               existed right now.

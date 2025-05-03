@@ -59,17 +59,21 @@ export default function NavBar() {
 
   return (
     <>
-      <img id="top-border" alt="top border" src={border} />
-      <div id="navigation">
+      <img
+        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--ds) select-none max-2xl:h-[140px] max-2xl:w-auto"
+        alt="top border"
+        src={border}
+      />
+      <div className="navigation font-fakt fixed z-20 flex w-full items-center justify-between pt-6 text-center font-semibold text-(--ti-brown) max-xl:justify-center">
         {/* LEFT ITEMS */}
-        <span id="data-box">
+        <span className="flex items-center gap-5 pl-12 max-xl:hidden">
           <img className="icon" alt="network icon" src={network} />
-          <span id="internet-box">
-            <p style={{ color: "white" }}> Internet </p>
+          <span className="h-7 w-36 rounded-lg bg-(--ti-brown)">
+            <p className="text-white">Internet</p>
           </span>
         </span>
         {/* WEB NAVBAR */}
-        <div className="middle-nav">
+        <div className="absolute left-1/2 -translate-x-1/2">
           <NavLink to="/" className="underline">
             home
           </NavLink>
@@ -115,7 +119,7 @@ export default function NavBar() {
           </a>
         </div>
         {/* RIGHT ITEMS */}
-        <span id="settings">
+        <span className="flex items-center gap-5 pr-12 [word-spacing:0px] max-xl:hidden">
           <DateTime />
           <BGM />
           <img className="icon" alt="battery icon" src={battery} />

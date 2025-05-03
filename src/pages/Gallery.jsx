@@ -135,7 +135,7 @@ function Gallery() {
 
   return (
     <div className="box">
-      <div style={{ marginBottom: "56px" }}>
+      <div className="mb-14">
         <h1>gallery</h1>
         <p>a collection of my works over the years!</p>
       </div>
@@ -148,7 +148,7 @@ function Gallery() {
               style={{
                 aspectRatio: `${image.aspectRatio}`,
               }}
-              loader={<div style={{ background: "var(--ti-beige)" }} />}
+              loader={<div className="bg-(--ti-beige)" />}
             />
             <p>{image.title}</p>
           </div>

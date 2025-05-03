@@ -14,30 +14,25 @@ function About() {
 
   return (
     <>
-      <div className="bg-text">
-        <p className="bg-text-top">井上</p>
-        <p className="bg-text-bottom">トロ</p>
+      <div className="absolute right-12 flex h-screen flex-col items-end justify-center select-none max-xl:hidden">
+        <p className="mt-24 mr-44 -mb-7 text-[14vw] font-semibold text-(--ti-beige)">
+          井上
+        </p>
+        <p className="text-[14vw] font-semibold text-(--ti-beige)">トロ</p>
       </div>
       <div className="flex-box">
         <div className="box">
           <h1>about me</h1>
           <h3>hello!</h3>
-          <p
-            style={{
-              marginTop: "15px",
-              marginBottom: "25px",
-              maxWidth: "600px",
-            }}
-          >
-            i'm a third year cs major at ucla, interested in full stack (mostly
-            front-end), ui/ux, and ui development! in my spare time, i enjoy
-            playing video games, reading manhwas and novels, and exploring
-            different albums.
+          <p className="my-4 max-w-xl">
+            i'm a third year cs major at ucla, interested in full-stack (mostly
+            frontend) and ui/ux! in my spare time, i enjoy playing video games,
+            reading manhwas and novels, and exploring different albums.
           </p>
-          <div className="icon-text" style={{ maxWidth: 600 }}>
-            <span style={{ gap: 15 }}>
+          <div className="icon-text max-w-xl">
+            <span className="gap-3">
               <img className="icon-shadow" alt="music icon" src={music} />
-              <h3 className="flex-music">
+              <h3 className="flex flex-wrap">
                 last played: &nbsp;
                 <LastFmSong
                   username={import.meta.env.VITE_LASTFM_USERNAME}
@@ -46,8 +41,8 @@ function About() {
               </h3>
             </span>
           </div>
-          <h1 style={{ marginTop: "50px" }}>contact</h1>
-          <div className="icon-text" style={{ marginBottom: "15px" }}>
+          <h1 className="mt-10">contact</h1>
+          <div className="icon-text mb-4">
             <span>
               <img className="icon-shadow" alt="mail icon" src={mail} />
               <a
@@ -60,7 +55,7 @@ function About() {
               </a>
             </span>
           </div>
-          <div className="icon-text" style={{ marginBottom: "15px" }}>
+          <div className="icon-text mb-4">
             <span>
               <img
                 className="icon-shadow"
@@ -79,15 +74,15 @@ function About() {
           </div>
         </div>
         <div className="box-2">
-          <div className="dialogue">
+          <div className="flex max-w-[300px] flex-col items-center">
             <div className="bubble">
               <img
                 src={bubble}
-                className="drop-shadow"
-                width="350"
+                className="max-w-none drop-shadow"
+                width={350}
                 draggable="false"
               />
-              <div className="flex-dialogue">
+              <div className="absolute top-6 left-5 flex max-w-[310px] flex-wrap">
                 <LastFmArtist
                   username={import.meta.env.VITE_LASTFM_USERNAME}
                   apiKey={import.meta.env.VITE_LASTFM_API_KEY}
@@ -95,10 +90,10 @@ function About() {
               </div>
             </div>
             <img
-              id="newspaper"
               alt="toro reading newspaper"
               src={newspaper}
               draggable="false"
+              className="z-10 mx-24 w-64 max-w-full max-xl:mb-24"
             />
           </div>
         </div>

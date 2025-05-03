@@ -1,36 +1,11 @@
-/*
-. = class
-# = id
-*/
+@import "tailwindcss";
 
 :root {
   --ti-brown: hsl(29, 97%, 15%);
   --ti-bg: #f7f6e8;
   --ti-beige: #e7e7d7;
   --ti-pink: #efbab0;
-}
-
-/* Fakt Soft */
-@font-face {
-  font-family: "Fakt Soft";
-  src: url("fonts/fakt-soft-nor.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fakt Soft";
-  src: url("fonts/fakt-soft-smbd.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-/* Grand Wilson Sans */
-@font-face {
-  font-family: "Grand Wilson Sans";
-  src: url("fonts/grand-wilson-sans.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
+  --ds: 0px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
 [data-aos="light-fade-up"] {
@@ -43,14 +18,120 @@
   }
 }
 
-a:link {
-  text-decoration: none;
-  color: var(--ti-brown);
+@theme {
+  --font-fakt: "Fakt Soft", "sans-serif";
 }
 
-a:visited {
-  text-decoration: none;
-  color: var(--ti-brown);
+@layer base {
+  /* Fakt Soft */
+  @font-face {
+    font-family: "Fakt Soft";
+    src: url("fonts/fakt-soft-nor.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fakt Soft";
+    src: url("fonts/fakt-soft-smbd.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* Grand Wilson Sans */
+  @font-face {
+    font-family: "Grand Wilson Sans";
+    src: url("fonts/grand-wilson-sans.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: var(--ti-brown);
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: var(--ti-brown);
+  }
+
+  h1 {
+    font-family: "Grand Wilson Sans";
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--ti-brown);
+    margin: 0;
+
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1:after {
+    content: "";
+    position: absolute;
+    background-color: var(--ti-beige);
+    height: 15px;
+    width: 100%;
+    bottom: 18px;
+    z-index: -1;
+    width: calc(100% + 6px);
+    left: -3px;
+  }
+
+  h2 {
+    font-family: "Grand Wilson Sans";
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--ti-brown);
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  h3 {
+    font-family: "Fakt Soft";
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--ti-brown);
+    margin: 0;
+  }
+
+  p {
+    font-family: "Fakt Soft";
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--ti-brown);
+    margin: 0;
+  }
+
+  button {
+    background-color: var(--ti-beige);
+    color: var(--ti-brown);
+    font-family: "Fakt Soft";
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 20px;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: var(--ti-brown);
+    color: white;
+  }
+
+  .icon-text span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@layer utilities {
 }
 
 .project-link {
@@ -59,74 +140,6 @@ a:visited {
   font-size: 18px;
   color: var(--ti-brown);
   text-decoration: underline;
-}
-
-h1 {
-  font-family: "Grand Wilson Sans";
-  font-weight: 400;
-  font-size: 48px;
-  color: var(--ti-brown);
-  margin: 0;
-
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-}
-
-h1:after {
-  content: "";
-  position: absolute;
-  background-color: var(--ti-beige);
-  height: 15px;
-  width: 100%;
-  bottom: 10px;
-  z-index: -1;
-  width: calc(100% + 6px);
-  left: -3px;
-}
-
-h2 {
-  font-family: "Grand Wilson Sans";
-  font-weight: 400;
-  font-size: 36px;
-  color: var(--ti-brown);
-  margin: 0;
-  margin-top: 50px;
-}
-
-h3 {
-  font-family: "Fakt Soft";
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--ti-brown);
-  margin: 0;
-}
-
-p {
-  font-family: "Fakt Soft";
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--ti-brown);
-  margin: 0;
-}
-
-button {
-  background-color: var(--ti-beige);
-  color: var(--ti-brown);
-  font-family: "Fakt Soft";
-  font-weight: 400;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 8px 20px;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-}
-
-button:hover {
-  background-color: var(--ti-brown);
-  color: white;
 }
 
 .underline-highlight {
@@ -164,12 +177,6 @@ button:hover {
 
 .box-2 {
   margin: 0px 100px;
-}
-
-.icon-text span {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .icon {

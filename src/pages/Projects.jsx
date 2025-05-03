@@ -130,11 +130,11 @@ function Projects() {
   }, []);
 
   return (
-    <div>
-      <div className="code-project">
-        <div className="projects-header">
+    <>
+      <div className="px-24 pt-36 pb-6 max-lg:px-12 max-lg:pt-36 max-lg:pb-20">
+        <div className="flex items-end gap-5">
           <h1>projects</h1>
-          <img src={draw} height={110} className="header-img" />
+          <img src={draw} className="h-28 max-lg:hidden" />
         </div>
         <div className="project-flex">
           {codeProjects.map((projects) => (
@@ -153,9 +153,9 @@ function Projects() {
           ))}
         </div>
       </div>
-      <section className="ui-project">
-        <div className="hifis-header">
-          <img src={tv} height={200} className="header-img" />
+      <section className="px-24 max-lg:px-12">
+        <div className="flex items-end justify-between">
+          <img src={tv} className="h-48 max-lg:hidden" />
           <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
             proto&shy;types
           </h1>
@@ -176,8 +176,10 @@ function Projects() {
           ))}
         </div>
       </section>
-      <h3 className="footer">... and more to come! ^^</h3>
-    </div>
+      <h3 className="my-24 flex w-screen justify-center">
+        ... and more to come! ^^
+      </h3>
+    </>
   );
 }
 

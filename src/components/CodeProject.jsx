@@ -42,7 +42,7 @@ export default function CodeProject({
       <div className="name-tag">
         <AsyncImage
           src={isChecked ? checkedbox : checkbox}
-          className="checkbox aspect-square h-auto w-8"
+          className="checkbox"
           loader={<div className="bg-(--ti-yellow)" />}
         />
         <h3 className="label">{name}</h3>
@@ -57,7 +57,7 @@ export default function CodeProject({
           to={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="image-frame"
+          className="flex justify-center"
         >
           <AsyncImage
             src={isChecked ? image : bwimage}

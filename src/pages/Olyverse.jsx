@@ -31,15 +31,13 @@ function Olyverse() {
           the LA28 games
         </h3>
       </div>
-
-      <div className="flex-box-2">
+      <div className="project-content">
         <div className="w-lg">
           <h2 className="m-0">goal</h2>
           <p>
             design an app that allows users to interact with LA28 athletes and
             get a fuller LA28 experience.
           </p>
-
           <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             “ucla, aws, & slalom innovation challenge”
@@ -90,8 +88,7 @@ function Olyverse() {
             got to make some unforgettable memories.
           </p>
         </div>
-
-        <div className="flex-box-5">
+        <div className="project-summary">
           <div>
             <h3>role</h3>
             <p>ui/ux</p>
@@ -114,7 +111,6 @@ function Olyverse() {
             </div>
             <br />
           </div>
-
           <img
             alt="kuro cheers"
             src={cheers}
@@ -122,7 +118,6 @@ function Olyverse() {
           />
         </div>
       </div>
-
       <div>
         <section className="beige-bg">
           <h2>mockups</h2>
@@ -142,8 +137,7 @@ function Olyverse() {
             <img className="mobile-proto" alt="results" src={o_12} />
           </div>
         </section>
-
-        <div className="flex-box-3">
+        <div className="project-end">
           <img
             alt="toro and kuro racecar"
             src={racecar}

@@ -22,12 +22,10 @@ function CreatorHub() {
           a platform to connect brands with content creators for advertisement
         </h3>
       </div>
-
-      <div className="flex-box-2">
+      <div className="project-content">
         <div className="w-lg">
           <h2 className="m-0">goal</h2>
           <p>design the screens for the creatorhub mvp.</p>
-
           <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             i am a gamer through and through (though not as much anymore). while
@@ -58,8 +56,7 @@ function CreatorHub() {
           <br />
           <p data-aos="light-fade-up">contact me if you want to see more!</p>
         </div>
-
-        <div className="flex-box-5">
+        <div className="project-summary">
           <div>
             <h3>role</h3>
             <p>ui/ux intern</p>
@@ -71,7 +68,6 @@ function CreatorHub() {
             <p>june 2023 - august 2023</p>
             <br />
           </div>
-
           <img
             alt="chasing"
             src={chase}
@@ -79,7 +75,6 @@ function CreatorHub() {
           />
         </div>
       </div>
-
       <div>
         <section className="beige-bg">
           <h2>mockups</h2>
@@ -90,8 +85,7 @@ function CreatorHub() {
             <img className="web-proto" alt="analytics" src={c_4} />
           </div>
         </section>
-
-        <div className="flex-box-3">
+        <div className="project-end">
           <img
             alt="toro and kuro chatting"
             src={chat}
@@ -104,7 +98,6 @@ function CreatorHub() {
               about personal next steps. but i think there are always ways to
               improve and reiterate pre-existing designs.
             </p>
-
             <h2>conclusion</h2>
             <p data-aos="light-fade-up">
               i have successfully completed a summer internship!

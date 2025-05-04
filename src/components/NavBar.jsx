@@ -60,19 +60,19 @@ export default function NavBar() {
   return (
     <>
       <img
-        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--ds) select-none max-2xl:h-[140px] max-2xl:w-auto"
+        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border)) select-none max-2xl:h-[140px] max-2xl:w-auto"
         alt="top border"
         src={border}
       />
       <div className="navigation font-fakt fixed z-20 flex w-full items-center justify-between pt-6 text-center font-semibold text-(--ti-brown) max-xl:justify-center">
-        {/* LEFT ITEMS */}
+        {/* === LEFT ITEMS === */}
         <span className="flex items-center gap-5 pl-12 max-xl:hidden">
           <img className="icon" alt="network icon" src={network} />
           <span className="h-7 w-36 rounded-lg bg-(--ti-brown)">
             <p className="text-white">Internet</p>
           </span>
         </span>
-        {/* WEB NAVBAR */}
+        {/* === WEB NAVBAR === */}
         <div className="absolute left-1/2 -translate-x-1/2">
           <NavLink to="/" className="underline">
             home
@@ -95,7 +95,7 @@ export default function NavBar() {
             resume
           </a>
         </div>
-        {/* MOBILE NAVBAR */}
+        {/* === MOBILE NAVBAR === */}
         <div>
           <NavLink to="/" className="nav-icons">
             <img className="icon" alt="home icon" src={homeIcon} />
@@ -118,7 +118,7 @@ export default function NavBar() {
             <img className="icon" alt="resume icon" src={resume} />
           </a>
         </div>
-        {/* RIGHT ITEMS */}
+        {/* === RIGHT ITEMS === */}
         <span className="flex items-center gap-5 pr-12 [word-spacing:0px] max-xl:hidden">
           <DateTime />
           <BGM />

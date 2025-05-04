@@ -40,7 +40,7 @@ export default function UIProject({
       <div className="name-tag">
         <AsyncImage
           src={isChecked ? checkedbox : checkbox}
-          className="checkbox aspect-square h-auto w-8"
+          className="checkbox"
           loader={<div className="bg-(--ti-yellow)" />}
         />
         <h3 className="label">{name}</h3>
@@ -48,7 +48,7 @@ export default function UIProject({
 
       {isHovered && <img src={pointer} className="pointer" />}
       <div className="image-tag">
-        <Link to={link} className="image-frame">
+        <Link to={link} className="flex justify-center">
           <AsyncImage
             src={isChecked ? image : bwimage}
             className="project-image aspect-17/10 h-auto w-full"

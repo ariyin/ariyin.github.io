@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import CodeProject from "../components/CodeProject";
 import UIProject from "../components/UIProject";
 import useTitle from "../components/useTitle";
-import "./Projects.css";
 import saga from "../assets/saga.png";
 import sagabw from "../assets/sagabw.png";
 import cuberunner from "../assets/cuberunner.png";

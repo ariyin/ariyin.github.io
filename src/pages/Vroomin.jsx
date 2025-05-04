@@ -24,15 +24,13 @@ function Vroomin() {
           a user experience designed to help facilitate campus ridesharing
         </h3>
       </div>
-
-      <div className="flex-box-2">
+      <div className="project-content">
         <div className="w-lg">
           <h2 className="m-0">goal</h2>
           <p data-aos="light-fade-up">
             design an app/website that will allow college students to find other
             people going the same places.
           </p>
-
           <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             i've often wanted to go to events, places, or concerts in la.
@@ -63,8 +61,7 @@ function Vroomin() {
             concept and added some n.flying references (my favorite band).
           </p>
         </div>
-
-        <div className="flex-box-5">
+        <div className="project-summary">
           <div>
             <h3>role</h3>
             <p>everything</p>
@@ -87,7 +84,6 @@ function Vroomin() {
             </div>
             <br />
           </div>
-
           <img
             alt="toro peekaboo"
             src={peekaboo}
@@ -95,7 +91,6 @@ function Vroomin() {
           />
         </div>
       </div>
-
       <div>
         <section className="beige-bg">
           <h2>mockups</h2>
@@ -113,8 +108,7 @@ function Vroomin() {
             <img className="web-proto" alt="ride requested" src={v_8} />
           </div>
         </section>
-
-        <div className="flex-box-3">
+        <div className="project-end">
           <img
             alt="kuro laying down"
             src={laying}

@@ -1,6 +1,5 @@
 import React from "react";
 import useTitle from "../components/useTitle";
-import "./About.css";
 import mail from "../assets/airplane.svg";
 import clinkedin from "../assets/clinkedin.svg";
 import newspaper from "../assets/newspaper.png";
@@ -15,33 +14,36 @@ function About() {
   return (
     <>
       <div className="absolute right-12 flex h-screen flex-col items-end justify-center select-none max-xl:hidden">
-        <p className="mt-24 mr-44 -mb-7 text-[14vw] font-semibold text-(--ti-beige)">
+        <p className="mt-20 mr-44 -mb-7 text-[14vw] font-semibold text-(--ti-beige)">
           井上
         </p>
         <p className="text-[14vw] font-semibold text-(--ti-beige)">トロ</p>
       </div>
-      <div className="flex-box">
-        <div className="box">
+      <div className="flex h-screen flex-wrap items-center justify-between max-md:justify-center">
+        <div className="relative px-24 pt-36 pb-24 max-md:px-12">
           <h1>about me</h1>
-          <h3>hello!</h3>
-          <p className="my-4 max-w-xl">
-            i'm a third year cs major at ucla, interested in full-stack (mostly
-            frontend) and ui/ux! in my spare time, i enjoy playing video games,
-            reading manhwas and novels, and exploring different albums.
-          </p>
-          <div className="icon-text max-w-xl">
-            <span className="gap-3">
-              <img className="icon-shadow" alt="music icon" src={music} />
-              <h3 className="flex flex-wrap">
-                last played: &nbsp;
-                <LastFmSong
-                  username={import.meta.env.VITE_LASTFM_USERNAME}
-                  apiKey={import.meta.env.VITE_LASTFM_API_KEY}
-                />
-              </h3>
-            </span>
+          <div className="my-2 flex flex-col gap-2">
+            <h3>hello!</h3>
+            <p className="max-w-xl">
+              i'm a third year cs major at ucla, interested in full-stack
+              (mostly frontend) and ui/ux! in my spare time, i enjoy playing
+              video games, reading manhwas and novels, and exploring different
+              albums.
+            </p>
+            <div className="icon-text max-w-xl">
+              <span className="gap-3">
+                <img className="icon-shadow" alt="music icon" src={music} />
+                <h3 className="flex flex-wrap">
+                  last played: &nbsp;
+                  <LastFmSong
+                    username={import.meta.env.VITE_LASTFM_USERNAME}
+                    apiKey={import.meta.env.VITE_LASTFM_API_KEY}
+                  />
+                </h3>
+              </span>
+            </div>
           </div>
-          <h1 className="mt-10">contact</h1>
+          <h1 className="mt-10 mb-2">contact</h1>
           <div className="icon-text mb-4">
             <span>
               <img className="icon-shadow" alt="mail icon" src={mail} />
@@ -73,12 +75,12 @@ function About() {
             </span>
           </div>
         </div>
-        <div className="box-2">
+        <div className="mx-24 my-0">
           <div className="flex max-w-[300px] flex-col items-center">
             <div className="bubble">
               <img
                 src={bubble}
-                className="max-w-none drop-shadow"
+                className="max-w-none drop-shadow-(--default)"
                 width={350}
                 draggable="false"
               />

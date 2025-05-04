@@ -76,7 +76,7 @@ function About() {
           </div>
         </div>
         <div className="mx-24 my-0">
-          <div className="flex max-w-[300px] flex-col items-center">
+          <div className="flex max-w-72 flex-col items-center">
             <div className="bubble">
               <img
                 className="max-w-none drop-shadow-(--default)"
@@ -85,7 +85,7 @@ function About() {
                 alt="speech bubble"
                 src={bubble}
               />
-              <div className="absolute top-6 left-5 flex max-w-[310px] flex-wrap">
+              <div className="absolute top-6 left-5 flex flex-wrap">
                 <LastFmArtist
                   username={import.meta.env.VITE_LASTFM_USERNAME}
                   apiKey={import.meta.env.VITE_LASTFM_API_KEY}

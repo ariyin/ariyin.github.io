@@ -59,7 +59,7 @@ export default function NavBar() {
   return (
     <>
       <img
-        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border) select-none max-2xl:h-[140px] max-2xl:w-auto"
+        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border) select-none max-xl:h-36 max-xl:w-auto"
         alt="top border"
         src={border}
       />

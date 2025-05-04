@@ -175,7 +175,7 @@
 /* === HOME === */
 
 .background-image {
-  @apply pointer-events-none absolute top-[75%] left-[50%] w-[85%] select-none max-md:w-full;
+  @apply pointer-events-none absolute top-3/4 left-1/2 w-17/20 select-none max-md:w-full;
   transform: translate(-50%, -50%);
   animation: toroMoveUp 1.5s ease-out;
 }

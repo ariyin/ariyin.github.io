@@ -18,7 +18,7 @@ VITE_LASTFM_API_KEY=
 ### commands
 
 - to start: `npm run dev`
-- to update gh-pages: `npm run build`
+- to update gh-pages: `npm run deploy`
 
 ## pages
 
@@ -65,6 +65,7 @@ thank you to all the kind people who developed these packages! this website coul
 - `masonry-layout` and `imagesloaded` for the gallery
 - `loadable-image` for lazy loading images
 - `css-doodle` for helping me make my spiral background
+- `react-medium-image-zoom` for zooming into some images
 - `prettier` for making the code prettier
 
 ### tools

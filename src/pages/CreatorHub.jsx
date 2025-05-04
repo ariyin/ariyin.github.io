@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import chat from "../assets/ti_chat.webp";
-import chase from "../assets/ti_chase.webp";
-import c_1 from "../assets/c_1.png";
-import c_2 from "../assets/c_2.png";
-import c_3 from "../assets/c_3.png";
-import c_4 from "../assets/c_4.png";
+import chat from "../assets/cat/chat.webp";
+import chase from "../assets/cat/chase.webp";
+import c_1 from "../assets/prototypes/c_1.png";
+import c_2 from "../assets/prototypes/c_2.png";
+import c_3 from "../assets/prototypes/c_3.png";
+import c_4 from "../assets/prototypes/c_4.png";
 
 const webProtos = [
   { src: c_1, alt: "home" },

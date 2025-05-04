@@ -1,5 +1,5 @@
 import useTitle from "../components/useTitle";
-import lost from "../assets/ti_lost.webp";
+import lost from "../assets/cat/lost.webp";
 import { Link } from "react-router-dom";
 import SpiralBackground from "../components/SpiralBackground";
 

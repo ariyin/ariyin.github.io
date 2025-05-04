@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import peekaboo from "../assets/ti_peekaboo.webp";
-import laying from "../assets/ti_laying.png";
-import v_1 from "../assets/v_1.png";
-import v_2 from "../assets/v_2.png";
-import v_3 from "../assets/v_3.png";
-import v_4 from "../assets/v_4.png";
-import v_5 from "../assets/v_5.png";
-import v_6 from "../assets/v_6.png";
-import v_7 from "../assets/v_7.png";
-import v_8 from "../assets/v_8.png";
+import peekaboo from "../assets/cat/peekaboo.webp";
+import laying from "../assets/cat/laying.png";
+import v_1 from "../assets/prototypes/v_1.png";
+import v_2 from "../assets/prototypes/v_2.png";
+import v_3 from "../assets/prototypes/v_3.png";
+import v_4 from "../assets/prototypes/v_4.png";
+import v_5 from "../assets/prototypes/v_5.png";
+import v_6 from "../assets/prototypes/v_6.png";
+import v_7 from "../assets/prototypes/v_7.png";
+import v_8 from "../assets/prototypes/v_8.png";
 
 const mobileProtos = [
   { src: v_1, alt: "home" },

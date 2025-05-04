@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Chip } from "@mui/material";
 import { AsyncImage } from "loadable-image";
-import pointer from "../assets/pointer.svg";
-import checkbox from "../assets/checkbox.svg";
-import checkedbox from "../assets/checkedbox.svg";
+import pointer from "../assets/icons/pointer.svg";
+import checkbox from "../assets/icons/checkbox.svg";
+import checkedbox from "../assets/icons/checkedbox.svg";
 
 export default function CodeProject({
   name,

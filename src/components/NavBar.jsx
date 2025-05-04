@@ -4,17 +4,17 @@ import BGM from "./BGM";
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import border from "../assets/border.svg";
-import home from "../assets/home.svg";
-import homefilled from "../assets/home-filled.svg";
-import about from "../assets/about.svg";
-import aboutfilled from "../assets/about-filled.svg";
-import projects from "../assets/projects.svg";
-import projectsfilled from "../assets/projects-filled.svg";
-import gallery from "../assets/gallery.svg";
-import galleryfilled from "../assets/gallery-filled.svg";
-import resume from "../assets/resume.svg";
-import network from "../assets/online.svg";
-import battery from "../assets/battery.svg";
+import home from "../assets/icons/home.svg";
+import homefilled from "../assets/icons/home-filled.svg";
+import about from "../assets/icons/about.svg";
+import aboutfilled from "../assets/icons/about-filled.svg";
+import projects from "../assets/icons/projects.svg";
+import projectsfilled from "../assets/icons/projects-filled.svg";
+import gallery from "../assets/icons/gallery.svg";
+import galleryfilled from "../assets/icons/gallery-filled.svg";
+import resume from "../assets/icons/resume.svg";
+import network from "../assets/icons/online.svg";
+import battery from "../assets/icons/battery.svg";
 
 export default function NavBar() {
   const location = useLocation();

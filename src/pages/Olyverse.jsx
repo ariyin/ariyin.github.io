@@ -1,19 +1,19 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
-import cheers from "../assets/ti_cheers.webp";
-import racecar from "../assets/ti_racecar.webp";
-import o_1 from "../assets/o_1.png";
-import o_2 from "../assets/o_2.png";
-import o_3 from "../assets/o_3.png";
-import o_4 from "../assets/o_4.png";
-import o_5 from "../assets/o_5.png";
-import o_6 from "../assets/o_6.png";
-import o_7 from "../assets/o_7.png";
-import o_8 from "../assets/o_8.png";
-import o_9 from "../assets/o_9.png";
-import o_10 from "../assets/o_10.png";
-import o_11 from "../assets/o_11.png";
-import o_12 from "../assets/o_12.png";
+import cheers from "../assets/cat/cheers.webp";
+import racecar from "../assets/cat/racecar.webp";
+import o_1 from "../assets/prototypes/o_1.png";
+import o_2 from "../assets/prototypes/o_2.png";
+import o_3 from "../assets/prototypes/o_3.png";
+import o_4 from "../assets/prototypes/o_4.png";
+import o_5 from "../assets/prototypes/o_5.png";
+import o_6 from "../assets/prototypes/o_6.png";
+import o_7 from "../assets/prototypes/o_7.png";
+import o_8 from "../assets/prototypes/o_8.png";
+import o_9 from "../assets/prototypes/o_9.png";
+import o_10 from "../assets/prototypes/o_10.png";
+import o_11 from "../assets/prototypes/o_11.png";
+import o_12 from "../assets/prototypes/o_12.png";
 
 const mobileProtos = [
   { src: o_1, alt: "login" },

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import volumeon from "../assets/volume-on.svg";
-import volumeoff from "../assets/volume-off.svg";
+import volumeon from "../assets/icons/volume-on.svg";
+import volumeoff from "../assets/icons/volume-off.svg";
 import bgm from "../assets/bgm.ogg";
 
 export default function BGM() {

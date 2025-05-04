@@ -18,7 +18,7 @@ VITE_LASTFM_API_KEY=
 ### commands
 
 - to start: `npm run dev`
-- to update gh-pages: `yarn deploy`
+- to update gh-pages: `npm run build`
 
 ## pages
 

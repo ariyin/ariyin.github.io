@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "jenna wang",
   "version": "0.1.0",
   "homepage": "https://ariyin.github.io",
   "private": true,
@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",

@@ -64,8 +64,8 @@
 
   a:link,
   a:visited {
+    @apply text-(--ti-brown);
     text-decoration: none;
-    color: var(--ti-brown);
   }
 
   h1 {
@@ -105,6 +105,8 @@
   }
 }
 
+/* === UTILITIES === */
+
 .underline-highlight {
   @apply relative inline-block;
 }
@@ -114,8 +116,7 @@
 }
 
 .underline-highlight p:after {
-  @apply absolute -bottom-1 -left-[3px] -z-10 h-[2.5px] w-full bg-(--ti-pink) content-[""];
-  transition: 0.3s;
+  @apply absolute -bottom-1 -left-[3px] -z-10 h-[2.5px] w-full bg-(--ti-pink) duration-300 content-[""];
   width: calc(100% + 6px);
 }
 
@@ -134,6 +135,41 @@
 .pnf-description {
   @apply max-xl:hidden;
   max-inline-size: 460px;
+}
+
+/* === NAVIGATION === */
+
+.navigation a:link,
+.navigation a:visited {
+  @apply text-(--ti-brown) no-underline;
+}
+
+.nav-icons {
+  @apply hidden max-xl:inline-block;
+}
+
+.nav-icons:not(:last-child) {
+  @apply max-xl:mr-10;
+}
+
+.underline {
+  @apply relative inline-block w-fit max-xl:hidden;
+}
+
+.underline:after {
+  @apply absolute -bottom-0.5 left-0 h-[2.5px] w-0 bg-(--ti-brown) duration-300 content-[""];
+}
+
+.underline:hover:after {
+  @apply w-full;
+}
+
+.underline.active::after {
+  @apply absolute -bottom-0.5 left-0 h-[2.5px] w-full bg-(--ti-brown) content-[""];
+}
+
+.underline:not(:last-child) {
+  @apply mr-10;
 }
 
 /* === HOME === */

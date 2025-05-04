@@ -47,7 +47,7 @@ export default function CodeProject({
         />
         <h3 className="label">{name}</h3>
       </div>
-      {isHovered && <img src={pointer} className="pointer" />}
+      {isHovered && <img className="pointer" alt="pointer" src={pointer} />}
       <div
         className="image-tag"
         onMouseEnter={() => setIsHovered(true)}

@@ -1,4 +1,3 @@
-import "./NavBar.css";
 import DateTime from "./DateTime";
 import BGM from "./BGM";
 import React, { useState, useEffect } from "react";

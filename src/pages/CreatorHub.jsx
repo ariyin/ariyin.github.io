@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import ProjectNav from "../components/ProjectNav";
 import chat from "../assets/cat/chat.webp";
-import chase from "../assets/cat/chase.webp";
+import run from "../assets/cat/run.webp";
 import c_1 from "../assets/prototypes/c_1.png";
 import c_2 from "../assets/prototypes/c_2.png";
 import c_3 from "../assets/prototypes/c_3.png";
@@ -76,9 +76,9 @@ function CreatorHub() {
             <br />
           </div>
           <img
-            alt="chasing"
-            src={chase}
             className="mt-12 w-72 max-md:mb-12 max-md:w-64"
+            alt="toro and kuro running"
+            src={run}
           />
         </div>
       </div>
@@ -87,15 +87,15 @@ function CreatorHub() {
           <h2>mockups</h2>
           <div className="web-grid" data-aos="fade-in">
             {webProtos.map(({ src, alt }, index) => (
-              <img key={index} className="web-proto" src={src} alt={alt} />
+              <img key={index} className="web-proto" alt={alt} src={src} />
             ))}
           </div>
         </section>
         <div className="project-end">
           <img
+            className="w-64 max-md:mt-12 max-md:w-48"
             alt="toro and kuro chatting"
             src={chat}
-            className="w-64 max-md:mt-12 max-md:w-48"
           />
           <div className="w-lg">
             <h2>next steps</h2>

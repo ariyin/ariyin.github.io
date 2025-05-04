@@ -127,9 +127,9 @@ function Olyverse() {
             <br />
           </div>
           <img
-            alt="kuro cheers"
-            src={cheers}
             className="mt-12 w-48 max-md:mb-12 max-md:w-36"
+            alt="kuro cheering"
+            src={cheers}
           />
         </div>
       </div>
@@ -139,15 +139,15 @@ function Olyverse() {
           <p>see prototype for more screens.</p>
           <div className="mobile-grid" data-aos="fade-in">
             {mobileProtos.map(({ src, alt }, index) => (
-              <img key={index} className="mobile-proto" src={src} alt={alt} />
+              <img key={index} className="mobile-proto" alt={alt} src={src} />
             ))}
           </div>
         </section>
         <div className="project-end">
           <img
+            className="mt-24 h-40"
             alt="toro and kuro on racecars"
             src={racecar}
-            className="mt-24 h-40"
           />
           <div className="w-lg">
             <h2>next steps</h2>

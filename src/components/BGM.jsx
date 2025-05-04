@@ -22,11 +22,11 @@ export default function BGM() {
 
   return (
     <img
-      onClick={toggleAudio}
-      alt={playing ? "volume on" : "volume off"}
-      src={playing ? volumeon : volumeoff}
       className="icon cursor-pointer"
       style={{ pointerEvents: "visible" }}
+      alt={playing ? "volume on" : "volume off"}
+      src={playing ? volumeon : volumeoff}
+      onClick={toggleAudio}
     />
   );
 }

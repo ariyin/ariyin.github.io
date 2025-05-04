@@ -79,10 +79,11 @@ function About() {
           <div className="flex max-w-[300px] flex-col items-center">
             <div className="bubble">
               <img
-                src={bubble}
                 className="max-w-none drop-shadow-(--default)"
                 width={350}
                 draggable="false"
+                alt="speech bubble"
+                src={bubble}
               />
               <div className="absolute top-6 left-5 flex max-w-[310px] flex-wrap">
                 <LastFmArtist
@@ -92,10 +93,10 @@ function About() {
               </div>
             </div>
             <img
-              alt="toro reading newspaper"
-              src={newspaper}
-              draggable="false"
               className="z-10 mx-24 w-64 max-w-full max-xl:mb-24"
+              draggable="false"
+              alt="toro reading the newspaper"
+              src={newspaper}
             />
           </div>
         </div>

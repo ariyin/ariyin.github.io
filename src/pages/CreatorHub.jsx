@@ -7,6 +7,13 @@ import c_2 from "../assets/c_2.png";
 import c_3 from "../assets/c_3.png";
 import c_4 from "../assets/c_4.png";
 
+const webProtos = [
+  { src: c_1, alt: "home" },
+  { src: c_2, alt: "sign up" },
+  { src: c_3, alt: "profile" },
+  { src: c_4, alt: "analytics" },
+];
+
 function CreatorHub() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -79,10 +86,9 @@ function CreatorHub() {
         <section className="beige-bg">
           <h2>mockups</h2>
           <div className="web-grid" data-aos="fade-in">
-            <img className="web-proto" alt="home" src={c_1} />
-            <img className="web-proto" alt="sign up" src={c_2} />
-            <img className="web-proto" alt="profile" src={c_3} />
-            <img className="web-proto" alt="analytics" src={c_4} />
+            {webProtos.map(({ src, alt }, index) => (
+              <img key={index} className="web-proto" src={src} alt={alt} />
+            ))}
           </div>
         </section>
         <div className="project-end">

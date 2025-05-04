@@ -60,7 +60,7 @@ export default function NavBar() {
   return (
     <>
       <img
-        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border)) select-none max-2xl:h-[140px] max-2xl:w-auto"
+        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border) select-none max-2xl:h-[140px] max-2xl:w-auto"
         alt="top border"
         src={border}
       />
@@ -73,7 +73,7 @@ export default function NavBar() {
           </span>
         </span>
         {/* === WEB NAVBAR === */}
-        <div className="absolute left-1/2 -translate-x-1/2">
+        <div className="absolute left-1/2 -translate-x-1/2 max-xl:pt-8">
           <NavLink to="/" className="underline">
             home
           </NavLink>

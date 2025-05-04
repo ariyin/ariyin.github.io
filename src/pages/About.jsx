@@ -27,8 +27,8 @@ function About() {
             <p className="max-w-xl">
               i'm a third year cs major at ucla, interested in full-stack
               (mostly frontend) and ui/ux! in my spare time, i enjoy playing
-              video games, reading manhwas and novels, and exploring different
-              albums.
+              overwatch, reading manhwas and novels, listening to new songs, and
+              visiting new cafes.
             </p>
             <div className="icon-text max-w-xl">
               <span className="gap-3">

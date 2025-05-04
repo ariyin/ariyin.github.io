@@ -90,14 +90,14 @@
   }
 
   button {
-    @apply font-fakt cursor-pointer rounded-lg border-2 border-solid border-(--ti-brown) bg-(--ti-beige) px-5 py-2 text-lg font-normal text-(--ti-brown);
+    @apply font-fakt cursor-pointer rounded-lg border-2 border-solid border-(--ti-brown) bg-(--ti-brown) px-5 py-2 text-lg font-normal text-white;
     transition:
       background-color 0.3s ease,
       color 0.3s ease;
   }
 
   button:hover {
-    @apply bg-(--ti-brown) text-white;
+    @apply bg-(--ti-beige) text-(--ti-brown);
   }
 
   .icon-text span {

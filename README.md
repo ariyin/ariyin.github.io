@@ -1,6 +1,6 @@
 # jenna wang's portfolio
 
-this portfolio is powered by [vite](https://vitejs.dev/), deployed via [github pages](https://pages.github.com/), and utilizes html, css, javascript, and react.
+this portfolio is powered by [vite](https://vitejs.dev/), deployed via [github pages](https://pages.github.com/), and utilizes html, css, tailwind css, javascript, and react.
 
 ## get started
 
@@ -64,6 +64,7 @@ thank you to all the kind people who developed these packages! this website coul
 - `aos` for scroll animations
 - `masonry-layout` and `imagesloaded` for the gallery
 - `loadable-image` for lazy loading images
+- `css-doodle` for helping me make my spiral background
 - `prettier` for making the code prettier
 
 ### tools

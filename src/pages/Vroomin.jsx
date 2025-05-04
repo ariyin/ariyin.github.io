@@ -11,6 +11,20 @@ import v_6 from "../assets/v_6.png";
 import v_7 from "../assets/v_7.png";
 import v_8 from "../assets/v_8.png";
 
+const mobileProtos = [
+  { src: v_1, alt: "home" },
+  { src: v_2, alt: "choose a ride" },
+  { src: v_3, alt: "ride information" },
+  { src: v_4, alt: "ride requested" },
+];
+
+const webProtos = [
+  { src: v_5, alt: "home" },
+  { src: v_6, alt: "choose a ride" },
+  { src: v_7, alt: "ride information" },
+  { src: v_8, alt: "ride requested" },
+];
+
 function Vroomin() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -96,16 +110,14 @@ function Vroomin() {
           <h2>mockups</h2>
           <p>see prototype for more screens.</p>
           <div className="mobile-grid" data-aos="fade-in">
-            <img className="mobile-proto" alt="home" src={v_1} />
-            <img className="mobile-proto" alt="choose a ride" src={v_2} />
-            <img className="mobile-proto" alt="ride information" src={v_3} />
-            <img className="mobile-proto" alt="ride requested" src={v_4} />
+            {mobileProtos.map(({ src, alt }, index) => (
+              <img key={index} className="mobile-proto" src={src} alt={alt} />
+            ))}
           </div>
           <div className="web-grid" data-aos="fade-in">
-            <img className="web-proto" alt="home" src={v_5} />
-            <img className="web-proto" alt="choose a ride" src={v_6} />
-            <img className="web-proto" alt="ride information" src={v_7} />
-            <img className="web-proto" alt="ride requested" src={v_8} />
+            {webProtos.map(({ src, alt }, index) => (
+              <img key={index} className="web-proto" src={src} alt={alt} />
+            ))}
           </div>
         </section>
         <div className="project-end">

@@ -15,6 +15,21 @@ import o_10 from "../assets/o_10.png";
 import o_11 from "../assets/o_11.png";
 import o_12 from "../assets/o_12.png";
 
+const mobileProtos = [
+  { src: o_1, alt: "login" },
+  { src: o_2, alt: "follow athletes" },
+  { src: o_3, alt: "home" },
+  { src: o_4, alt: "explore" },
+  { src: o_5, alt: "team" },
+  { src: o_6, alt: "shop" },
+  { src: o_7, alt: "lottery" },
+  { src: o_8, alt: "stream" },
+  { src: o_9, alt: "watch party" },
+  { src: o_10, alt: "fantasy olympics" },
+  { src: o_11, alt: "leaderboard" },
+  { src: o_12, alt: "results" },
+];
+
 function Olyverse() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -123,23 +138,14 @@ function Olyverse() {
           <h2>mockups</h2>
           <p>see prototype for more screens.</p>
           <div className="mobile-grid" data-aos="fade-in">
-            <img className="mobile-proto" alt="login" src={o_1} />
-            <img className="mobile-proto" alt="follow athletes" src={o_2} />
-            <img className="mobile-proto" alt="home" src={o_3} />
-            <img className="mobile-proto" alt="explore" src={o_4} />
-            <img className="mobile-proto" alt="team" src={o_5} />
-            <img className="mobile-proto" alt="shop" src={o_6} />
-            <img className="mobile-proto" alt="lottery" src={o_7} />
-            <img className="mobile-proto" alt="stream" src={o_8} />
-            <img className="mobile-proto" alt="watch party" src={o_9} />
-            <img className="mobile-proto" alt="fantasy olympics" src={o_10} />
-            <img className="mobile-proto" alt="leaderboard" src={o_11} />
-            <img className="mobile-proto" alt="results" src={o_12} />
+            {mobileProtos.map(({ src, alt }, index) => (
+              <img key={index} className="mobile-proto" src={src} alt={alt} />
+            ))}
           </div>
         </section>
         <div className="project-end">
           <img
-            alt="toro and kuro racecar"
+            alt="toro and kuro on racecars"
             src={racecar}
             className="mt-24 h-40"
           />

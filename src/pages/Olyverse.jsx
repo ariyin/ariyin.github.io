@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Zoom from "react-medium-image-zoom";
+import "../Zoom.css";
 import ProjectNav from "../components/ProjectNav";
 import cheers from "../assets/cat/cheers.webp";
 import racecar from "../assets/cat/racecar.webp";
@@ -139,7 +141,9 @@ function Olyverse() {
           <p>see prototype for more screens.</p>
           <div className="mobile-grid" data-aos="fade-in">
             {mobileProtos.map(({ src, alt }, index) => (
-              <img key={index} className="mobile-proto" alt={alt} src={src} />
+              <Zoom>
+                <img key={index} className="mobile-proto" alt={alt} src={src} />
+              </Zoom>
             ))}
           </div>
         </section>

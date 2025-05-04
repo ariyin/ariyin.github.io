@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Zoom from "react-medium-image-zoom";
+import "../Zoom.css";
 import ProjectNav from "../components/ProjectNav";
 import chat from "../assets/cat/chat.webp";
 import run from "../assets/cat/run.webp";
@@ -87,7 +89,9 @@ function CreatorHub() {
           <h2>mockups</h2>
           <div className="web-grid" data-aos="fade-in">
             {webProtos.map(({ src, alt }, index) => (
-              <img key={index} className="web-proto" alt={alt} src={src} />
+              <Zoom>
+                <img key={index} className="web-proto" alt={alt} src={src} />
+              </Zoom>
             ))}
           </div>
         </section>

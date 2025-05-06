@@ -85,6 +85,9 @@ export default function NavBar() {
           <NavLink to="/gallery" className="underline">
             gallery
           </NavLink>
+          <NavLink to="/cafe" className="underline">
+            cafe
+          </NavLink>
           <a
             href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"
             target="_blank"

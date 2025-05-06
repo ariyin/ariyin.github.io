@@ -10,9 +10,11 @@ install the necessary packages: `npm i`
 
 create a `.env` file and fill out the following:
 
-```
+```env
 VITE_LASTFM_USERNAME=
 VITE_LASTFM_API_KEY=
+VITE_GOOGLE_API_KEY=
+VITE_GOOGLE_SHEET_ID=
 ```
 
 ### commands
@@ -37,6 +39,10 @@ for coding projects, feel free to looked at the repos on my github. for ui proje
 ### gallery
 
 for the art i've created over the years (spoiler: i do not create that many).
+
+### cafe
+
+for all the drinks i've tried. if you're looking for cafe recommendations check it out!
 
 ### resume
 

@@ -17,6 +17,10 @@
   @apply bg-(--ti-brown) text-(--ti-bg);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 [data-aos="light-fade-up"] {
   transform: translateY(36px);
   opacity: 0;
@@ -200,7 +204,7 @@
 }
 
 .nav-icons:not(:last-child) {
-  @apply max-xl:mr-10;
+  @apply max-xl:mr-7;
 }
 
 .underline {

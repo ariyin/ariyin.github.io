@@ -10,7 +10,7 @@ function formatDate(rawDate) {
   const date = new Date(year, month - 1, day);
   return `${date
     .toLocaleString("en-US", { month: "short" })
-    .toLowerCase()}. ${year}`;
+    .toLowerCase()}. '${String(year).slice(-2)}`;
 }
 
 function Cafe() {
@@ -68,7 +68,7 @@ function Cafe() {
           </Dialog>
         ))}
       </div>
-      <div className="grid grid-cols-[auto] gap-14 lg:hidden">
+      <div className="grid grid-cols-[auto] lg:hidden">
         {entries.map((drink, index) => (
           <Drink key={index} {...drink} />
         ))}

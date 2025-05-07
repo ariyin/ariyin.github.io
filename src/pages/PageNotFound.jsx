@@ -21,7 +21,7 @@ function PageNotFound() {
               worry, let's head back together!
             </p>
             <Link to="/">
-              <button className="my-5">back to home</button>
+              <button className="ti-button my-5">back to home</button>
             </Link>
           </div>
         </div>

@@ -45,21 +45,21 @@ export default function UIProject({
         />
         <h3 className="label">{name}</h3>
       </div>
-
       {isHovered && <img className="pointer" alt="pointer" src={pointer} />}
-      <div className="image-tag">
-        <Link to={link} className="flex justify-center">
+      <div
+        className="image-tag"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={handleCheckboxClick}
+      >
+        <Link to={link}>
           <AsyncImage
             src={isChecked ? image : bwimage}
             className="project-image aspect-17/10 h-auto w-full"
             loader={<div className="bg-(--ti-beige)" />}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onClick={handleCheckboxClick}
           />
         </Link>
       </div>
-
       <p className="width-scale">{description}</p>
     </div>
   );

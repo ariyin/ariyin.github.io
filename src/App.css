@@ -1,10 +1,13 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 :root {
-  --ti-brown: hsl(29, 97%, 15%);
+  --ti-brown: #4b2501;
   --ti-bg: #f7f6e8;
   --ti-beige: #e7e7d7;
   --ti-pink: #efbab0;
+  --ti-orange: #fbc99a;
+  --ti-light-orange: #f7dda8;
   --ti-yellow: #f9f8cc;
   --border: 0px 1px 6px rgba(0, 0, 0, 0.2);
   --default: 0px 2px 1.5px rgba(0, 0, 0, 0.2);
@@ -73,7 +76,7 @@
   }
 
   h1:after {
-    @apply absolute bottom-1.5 -left-[3px] -z-10 h-4 w-full bg-(--ti-beige) content-[""];
+    @apply absolute bottom-1.5 -left-[3px] -z-10 h-4 bg-(--ti-beige) content-[""];
     width: calc(100% + 6px);
   }
 
@@ -90,13 +93,17 @@
   }
 
   button {
+    cursor: pointer;
+  }
+
+  .ti-button {
     @apply font-fakt cursor-pointer rounded-lg border-2 border-solid border-(--ti-brown) bg-(--ti-brown) px-5 py-2 text-lg font-normal text-white;
     transition:
       background-color 0.3s ease,
       color 0.3s ease;
   }
 
-  button:hover {
+  .ti-button:hover {
     @apply bg-(--ti-beige) text-(--ti-brown);
   }
 
@@ -116,7 +123,7 @@
 }
 
 .underline-highlight p:after {
-  @apply absolute -bottom-1 -left-[3px] -z-10 h-[2.5px] w-full bg-(--ti-pink) duration-300 content-[""];
+  @apply absolute -bottom-1 -left-[3px] -z-10 h-[2.5px] bg-(--ti-pink) duration-300 content-[""];
   width: calc(100% + 6px);
 }
 
@@ -135,6 +142,50 @@
 .pnf-description {
   @apply max-xl:hidden;
   max-inline-size: 460px;
+}
+
+.MuiChip-label {
+  @apply font-fakt text-base font-semibold text-(--ti-bg);
+}
+
+.highlight-1:after,
+.highlight-2:after,
+.highlight-3:after {
+  @apply absolute bottom-1.5 -left-[3px] -z-10 h-2.5 bg-(--ti-light-orange) content-[""];
+  width: calc(100% + 6px);
+}
+
+.highlight-4:after {
+  @apply absolute bottom-1.5 -left-[3px] -z-10 h-2.5 bg-(--ti-orange) content-[""];
+  width: calc(100% + 6px);
+}
+
+.highlight-5:after {
+  @apply absolute bottom-1.5 -left-[3px] -z-10 h-2.5 bg-(--ti-pink) content-[""];
+  width: calc(100% + 6px);
+}
+
+.ni-bg-1,
+.ni-bg-2,
+.ni-bg-3 {
+  @apply bg-(--ti-light-orange);
+}
+
+.ni-bg-4 {
+  @apply bg-(--ti-orange);
+}
+
+.ni-bg-5 {
+  @apply bg-(--ti-pink);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* === NAVIGATION === */
@@ -343,10 +394,6 @@
   @apply my-5 border-10 border-solid border-white drop-shadow-(--default);
 }
 
-.MuiChip-label {
-  @apply font-fakt text-base font-semibold text-(--ti-bg);
-}
-
 .width-scale {
   @apply max-w-[340px] text-center max-md:max-w-[310px];
 }
@@ -415,5 +462,3 @@
     width: calc(100vw - 100px);
   }
 }
-
-/* === CAFE === */

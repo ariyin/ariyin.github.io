@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from "react";
 import useTitle from "../components/useTitle";
-import Masonry from "masonry-layout";
 import Drink from "../components/Drink";
-import { Chip } from "@mui/material";
+import DrinkDetail from "../components/DrinkDetail";
+import { Dialog, DialogContent, DialogTrigger } from "../components/ui/dialog";
+import noimage from "../assets/noimage.png";
+
+function formatDate(rawDate) {
+  const [month, day, year] = rawDate.split("/").map(Number);
+  const date = new Date(year, month - 1, day);
+  return `${date
+    .toLocaleString("en-US", { month: "short" })
+    .toLowerCase()}. ${year}`;
+}
 
 function Cafe() {
   const [entries, setEntries] = useState([]);
@@ -17,69 +26,22 @@ function Cafe() {
         );
         const json = await res.json();
         const rows = json.values || [];
-        const map = {}; // to process into proper format
 
-        const data = rows.map((row) => ({
-          date: row[0],
-          cafe: row[1],
-          location: row[2],
-          drink: row[3],
-          price: row[4],
-          pricePerOz: row[6],
-          rating: row[7],
-          review: row[8],
-          image: row[9],
-        }));
+        const data = rows
+          .map((row) => ({
+            date: formatDate(row[0]),
+            cafe: row[1],
+            location: row[2],
+            drink: row[3],
+            price: row[4],
+            rating: row[7],
+            review: row[8],
+            image: row[9] || noimage,
+          }))
+          .reverse(); // temporary
 
-        data.forEach(
-          ({
-            cafe,
-            location,
-            drink,
-            price,
-            pricePerOz,
-            date,
-            review,
-            rating,
-            image,
-          }) => {
-            // create new cafe
-            if (!map[cafe]) {
-              map[cafe] = {
-                locations: new Set(),
-                drinks: {},
-                images: new Set(),
-              };
-            }
-
-            // add location
-            map[cafe].locations.add(location);
-
-            // add image
-            if (image) {
-              map[cafe].images.add(image);
-            }
-
-            // add drink
-            if (!map[cafe].drinks[drink]) {
-              map[cafe].drinks[drink] = {
-                price,
-                pricePerOz,
-                date,
-                review,
-                rating,
-              };
-            }
-          },
-        );
-
-        // convert sets to arrays
-        for (const cafe in map) {
-          map[cafe].locations = Array.from(map[cafe].locations);
-          map[cafe].images = Array.from(map[cafe].images);
-        }
-
-        setEntries(map);
+        setEntries(data);
+        console.log(data);
       } catch (error) {
         console.error("Error fetching data from Google Sheets:", error);
       }
@@ -88,59 +50,27 @@ function Cafe() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    const grid = document.querySelector(".gallery");
-    const masonry = new Masonry(grid, {
-      itemSelector: ".gallery-image",
-      gutter: 20,
-      fitWidth: true,
-    });
-  }, [entries]);
-
   return (
     <div className="relative px-24 pt-36 pb-24 max-md:px-12">
       <div className="mb-14">
         <h1>cafe</h1>
-        <p>an excuse to buy more drinks</p>
+        <p>all the drinks and cafes i've tried and my review on them :3</p>
       </div>
-      <div className="gallery">
-        {Object.entries(entries).map(([cafeName, cafeData]) => (
-          <div
-            key={cafeName}
-            className="gallery-image my-4 flex w-sm flex-col gap-5 bg-white p-8 drop-shadow-[var(--default)]"
-          >
-            <div>
-              <h2 className="m-0 mb-2">{cafeName}</h2>
-              {/* === LOCATIONS === */}
-              {cafeData.locations.map((location, index) => (
-                <Chip
-                  key={index}
-                  label={location}
-                  style={{
-                    backgroundColor: "var(--ti-brown)",
-                    borderRadius: "10px",
-                    width: "fit-content",
-                  }}
-                />
-              ))}
-            </div>
-            {/* === DRINK COMPONENT === */}
-            <div className="flex flex-wrap gap-8">
-              {Object.entries(cafeData.drinks).map(([drinkName, drinkInfo]) => (
-                <Drink
-                  key={`${cafeName}-${drinkName}`}
-                  drinkName={drinkName}
-                  info={drinkInfo}
-                />
-              ))}
-            </div>
-            {/* === IMAGES === */}
-            <div className="flex flex-col gap-3">
-              {cafeData.images.map((image, index) => (
-                <img key={index} src={image} />
-              ))}
-            </div>
-          </div>
+      <div className="grid grid-cols-[repeat(3,_1fr)] gap-14 max-xl:grid-cols-[repeat(2,_1fr)] max-lg:hidden">
+        {entries.map((drink, index) => (
+          <Dialog>
+            <DialogTrigger>
+              <Drink key={index} {...drink} />
+            </DialogTrigger>
+            <DialogContent>
+              <DrinkDetail key={index} {...drink} />
+            </DialogContent>
+          </Dialog>
+        ))}
+      </div>
+      <div className="grid grid-cols-[auto] gap-14 lg:hidden">
+        {entries.map((drink, index) => (
+          <Drink key={index} {...drink} />
         ))}
       </div>
     </div>

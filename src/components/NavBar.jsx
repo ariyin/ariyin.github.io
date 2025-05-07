@@ -11,6 +11,8 @@ import projects from "../assets/icons/projects.svg";
 import projectsfilled from "../assets/icons/projects-filled.svg";
 import gallery from "../assets/icons/gallery.svg";
 import galleryfilled from "../assets/icons/gallery-filled.svg";
+import cafe from "../assets/icons/cafe.svg";
+import cafefilled from "../assets/icons/cafefilled.svg";
 import resume from "../assets/icons/resume.svg";
 import network from "../assets/icons/online.svg";
 import battery from "../assets/icons/battery.svg";
@@ -21,6 +23,7 @@ export default function NavBar() {
   const [aboutIcon, setAboutIcon] = useState(about);
   const [projectsIcon, setProjectsIcon] = useState(projects);
   const [galleryIcon, setGalleryIcon] = useState(gallery);
+  const [cafeIcon, setCafeIcon] = useState(cafe);
 
   useEffect(() => {
     switch (location.pathname) {
@@ -29,30 +32,42 @@ export default function NavBar() {
         setAboutIcon(about);
         setProjectsIcon(projects);
         setGalleryIcon(gallery);
+        setCafeIcon(cafe);
         break;
       case "/about":
         setHomeIcon(home);
         setAboutIcon(aboutfilled);
         setProjectsIcon(projects);
         setGalleryIcon(gallery);
+        setCafeIcon(cafe);
         break;
       case "/projects":
         setHomeIcon(home);
         setAboutIcon(about);
         setProjectsIcon(projectsfilled);
         setGalleryIcon(gallery);
+        setCafeIcon(cafe);
         break;
       case "/gallery":
         setHomeIcon(home);
         setAboutIcon(about);
         setProjectsIcon(projects);
         setGalleryIcon(galleryfilled);
+        setCafeIcon(cafe);
+        break;
+      case "/cafe":
+        setHomeIcon(home);
+        setAboutIcon(about);
+        setProjectsIcon(projects);
+        setGalleryIcon(gallery);
+        setCafeIcon(cafefilled);
         break;
       default:
         setHomeIcon(home);
         setAboutIcon(about);
         setProjectsIcon(projects);
         setGalleryIcon(gallery);
+        setCafeIcon(cafe);
     }
   }, [location.pathname]);
 
@@ -110,6 +125,9 @@ export default function NavBar() {
           </NavLink>
           <NavLink to="/gallery" className="nav-icons">
             <img className="icon" alt="gallery icon" src={galleryIcon} />
+          </NavLink>
+          <NavLink to="/cafe" className="nav-icons">
+            <img className="icon" alt="cafe icon" src={cafeIcon} />
           </NavLink>
           <a
             href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"

@@ -52,18 +52,13 @@ export default function CodeProject({
         className="image-tag"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={handleCheckboxClick}
       >
-        <Link
-          to={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex justify-center"
-        >
+        <Link to={link} target="_blank" rel="noopener noreferrer">
           <AsyncImage
             src={isChecked ? image : bwimage}
             className="project-image aspect-17/10 h-auto w-full"
             loader={<div className="bg-(--ti-beige)" />}
-            onClick={handleCheckboxClick}
           />
         </Link>
         <div className="absolute bottom-10 left-5 flex gap-2.5">

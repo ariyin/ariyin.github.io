@@ -51,7 +51,7 @@ function Cafe() {
   }, []);
 
   return (
-    <div className="relative px-24 pt-36 pb-24 max-md:px-12">
+    <div className="relative w-screen px-24 pt-36 pb-24 max-md:px-12">
       <div className="mb-14">
         <h1>cafe</h1>
         <p>all the drinks and cafes i've tried and my review on them :3</p>

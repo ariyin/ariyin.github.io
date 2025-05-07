@@ -133,7 +133,7 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="relative px-24 pt-36 pb-24 max-md:px-12">
+    <div className="relative px-24 pt-36 pb-24 max-md:px-8">
       <div className="mb-14">
         <h1>gallery</h1>
         <p>a collection of my works over the years!</p>

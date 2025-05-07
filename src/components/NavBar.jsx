@@ -78,7 +78,7 @@ export default function NavBar() {
         alt="top border"
         src={border}
       />
-      <div className="navigation font-fakt fixed z-20 flex w-full items-center justify-between pt-6 text-center font-semibold text-(--ti-brown) max-xl:justify-center">
+      <div className="navigation font-fakt fixed z-20 flex w-full items-center justify-between pt-5 text-center font-semibold text-(--ti-brown) max-xl:justify-center">
         {/* === LEFT ITEMS === */}
         <span className="flex items-center gap-5 pl-12 max-xl:hidden">
           <img className="icon" alt="network icon" src={network} />

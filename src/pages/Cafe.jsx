@@ -10,7 +10,7 @@ function formatDate(rawDate) {
   const date = new Date(year, month - 1, day);
   return `${date
     .toLocaleString("en-US", { month: "short" })
-    .toLowerCase()}. '${String(year).slice(-2)}`;
+    .toLowerCase()}. ${year}`;
 }
 
 function Cafe() {
@@ -51,7 +51,7 @@ function Cafe() {
   }, []);
 
   return (
-    <div className="relative w-screen px-24 pt-36 pb-24 max-md:px-12">
+    <div className="relative w-screen px-24 pt-36 pb-24 max-md:px-8">
       <div className="mb-14">
         <h1>cafe</h1>
         <p>all the drinks and cafes i've tried and my review on them :3</p>
@@ -68,7 +68,7 @@ function Cafe() {
           </Dialog>
         ))}
       </div>
-      <div className="grid grid-cols-[auto] lg:hidden">
+      <div className="grid grid-cols-[auto] gap-14 lg:hidden">
         {entries.map((drink, index) => (
           <Drink key={index} {...drink} />
         ))}

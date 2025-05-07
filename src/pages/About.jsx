@@ -20,7 +20,7 @@ function About() {
         <p className="text-[14vw] font-semibold text-(--ti-beige)">トロ</p>
       </div>
       <div className="flex h-screen flex-wrap items-center justify-between max-md:justify-center">
-        <div className="relative px-24 pt-36 pb-24 max-md:px-12">
+        <div className="relative px-24 pt-36 pb-24 max-md:px-8">
           <h1>about me</h1>
           <div className="my-2 flex flex-col gap-2">
             <h3>hello!</h3>

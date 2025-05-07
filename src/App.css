@@ -409,7 +409,7 @@
 /* === PROTOTYPE === */
 
 .project-container {
-  @apply flex flex-col gap-12 px-24 pt-36 pb-24 max-md:px-12;
+  @apply flex flex-col gap-12 px-24 pt-36 pb-24 max-md:px-8;
 }
 
 .project-content {

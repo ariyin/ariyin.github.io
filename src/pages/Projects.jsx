@@ -130,7 +130,7 @@ function Projects() {
 
   return (
     <>
-      <div className="px-24 pt-36 pb-6 max-md:px-12 max-md:pt-36 max-md:pb-20">
+      <div className="px-24 pt-36 pb-6 max-md:px-8 max-md:pt-36 max-md:pb-20">
         <div className="flex items-end gap-5">
           <h1>projects</h1>
           <img

@@ -74,14 +74,14 @@ export default function NavBar() {
   return (
     <>
       <img
-        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border) select-none max-xl:h-36 max-xl:w-auto"
-        alt="top border"
         src={border}
+        className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border) select-none max-xl:h-36 max-xl:w-auto"
+        alt=""
       />
       <div className="navigation font-fakt fixed z-20 flex w-full items-center justify-between pt-5 text-center font-semibold text-(--ti-brown) max-xl:justify-center">
         {/* === LEFT ITEMS === */}
         <span className="flex items-center gap-5 pl-12 max-xl:hidden">
-          <img className="icon" alt="network icon" src={network} />
+          <img src={network} className="icon" alt="" />
           <span className="h-7 w-36 rounded-lg bg-(--ti-brown)">
             <p className="text-white">Internet</p>
           </span>
@@ -115,19 +115,27 @@ export default function NavBar() {
         {/* === MOBILE NAVBAR === */}
         <div>
           <NavLink to="/" className="nav-icons">
-            <img className="icon" alt="home icon" src={homeIcon} />
+            <img src={homeIcon} className="icon" alt="icon to home page" />
           </NavLink>
           <NavLink to="/about" className="nav-icons">
-            <img className="icon" alt="about icon" src={aboutIcon} />
+            <img src={aboutIcon} className="icon" alt="icon to about page" />
           </NavLink>
           <NavLink to="/projects" className="nav-icons">
-            <img className="icon" alt="projects icon" src={projectsIcon} />
+            <img
+              src={projectsIcon}
+              className="icon"
+              alt="icon to projects page"
+            />
           </NavLink>
           <NavLink to="/gallery" className="nav-icons">
-            <img className="icon" alt="gallery icon" src={galleryIcon} />
+            <img
+              src={galleryIcon}
+              className="icon"
+              alt="icon to gallery page"
+            />
           </NavLink>
           <NavLink to="/cafe" className="nav-icons">
-            <img className="icon" alt="cafe icon" src={cafeIcon} />
+            <img src={cafeIcon} className="icon" alt="icon to cafe page" />
           </NavLink>
           <a
             href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"
@@ -135,14 +143,14 @@ export default function NavBar() {
             rel="noopener noreferrer"
             className="nav-icons"
           >
-            <img className="icon" alt="resume icon" src={resume} />
+            <img src={resume} className="icon" alt="icon to resume" />
           </a>
         </div>
         {/* === RIGHT ITEMS === */}
         <span className="flex items-center gap-5 pr-12 [word-spacing:0px] max-xl:hidden">
           <DateTime />
           <BGM />
-          <img className="icon" alt="battery icon" src={battery} />
+          <img src={battery} className="icon" alt="" />
         </span>
       </div>
     </>

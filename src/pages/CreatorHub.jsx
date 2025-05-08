@@ -78,9 +78,9 @@ function CreatorHub() {
             <br />
           </div>
           <img
-            className="mt-12 w-72 max-md:mb-12 max-md:w-64"
-            alt="toro and kuro running"
             src={run}
+            className="mt-12 w-72 max-md:mb-12 max-md:w-64"
+            alt=""
           />
         </div>
       </div>
@@ -90,17 +90,13 @@ function CreatorHub() {
           <div className="web-grid" data-aos="fade-in">
             {webProtos.map(({ src, alt }, index) => (
               <Zoom>
-                <img key={index} className="web-proto" alt={alt} src={src} />
+                <img src={src} key={index} className="web-proto" alt={alt} />
               </Zoom>
             ))}
           </div>
         </section>
         <div className="project-end">
-          <img
-            className="w-64 max-md:mt-12 max-md:w-48"
-            alt="toro and kuro chatting"
-            src={chat}
-          />
+          <img src={chat} className="w-64 max-md:mt-12 max-md:w-48" alt="" />
           <div className="w-lg">
             <h2>next steps</h2>
             <p data-aos="light-fade-up">

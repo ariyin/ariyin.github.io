@@ -133,11 +133,7 @@ function Projects() {
       <div className="px-24 pt-36 pb-6 max-md:px-8 max-md:pt-36 max-md:pb-20">
         <div className="flex items-end gap-5">
           <h1>projects</h1>
-          <img
-            className="h-28 max-md:hidden"
-            alt="toro drawing on the ground"
-            src={draw}
-          />
+          <img src={draw} className="h-28 max-md:hidden" alt="" />
         </div>
         <div className="project-flex">
           {codeProjects.map((projects) => (
@@ -158,7 +154,7 @@ function Projects() {
       </div>
       <section className="px-24 max-md:px-12">
         <div className="flex items-end justify-between">
-          <img className="h-48 max-md:hidden" alt="toro watching tv" src={tv} />
+          <img src={tv} className="h-48 max-md:hidden" alt="" />
           <h1 style={{ maxInlineSize: "500px", wordWrap: "break-word" }}>
             proto&shy;types
           </h1>

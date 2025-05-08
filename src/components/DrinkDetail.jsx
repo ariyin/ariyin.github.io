@@ -17,12 +17,18 @@ export default function DrinkDetail({
       <img
         src={image}
         className={`ni-bg-${rating} h-full basis-1/2 object-cover`}
+        alt={`${drink} image`}
       />
       <div className="flex basis-1/2 flex-col gap-2.5 bg-white p-10">
         <h2 className="m-0 text-center text-xl">{drink}</h2>
         <div className="mt-2 flex gap-3">
           {[...Array(Number(rating))].map((_, i) => (
-            <img src={torohead} key={i} className="w-4" />
+            <img
+              src={torohead}
+              key={i}
+              className="w-4"
+              alt={`${rating}/5 rating`}
+            />
           ))}
         </div>
         <h3>{cafe}</h3>

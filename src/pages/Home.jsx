@@ -39,9 +39,9 @@ function Home() {
         </div>
       </div>
       <img
-        className="pointer-events-none fixed bottom-0 w-screen max-w-none drop-shadow-(--border) select-none max-xl:h-36 max-xl:w-auto"
-        alt="bottom border"
         src={border}
+        className="pointer-events-none fixed bottom-0 w-screen max-w-none drop-shadow-(--border) select-none max-xl:h-36 max-xl:w-auto"
+        alt=""
       />
     </>
   );

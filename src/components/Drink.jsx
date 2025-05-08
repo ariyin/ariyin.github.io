@@ -23,9 +23,9 @@ export default function Drink({
     >
       {isHovered && (
         <img
-          className="absolute -top-7 -right-7 z-10 w-12 drop-shadow-(--default)"
-          alt="pointer"
           src={pointer}
+          className="absolute -top-7 -right-7 z-10 w-12 drop-shadow-(--default)"
+          alt=""
         />
       )}
       <div className="flex flex-col gap-2 p-5">
@@ -39,11 +39,17 @@ export default function Drink({
         <img
           src={image}
           className={`ni-bg-${rating} mb-4 h-56 rounded-xl object-cover`}
+          alt={`${drink} image`}
         />
         <div className="flex h-max flex-col gap-2.5">
           <div className="flex gap-3">
             {[...Array(Number(rating))].map((_, i) => (
-              <img src={torohead} key={i} className="w-4" />
+              <img
+                src={torohead}
+                key={i}
+                className="w-4"
+                alt={`${rating}/5 rating`}
+              />
             ))}
           </div>
           <h3>{cafe}</h3>

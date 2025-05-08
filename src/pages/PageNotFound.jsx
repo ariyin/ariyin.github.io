@@ -11,7 +11,7 @@ function PageNotFound() {
       <SpiralBackground />
       <div className="h-screen w-screen px-24 pt-36 pb-24">
         <div className="flex h-full w-full flex-wrap content-center justify-center gap-20 max-lg:gap-10">
-          <img className="z-10 h-64 max-lg:h-52" alt="toro lost" src={lost} />
+          <img src={lost} className="z-10 h-64 max-lg:h-52" alt="" />
           <div className="z-10 flex flex-col flex-wrap justify-center">
             <h1>page not found</h1>
             <p className="pnf-description">

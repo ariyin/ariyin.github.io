@@ -32,7 +32,7 @@ function About() {
             </p>
             <div className="icon-text max-w-xl">
               <span className="gap-3">
-                <img className="icon-shadow" alt="music icon" src={music} />
+                <img src={music} className="icon-shadow" alt="" />
                 <h3 className="flex flex-wrap">
                   last played: &nbsp;
                   <LastFmSong
@@ -46,7 +46,7 @@ function About() {
           <h1 className="mt-10 mb-2">contact</h1>
           <div className="icon-text mb-4">
             <span>
-              <img className="icon-shadow" alt="mail icon" src={mail} />
+              <img src={mail} className="icon-shadow" alt="" />
               <a
                 className="underline-highlight"
                 href="mailto:jenna2004@gmail.com"
@@ -59,11 +59,7 @@ function About() {
           </div>
           <div className="icon-text mb-4">
             <span>
-              <img
-                className="icon-shadow"
-                alt="linkedin icon"
-                src={clinkedin}
-              />
+              <img src={clinkedin} className="icon-shadow" alt="" />
               <a
                 className="underline-highlight"
                 href="https://www.linkedin.com/in/jyw42/"
@@ -79,11 +75,11 @@ function About() {
           <div className="flex max-w-72 flex-col items-center">
             <div className="bubble">
               <img
+                src={bubble}
                 className="max-w-none drop-shadow-(--default)"
                 width={350}
                 draggable="false"
-                alt="speech bubble"
-                src={bubble}
+                alt=""
               />
               <div className="absolute top-6 left-5 flex flex-wrap">
                 <LastFmArtist
@@ -93,10 +89,10 @@ function About() {
               </div>
             </div>
             <img
+              src={newspaper}
               className="z-10 mx-24 w-64 max-w-full max-xl:mb-24"
               draggable="false"
-              alt="toro reading the newspaper"
-              src={newspaper}
+              alt=""
             />
           </div>
         </div>

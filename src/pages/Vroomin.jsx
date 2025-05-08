@@ -101,9 +101,9 @@ function Vroomin() {
             <br />
           </div>
           <img
-            className="mt-12 w-60 max-md:mb-12 max-md:w-48"
-            alt="toro peekaboo"
             src={peekaboo}
+            className="mt-12 w-60 max-md:mb-12 max-md:w-48"
+            alt=""
           />
         </div>
       </div>
@@ -114,24 +114,20 @@ function Vroomin() {
           <div className="mobile-grid" data-aos="fade-in">
             {mobileProtos.map(({ src, alt }, index) => (
               <Zoom>
-                <img key={index} className="mobile-proto" alt={alt} src={src} />
+                <img src={src} key={index} className="mobile-proto" alt={alt} />
               </Zoom>
             ))}
           </div>
           <div className="web-grid" data-aos="fade-in">
             {webProtos.map(({ src, alt }, index) => (
               <Zoom>
-                <img key={index} className="web-proto" alt={alt} src={src} />
+                <img src={src} key={index} className="web-proto" alt={alt} />
               </Zoom>
             ))}
           </div>
         </section>
         <div className="project-end">
-          <img
-            className="mt-24 w-72 max-md:w-48"
-            alt="kuro laying down"
-            src={laying}
-          />
+          <img src={laying} className="mt-24 w-72 max-md:w-48" alt="" />
           <div className="w-lg">
             <h2>next steps</h2>
             <p data-aos="light-fade-up">

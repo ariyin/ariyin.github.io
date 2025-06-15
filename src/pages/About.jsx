@@ -14,10 +14,10 @@ function About() {
   return (
     <>
       <div className="absolute right-12 flex h-screen flex-col items-end justify-center select-none max-xl:hidden">
-        <p className="mt-20 mr-44 -mb-7 text-[14vw] font-semibold text-(--ti-beige)">
+        <p className="text-ti-beige mt-20 mr-44 -mb-7 text-[14vw] font-semibold">
           井上
         </p>
-        <p className="text-[14vw] font-semibold text-(--ti-beige)">トロ</p>
+        <p className="text-ti-beige text-[14vw] font-semibold">トロ</p>
       </div>
       <div className="flex h-screen flex-wrap items-center justify-between max-md:justify-center">
         <div className="relative px-24 pt-36 pb-24 max-md:px-8">

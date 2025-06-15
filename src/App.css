@@ -14,7 +14,7 @@
 }
 
 ::selection {
-  @apply bg-(--ti-brown) text-(--ti-bg);
+  @apply bg-ti-brown text-ti-bg;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +34,13 @@
 @theme {
   --font-fakt: "Fakt Soft", "sans-serif";
   --font-gws: "Grand Wilson Sans", "sans-serif";
+  --color-ti-brown: #4b2501;
+  --color-ti-bg: #f7f6e8;
+  --color-ti-beige: #e7e7d7;
+  --color-ti-pink: #efbab0;
+  --color-ti-orange: #fbc99a;
+  --color-ti-light-orange: #f7dda8;
+  --color-ti-yellow: #f9f8cc;
 }
 
 @layer base {
@@ -62,38 +69,36 @@
 
   html,
   body {
-    margin: 0;
+    @apply bg-ti-bg m-0 overflow-x-hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-    background-color: var(--ti-bg);
   }
 
   a:link,
   a:visited {
-    @apply text-(--ti-brown);
+    @apply text-ti-brown;
     text-decoration: none;
   }
 
   h1 {
-    @apply font-gws relative z-10 m-0 inline-block text-5xl font-normal text-(--ti-brown) max-md:text-4xl;
+    @apply font-gws text-ti-brown relative z-10 m-0 inline-block text-5xl font-normal max-md:text-4xl;
   }
 
   h1:after {
-    @apply absolute bottom-1.5 -left-[3px] -z-10 h-4 bg-(--ti-beige) content-[""];
+    @apply bg-ti-beige absolute bottom-1.5 -left-[3px] -z-10 h-4 content-[""];
     width: calc(100% + 6px);
   }
 
   h2 {
-    @apply font-gws m-0 mt-12 text-4xl font-normal text-(--ti-brown) max-md:text-3xl;
+    @apply font-gws text-ti-brown m-0 mt-12 text-4xl font-normal max-md:text-3xl;
   }
 
   h3 {
-    @apply font-fakt m-0 text-lg font-semibold text-(--ti-brown);
+    @apply font-fakt text-ti-brown m-0 text-lg font-semibold;
   }
 
   p {
-    @apply font-fakt m-0 text-lg font-normal text-(--ti-brown);
+    @apply font-fakt text-ti-brown m-0 text-lg font-normal;
   }
 
   button {
@@ -101,14 +106,14 @@
   }
 
   .ti-button {
-    @apply font-fakt cursor-pointer rounded-lg border-2 border-solid border-(--ti-brown) bg-(--ti-brown) px-5 py-2 text-lg font-normal text-white;
+    @apply font-fakt border-ti-brown bg-ti-brown cursor-pointer rounded-lg border-2 border-solid px-5 py-2 text-lg font-normal text-white;
     transition:
       background-color 0.3s ease,
       color 0.3s ease;
   }
 
   .ti-button:hover {
-    @apply bg-(--ti-beige) text-(--ti-brown);
+    @apply text-ti-brown bg-ti-beige;
   }
 
   .icon-text span {
@@ -127,7 +132,7 @@
 }
 
 .underline-highlight p:after {
-  @apply absolute -bottom-1 -left-[3px] -z-10 h-[2.5px] bg-(--ti-pink) duration-300 content-[""];
+  @apply bg-ti-pink absolute -bottom-1 -left-[3px] -z-10 h-[2.5px] duration-300 content-[""];
   width: calc(100% + 6px);
 }
 
@@ -149,38 +154,38 @@
 }
 
 .MuiChip-label {
-  @apply font-fakt text-base font-semibold text-(--ti-bg);
+  @apply font-fakt text-ti-bg text-base font-semibold;
 }
 
 .highlight-1:after,
 .highlight-2:after,
 .highlight-3:after {
-  @apply absolute bottom-1.5 -left-[3px] -z-10 h-2.5 bg-(--ti-light-orange) content-[""];
+  @apply bg-ti-light-orange absolute bottom-1.5 -left-[3px] -z-10 h-2.5 content-[""];
   width: calc(100% + 6px);
 }
 
 .highlight-4:after {
-  @apply absolute bottom-1.5 -left-[3px] -z-10 h-2.5 bg-(--ti-orange) content-[""];
+  @apply bg-ti-orange absolute bottom-1.5 -left-[3px] -z-10 h-2.5 content-[""];
   width: calc(100% + 6px);
 }
 
 .highlight-5:after {
-  @apply absolute bottom-1.5 -left-[3px] -z-10 h-2.5 bg-(--ti-pink) content-[""];
+  @apply bg-ti-pink absolute bottom-1.5 -left-[3px] -z-10 h-2.5 content-[""];
   width: calc(100% + 6px);
 }
 
 .ni-bg-1,
 .ni-bg-2,
 .ni-bg-3 {
-  @apply bg-(--ti-light-orange);
+  @apply bg-ti-light-orange;
 }
 
 .ni-bg-4 {
-  @apply bg-(--ti-orange);
+  @apply bg-ti-orange;
 }
 
 .ni-bg-5 {
-  @apply bg-(--ti-pink);
+  @apply bg-ti-pink;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -196,7 +201,7 @@
 
 .navigation a:link,
 .navigation a:visited {
-  @apply text-(--ti-brown) no-underline;
+  @apply text-ti-brown no-underline;
 }
 
 .nav-icons {
@@ -212,7 +217,7 @@
 }
 
 .underline:after {
-  @apply absolute -bottom-0.5 left-0 h-[2.5px] w-0 bg-(--ti-brown) duration-300 content-[""];
+  @apply bg-ti-brown absolute -bottom-0.5 left-0 h-[2.5px] w-0 duration-300 content-[""];
 }
 
 .underline:hover:after {
@@ -220,7 +225,7 @@
 }
 
 .underline.active::after {
-  @apply absolute -bottom-0.5 left-0 h-[2.5px] w-full bg-(--ti-brown) content-[""];
+  @apply bg-ti-brown absolute -bottom-0.5 left-0 h-[2.5px] w-full content-[""];
 }
 
 .underline:not(:last-child) {
@@ -263,7 +268,7 @@
 }
 
 .squares div {
-  @apply absolute -bottom-36 block h-5 w-5 bg-(--ti-beige);
+  @apply bg-ti-beige absolute -bottom-36 block h-5 w-5;
   animation: animate 25s linear infinite;
 }
 
@@ -375,7 +380,7 @@
 }
 
 .name-tag {
-  @apply flex items-center bg-(--ti-yellow) drop-shadow-(--default);
+  @apply bg-ti-yellow flex items-center drop-shadow-(--default);
 }
 
 .checkbox {
@@ -403,7 +408,7 @@
 }
 
 .project-button {
-  @apply bg-(--ti-brown) px-5 py-1 text-white max-md:px-4;
+  @apply bg-ti-brown px-5 py-1 text-white max-md:px-4;
 }
 
 /* === PROTOTYPE === */
@@ -422,11 +427,11 @@
 }
 
 .project-link {
-  @apply font-fakt text-lg font-normal text-(--ti-brown) underline;
+  @apply font-fakt text-ti-brown text-lg font-normal underline;
 }
 
 .beige-bg {
-  @apply -mx-24 my-0 bg-(--ti-beige) px-24 py-1;
+  @apply bg-ti-beige -mx-24 my-0 px-24 py-1;
 }
 
 .mobile-grid {

@@ -13,7 +13,6 @@ import gallery from "../assets/icons/gallery.svg";
 import galleryfilled from "../assets/icons/gallery-filled.svg";
 import cafe from "../assets/icons/cafe.svg";
 import cafefilled from "../assets/icons/cafefilled.svg";
-import resume from "../assets/icons/resume.svg";
 import network from "../assets/icons/online.svg";
 import battery from "../assets/icons/battery.svg";
 
@@ -78,11 +77,11 @@ export default function NavBar() {
         className="pointer-events-none fixed top-0 z-20 w-screen max-w-none rotate-180 drop-shadow-(--border) select-none max-xl:h-36 max-xl:w-auto"
         alt=""
       />
-      <div className="navigation font-fakt fixed z-20 flex w-full items-center justify-between pt-5 text-center font-semibold text-(--ti-brown) max-xl:justify-center">
+      <div className="navigation font-fakt text-ti-brown fixed z-20 flex w-full items-center justify-between pt-5 text-center font-semibold max-xl:justify-center">
         {/* === LEFT ITEMS === */}
         <span className="flex items-center gap-5 pl-12 max-xl:hidden">
           <img src={network} className="icon" alt="" />
-          <span className="h-7 w-36 rounded-lg bg-(--ti-brown)">
+          <span className="bg-ti-brown h-7 w-36 rounded-lg">
             <p className="text-white">Internet</p>
           </span>
         </span>
@@ -103,14 +102,6 @@ export default function NavBar() {
           <NavLink to="/cafe" className="underline">
             cafe
           </NavLink>
-          <a
-            href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            resume
-          </a>
         </div>
         {/* === MOBILE NAVBAR === */}
         <div>
@@ -137,14 +128,6 @@ export default function NavBar() {
           <NavLink to="/cafe" className="nav-icons">
             <img src={cafeIcon} className="icon" alt="icon to cafe page" />
           </NavLink>
-          <a
-            href="https://drive.google.com/drive/folders/1SaSxOoUAGhTMfW6iIWo1fop8Vn0M-5jj?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-icons"
-          >
-            <img src={resume} className="icon" alt="icon to resume" />
-          </a>
         </div>
         {/* === RIGHT ITEMS === */}
         <span className="flex items-center gap-5 pr-12 [word-spacing:0px] max-xl:hidden">

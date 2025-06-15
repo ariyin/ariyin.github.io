@@ -43,7 +43,7 @@ export default function CodeProject({
         <AsyncImage
           src={isChecked ? checkedbox : checkbox}
           className="checkbox"
-          loader={<div className="bg-(--ti-yellow)" />}
+          loader={<div className="bg-ti-yellow" />}
         />
         <h3 className="label">{name}</h3>
       </div>
@@ -58,7 +58,7 @@ export default function CodeProject({
           <AsyncImage
             src={isChecked ? image : bwimage}
             className="project-image aspect-17/10 h-auto w-full"
-            loader={<div className="bg-(--ti-beige)" />}
+            loader={<div className="bg-ti-beige" />}
           />
         </Link>
         <div className="absolute bottom-10 left-5 flex gap-2.5">

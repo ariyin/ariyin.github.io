@@ -41,7 +41,7 @@ export default function UIProject({
         <AsyncImage
           src={isChecked ? checkedbox : checkbox}
           className="checkbox"
-          loader={<div className="bg-(--ti-yellow)" />}
+          loader={<div className="bg-ti-yellow" />}
         />
         <h3 className="label">{name}</h3>
       </div>
@@ -56,7 +56,7 @@ export default function UIProject({
           <AsyncImage
             src={isChecked ? image : bwimage}
             className="project-image aspect-17/10 h-auto w-full"
-            loader={<div className="bg-(--ti-beige)" />}
+            loader={<div className="bg-ti-beige" />}
           />
         </Link>
       </div>

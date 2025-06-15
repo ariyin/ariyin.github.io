@@ -42,7 +42,7 @@ for the art i've created over the years (spoiler: i do not create that many).
 
 ### cafe
 
-for all the drinks i've tried. if you're looking for cafe recommendations check it out!
+for all the drinks i've tried. if you're looking for cafe recommendations, check it out!
 
 ### resume
 

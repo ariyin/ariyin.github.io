@@ -147,7 +147,7 @@ function Gallery() {
               style={{
                 aspectRatio: `${image.aspectRatio}`,
               }}
-              loader={<div className="bg-(--ti-beige)" />}
+              loader={<div className="bg-ti-beige" />}
             />
             <p>{image.title}</p>
           </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import useTitle from "../components/useTitle";
 import Drink from "../components/Drink";
 import DrinkDetail from "../components/DrinkDetail";
-import { Dialog, DialogContent, DialogTrigger } from "../components/ui/dialog";
+import { Dialog, DialogContent } from "../components/ui/dialog";
 import {
   Select,
   SelectContent,
@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import noimage from "../assets/noimage.png";
 
 function formatDate(rawDate) {
@@ -26,6 +27,8 @@ function Cafe() {
   const [selectedLocation, setSelectedLocation] = useState("all");
   const [selectedRating, setSelectedRating] = useState("all");
   const [sortOption, setSortOption] = useState("date_desc");
+  const [currentDrinkIndex, setCurrentDrinkIndex] = useState(0);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const RANGE = "ratings!A2:J";
   useTitle("cafe - ");
 
@@ -51,13 +54,13 @@ function Cafe() {
 
       switch (field) {
         case "date":
-          // Convert dates to timestamps for comparison
+          // convert dates to timestamps for comparison
           const dateA = new Date(a.date.split(".").reverse().join("-"));
           const dateB = new Date(b.date.split(".").reverse().join("-"));
           comparison = dateA - dateB;
           break;
         case "price":
-          // Remove $ and convert to number
+          // remove $ and convert to number
           comparison =
             parseFloat(a.price.replace("$", "")) -
             parseFloat(b.price.replace("$", ""));
@@ -134,6 +137,18 @@ function Cafe() {
     setFilteredEntries(sortEntries(filtered));
   }, [entries, selectedLocation, selectedRating, sortOption]);
 
+  const handleNavigate = (direction) => {
+    if (direction === "prev") {
+      setCurrentDrinkIndex((prev) =>
+        prev > 0 ? prev - 1 : filteredEntries.length - 1,
+      );
+    } else {
+      setCurrentDrinkIndex((prev) =>
+        prev < filteredEntries.length - 1 ? prev + 1 : 0,
+      );
+    }
+  };
+
   return (
     <div className="relative flex w-screen flex-col gap-10 px-24 pt-36 pb-24 max-md:px-8">
       <div>
@@ -191,18 +206,38 @@ function Cafe() {
       </div>
       <div className="grid grid-cols-[repeat(3,_1fr)] gap-14 max-xl:grid-cols-[repeat(2,_1fr)] max-lg:hidden">
         {filteredEntries.map((drink, index) => (
-          <Dialog key={index}>
-            <DialogTrigger>
-              <Drink key={index} {...drink} />
-            </DialogTrigger>
-            <DialogContent
-              onOpenAutoFocus={(e) => e.preventDefault()}
-              onCloseAutoFocus={(e) => e.preventDefault()}
-            >
-              <DrinkDetail key={index} {...drink} />
-            </DialogContent>
-          </Dialog>
+          <div
+            key={index}
+            onClick={() => {
+              setCurrentDrinkIndex(index);
+              setIsDialogOpen(true);
+            }}
+          >
+            <Drink {...drink} />
+          </div>
         ))}
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogContent
+            onOpenAutoFocus={(e) => e.preventDefault()}
+            onCloseAutoFocus={(e) => e.preventDefault()}
+          >
+            <button
+              onClick={() => handleNavigate("prev")}
+              className="absolute top-1/2 -left-10 z-20 -translate-y-1/2 rounded-full bg-white p-1"
+              aria-label="previous drink"
+            >
+              <ChevronLeft className="text-ti-brown size-4" />
+            </button>
+            <button
+              onClick={() => handleNavigate("next")}
+              className="absolute top-1/2 -right-10 z-20 -translate-y-1/2 rounded-full bg-white p-1"
+              aria-label="next drink"
+            >
+              <ChevronRight className="text-ti-brown size-4" />
+            </button>
+            <DrinkDetail {...filteredEntries[currentDrinkIndex]} />
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="grid grid-cols-[auto] gap-14 lg:hidden">
         {filteredEntries.map((drink, index) => (

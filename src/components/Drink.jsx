@@ -30,9 +30,7 @@ export default function Drink({
       )}
       <div className="flex flex-col gap-2 p-5">
         <div className="flex h-16 items-center justify-center">
-          <h2
-            className={`highlight-${rating} relative m-0 text-center text-lg leading-6 whitespace-pre-line`}
-          >
+          <h2 className="relative m-0 text-center text-lg leading-6 whitespace-pre-line">
             {drink}
           </h2>
         </div>

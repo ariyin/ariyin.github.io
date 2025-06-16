@@ -3,12 +3,7 @@
 
 :root {
   --ti-brown: #4b2501;
-  --ti-bg: #f7f6e8;
   --ti-beige: #e7e7d7;
-  --ti-pink: #efbab0;
-  --ti-orange: #fbc99a;
-  --ti-light-orange: #f7dda8;
-  --ti-yellow: #f9f8cc;
   --border: 0px 1px 6px rgba(0, 0, 0, 0.2);
   --default: 0px 2px 1.5px rgba(0, 0, 0, 0.2);
 }
@@ -155,23 +150,6 @@
 
 .MuiChip-label {
   @apply font-fakt text-ti-bg text-base font-semibold;
-}
-
-.highlight-1:after,
-.highlight-2:after,
-.highlight-3:after {
-  @apply bg-ti-light-orange absolute bottom-1.5 -left-[3px] -z-10 h-2.5 content-[""];
-  width: calc(100% + 6px);
-}
-
-.highlight-4:after {
-  @apply bg-ti-orange absolute bottom-1.5 -left-[3px] -z-10 h-2.5 content-[""];
-  width: calc(100% + 6px);
-}
-
-.highlight-5:after {
-  @apply bg-ti-pink absolute bottom-1.5 -left-[3px] -z-10 h-2.5 content-[""];
-  width: calc(100% + 6px);
 }
 
 .ni-bg-1,

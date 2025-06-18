@@ -2,7 +2,9 @@ import React from "react";
 import { Chip } from "@mui/material";
 import { DialogTitle, DialogDescription } from "../components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { formatDate } from "./Drink";
 import torohead from "../assets/icons/torohead.svg";
+import stamp from "../assets/stamp.png";
 
 export default function DrinkDetail({
   date,
@@ -32,17 +34,22 @@ export default function DrinkDetail({
         />
         <div className="flex basis-1/2 flex-col gap-2.5 bg-white p-10">
           <h2 className="m-0 text-center text-xl">{drink}</h2>
-          <div className="mt-2 flex gap-3">
-            {[...Array(Number(rating))].map((_, i) => (
-              <img
-                src={torohead}
-                key={i}
-                className="w-4"
-                alt={`${rating}/5 rating`}
-              />
-            ))}
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="mt-2 flex gap-3">
+                {[...Array(Number(rating))].map((_, i) => (
+                  <img
+                    src={torohead}
+                    key={i}
+                    className="w-4"
+                    alt={`${rating}/5 rating`}
+                  />
+                ))}
+              </div>
+              <h3>{cafe}</h3>
+            </div>
+            {Number(rating) === 5 && <img src={stamp} className="size-10" />}
           </div>
-          <h3>{cafe}</h3>
           <div className="flex gap-2">
             <Chip
               label={price}
@@ -59,7 +66,7 @@ export default function DrinkDetail({
               }}
             />
             <Chip
-              label={date}
+              label={formatDate(date)}
               style={{
                 backgroundColor: "var(--ti-brown)",
                 borderRadius: "10px",

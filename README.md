@@ -11,8 +11,10 @@ install the necessary packages: `npm i`
 create a `.env` file and fill out the following:
 
 ```env
+# to track the most recent listened to music
 VITE_LASTFM_USERNAME=
 VITE_LASTFM_API_KEY=
+# to display drink reviews
 VITE_GOOGLE_API_KEY=
 VITE_GOOGLE_SHEET_ID=
 ```
@@ -44,16 +46,6 @@ for the art i've created over the years (spoiler: i do not create that many).
 
 for all the drinks i've tried. if you're looking for cafe recommendations, check it out!
 
-### resume
-
-not an actual page, but links to my most recently updated resume! for those who want to stalk my gpa and know what i've been up to academically and extracurricularly.
-
-## todo
-
-aka (some of) my future plan(s) for this site. i've whittled away most of my ideas and now i have but a dream...
-
-- website themes (in the far future when i become a real pro, for example toro inoue is one theme, and another theme could be y2k)
-
 ## assets
 
 ### images
@@ -66,6 +58,7 @@ aka (some of) my future plan(s) for this site. i've whittled away most of my ide
 
 thank you to all the kind people who developed these packages! this website couldn't have been made without you <3
 
+- `shadcn` for basic components
 - `mui` for the chips
 - `aos` for scroll animations
 - `masonry-layout` and `imagesloaded` for the gallery

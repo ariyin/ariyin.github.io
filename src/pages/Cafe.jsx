@@ -13,14 +13,6 @@ import {
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import noimage from "../assets/noimage.png";
 
-function formatDate(rawDate) {
-  const [month, day, year] = rawDate.split("/").map(Number);
-  const date = new Date(year, month - 1, day);
-  return `${date
-    .toLocaleString("en-US", { month: "short" })
-    .toLowerCase()}. ${year}`;
-}
-
 function Cafe() {
   const [entries, setEntries] = useState([]);
   const [filteredEntries, setFilteredEntries] = useState([]);
@@ -34,7 +26,7 @@ function Cafe() {
 
   // get unique locations from entries
   const locations = ["all", ...new Set(entries.map((entry) => entry.location))];
-  const ratings = ["all", "1", "2", "3", "4", "5"];
+  const ratings = ["all", "5", "4", "3", "2", "1"];
 
   const sortOptions = [
     { value: "date_desc", label: "date: recent to old" },
@@ -55,8 +47,8 @@ function Cafe() {
       switch (field) {
         case "date":
           // convert dates to timestamps for comparison
-          const dateA = new Date(a.date.split(".").reverse().join("-"));
-          const dateB = new Date(b.date.split(".").reverse().join("-"));
+          const dateA = new Date(a.date.split("/").join("-"));
+          const dateB = new Date(b.date.split("/").join("-"));
           comparison = dateA - dateB;
           break;
         case "price":
@@ -92,7 +84,7 @@ function Cafe() {
         const rows = json.values || [];
         const data = rows
           .map((row) => ({
-            date: formatDate(row[0]),
+            date: row[0],
             cafe: row[1],
             location: row[2],
             drink: row[3],
@@ -153,7 +145,10 @@ function Cafe() {
     <div className="relative flex w-screen flex-col gap-10 px-24 pt-36 pb-24 max-md:px-8">
       <div>
         <h1>cafe</h1>
-        <p>all the drinks and cafes i've tried and my review on them :3</p>
+        <p>
+          all the drinks from cafes i've tried and my review on them as someone
+          who prefers a minimum amount of sweetness :3
+        </p>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex flex-wrap items-center gap-4">

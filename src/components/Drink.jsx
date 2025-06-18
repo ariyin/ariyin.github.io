@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { Chip } from "@mui/material";
 import pointer from "../assets/icons/pointer.svg";
 import torohead from "../assets/icons/torohead.svg";
+import stamp from "../assets/stamp.png";
+
+export function formatDate(rawDate) {
+  const [month, day, year] = rawDate.split("/").map(Number);
+  const date = new Date(year, month - 1, day);
+  return `${date
+    .toLocaleString("en-US", { month: "short" })
+    .toLowerCase()}. ${year}`;
+}
 
 export default function Drink({
   date,
@@ -40,17 +49,22 @@ export default function Drink({
           alt={`${drink} image`}
         />
         <div className="flex h-max flex-col gap-2.5">
-          <div className="flex gap-3">
-            {[...Array(Number(rating))].map((_, i) => (
-              <img
-                src={torohead}
-                key={i}
-                className="w-4"
-                alt={`${rating}/5 rating`}
-              />
-            ))}
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-2.5">
+              <div className="flex gap-3">
+                {[...Array(Number(rating))].map((_, i) => (
+                  <img
+                    src={torohead}
+                    key={i}
+                    className="w-4"
+                    alt={`${rating}/5 rating`}
+                  />
+                ))}
+              </div>
+              <h3>{cafe}</h3>
+            </div>
+            {Number(rating) === 5 && <img src={stamp} className="size-10" />}
           </div>
-          <h3>{cafe}</h3>
           <div className="flex gap-2">
             <Chip
               label={price}
@@ -67,7 +81,7 @@ export default function Drink({
               }}
             />
             <Chip
-              label={date}
+              label={formatDate(date)}
               style={{
                 backgroundColor: "var(--ti-brown)",
                 borderRadius: "10px",

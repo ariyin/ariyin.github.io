@@ -51,7 +51,7 @@ function Olyverse() {
       <div className="project-content">
         <div className="w-lg">
           <h2 className="m-0">goal</h2>
-          <p>
+          <p data-aos="light-fade-up">
             design an app that allows users to interact with LA28 athletes and
             get a fuller LA28 experience.
           </p>

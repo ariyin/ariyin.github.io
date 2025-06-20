@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import { Chip } from "@mui/material";
+import { formatDate } from "./utils";
 import pointer from "../assets/icons/pointer.svg";
 import torohead from "../assets/icons/torohead.svg";
 import stamp from "../assets/stamp.png";
-
-export function formatDate(rawDate) {
-  const [month, day, year] = rawDate.split("/").map(Number);
-  const date = new Date(year, month - 1, day);
-  return `${date
-    .toLocaleString("en-US", { month: "short" })
-    .toLowerCase()}. ${year}`;
-}
 
 export default function Drink({
   date,
@@ -26,7 +19,7 @@ export default function Drink({
 
   return (
     <div
-      className="image-tag bg-white text-left drop-shadow-(--default)"
+      className="image-tag cursor-pointer bg-white text-left drop-shadow-(--default)"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

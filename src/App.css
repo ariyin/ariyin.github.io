@@ -149,7 +149,7 @@
 }
 
 .MuiChip-label {
-  @apply font-fakt text-ti-bg text-base font-semibold;
+  @apply font-fakt text-ti-bg text-sm font-semibold;
 }
 
 .ni-bg-1,

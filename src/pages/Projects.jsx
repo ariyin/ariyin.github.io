@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import CodeProject from "../components/CodeProject";
 import UIProject from "../components/UIProject";
 import useTitle from "../components/useTitle";
+import speak from "../assets/thumbnails/speak.png";
+import speakbw from "../assets/thumbnails/speakbw.png";
 import saga from "../assets/thumbnails/saga.png";
 import sagabw from "../assets/thumbnails/sagabw.png";
-import cuberunner from "../assets/thumbnails/cuberunner.png";
-import cuberunnerbw from "../assets/thumbnails/cuberunnerbw.png";
 import soundsright from "../assets/thumbnails/soundsright.png";
 import soundsrightbw from "../assets/thumbnails/soundsrightbw.png";
 import ucthrift from "../assets/thumbnails/ucthrift.png";
@@ -25,23 +25,23 @@ import tv from "../assets/cat/tv.webp";
 
 const codeProjects = [
   {
+    name: "speak",
+    description: "get feedback for your public speaking",
+    image: speak,
+    bwimage: speakbw,
+    link: "https://github.com/ariyin/speak",
+    skills: ["farm", "typescript", "gemini"],
+    rotate: "0",
+    shift: "0",
+  },
+  {
     name: "SAGA",
     description:
       "an educational website that teaches computer graphics with ai",
     image: saga,
     bwimage: sagabw,
     link: "https://teach-saga.netlify.app/",
-    skills: ["react.js", "three.js", "gemini"],
-    rotate: "0",
-    shift: "0",
-  },
-  {
-    name: "Cube Runner",
-    description: "the classic cube runner game implemented with tinygraphics",
-    image: cuberunner,
-    bwimage: cuberunnerbw,
-    link: "https://ariyin.github.io/cube-runner/",
-    skills: ["tinygraphics", "javascript"],
+    skills: ["react", "javascript", "three.js", "gemini"],
     rotate: "-1",
     shift: "20",
   },
@@ -52,7 +52,7 @@ const codeProjects = [
     image: soundsright,
     bwimage: soundsrightbw,
     link: "https://github.com/uclaacm/stackschool-demo-w24",
-    skills: ["pern", "spotify"],
+    skills: ["pern", "javascript", "spotify"],
     rotate: "2",
     shift: "10",
   },
@@ -62,7 +62,7 @@ const codeProjects = [
     image: ucthrift,
     bwimage: ucthriftbw,
     link: "https://github.com/Monicaaawa/uc-thrift",
-    skills: ["mern"],
+    skills: ["mern", "javascript"],
     rotate: "-1",
     shift: "0",
   },

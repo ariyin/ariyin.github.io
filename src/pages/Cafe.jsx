@@ -211,7 +211,11 @@ function Cafe() {
             <Drink {...drink} />
           </div>
         ))}
-        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <Dialog
+          open={isDialogOpen}
+          onOpenChange={setIsDialogOpen}
+          className="w-3/4"
+        >
           <DialogContent
             onOpenAutoFocus={(e) => e.preventDefault()}
             onCloseAutoFocus={(e) => e.preventDefault()}

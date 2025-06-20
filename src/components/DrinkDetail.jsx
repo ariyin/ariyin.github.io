@@ -2,7 +2,7 @@ import React from "react";
 import { Chip } from "@mui/material";
 import { DialogTitle, DialogDescription } from "../components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { formatDate } from "./Drink";
+import { formatDate } from "./utils";
 import torohead from "../assets/icons/torohead.svg";
 import stamp from "../assets/stamp.png";
 
@@ -26,10 +26,10 @@ export default function DrinkDetail({
           visited {date}, paid {price}, review: {review}
         </DialogDescription>
       </VisuallyHidden>
-      <div className="flex h-full w-auto gap-2 bg-white drop-shadow-(--default)">
+      <div className="flex h-full gap-2 bg-white drop-shadow-(--default)">
         <img
           src={image}
-          className={`ni-bg-${rating} h-full basis-1/2 object-cover`}
+          className={`ni-bg-${rating} w-1/2 object-cover`}
           alt={`${drink} image`}
         />
         <div className="flex basis-1/2 flex-col gap-2.5 bg-white p-10">

@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Chip } from "@mui/material";
 import { AsyncImage } from "loadable-image";
 import pointer from "../assets/icons/pointer.svg";
 import checkbox from "../assets/icons/checkbox.svg";
 import checkedbox from "../assets/icons/checkedbox.svg";
+import { useCheckbox } from "./utils";
 
 export default function CodeProject({
   name,
@@ -17,22 +18,7 @@ export default function CodeProject({
   shift,
 }) {
   const [isHovered, setIsHovered] = useState(false);
-  const [isChecked, setIsChecked] = useState();
-
-  const handleCheckboxClick = () => {
-    setIsChecked(true);
-    localStorage.setItem(name, true);
-  };
-
-  useEffect(() => {
-    const storedValue = localStorage.getItem(name);
-    if (storedValue === "true") {
-      setIsChecked(true);
-    } else {
-      setIsChecked(false);
-      localStorage.setItem(name, false);
-    }
-  }, []);
+  const { isChecked, handleCheckboxClick } = useCheckbox(name);
 
   return (
     <div

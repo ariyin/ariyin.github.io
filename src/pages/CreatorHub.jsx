@@ -34,7 +34,9 @@ function CreatorHub() {
       <div className="project-content">
         <div className="w-lg">
           <h2 className="m-0">goal</h2>
-          <p>design the screens for the creatorhub mvp.</p>
+          <p data-aos="light-fade-up">
+            design the screens for the creatorhub mvp.
+          </p>
           <h2>thoughts</h2>
           <p data-aos="light-fade-up">
             i am a gamer through and through (though not as much anymore). while

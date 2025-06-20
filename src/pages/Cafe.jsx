@@ -12,6 +12,7 @@ import {
 } from "../components/ui/select";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import noimage from "../assets/noimage.png";
+import torohead from "../assets/icons/torohead.svg";
 
 function Cafe() {
   const [entries, setEntries] = useState([]);
@@ -21,6 +22,7 @@ function Cafe() {
   const [sortOption, setSortOption] = useState("date_desc");
   const [currentDrinkIndex, setCurrentDrinkIndex] = useState(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
   const RANGE = "ratings!A2:J";
   useTitle("cafe - ");
 
@@ -97,10 +99,12 @@ function Cafe() {
 
         setEntries(data);
         setFilteredEntries(sortEntries(data));
+        setLoading(false);
       } catch (error) {
         // don't update state if this effect has been cleaned up
         if (ignore) return;
         console.error("Error fetching data from Google Sheets:", error);
+        setLoading(false);
       }
     };
 
@@ -142,7 +146,7 @@ function Cafe() {
   };
 
   return (
-    <div className="relative flex w-screen flex-col gap-10 px-24 pt-36 pb-24 max-md:px-8">
+    <div className="relative flex min-h-screen w-screen flex-col gap-10 px-24 pt-36 pb-24 max-md:px-8">
       <div>
         <h1>cafe</h1>
         <p>
@@ -199,50 +203,59 @@ function Cafe() {
           {filteredEntries.length !== 1 ? "s" : ""}
         </p>
       </div>
-      <div className="grid grid-cols-[repeat(3,_1fr)] gap-14 max-xl:grid-cols-[repeat(2,_1fr)] max-lg:hidden">
-        {filteredEntries.map((drink, index) => (
-          <div
-            key={index}
-            onClick={() => {
-              setCurrentDrinkIndex(index);
-              setIsDialogOpen(true);
-            }}
-          >
-            <Drink {...drink} />
+      {loading ? (
+        <div className="flex h-full w-full flex-1 flex-col items-center justify-center gap-10 text-center">
+          <img src={torohead} className="bounce w-16" />
+          <p className="loading-text">loading</p>
+        </div>
+      ) : (
+        <>
+          <div className="grid grid-cols-[repeat(3,_1fr)] gap-14 max-xl:grid-cols-[repeat(2,_1fr)] max-lg:hidden">
+            {filteredEntries.map((drink, index) => (
+              <div
+                key={index}
+                onClick={() => {
+                  setCurrentDrinkIndex(index);
+                  setIsDialogOpen(true);
+                }}
+              >
+                <Drink {...drink} />
+              </div>
+            ))}
+            <Dialog
+              open={isDialogOpen}
+              onOpenChange={setIsDialogOpen}
+              className="w-3/4"
+            >
+              <DialogContent
+                onOpenAutoFocus={(e) => e.preventDefault()}
+                onCloseAutoFocus={(e) => e.preventDefault()}
+              >
+                <button
+                  onClick={() => handleNavigate("prev")}
+                  className="absolute top-1/2 -left-10 z-20 -translate-y-1/2 rounded-full bg-white p-1"
+                  aria-label="previous drink"
+                >
+                  <ChevronLeft className="text-ti-brown size-4" />
+                </button>
+                <button
+                  onClick={() => handleNavigate("next")}
+                  className="absolute top-1/2 -right-10 z-20 -translate-y-1/2 rounded-full bg-white p-1"
+                  aria-label="next drink"
+                >
+                  <ChevronRight className="text-ti-brown size-4" />
+                </button>
+                <DrinkDetail {...filteredEntries[currentDrinkIndex]} />
+              </DialogContent>
+            </Dialog>
           </div>
-        ))}
-        <Dialog
-          open={isDialogOpen}
-          onOpenChange={setIsDialogOpen}
-          className="w-3/4"
-        >
-          <DialogContent
-            onOpenAutoFocus={(e) => e.preventDefault()}
-            onCloseAutoFocus={(e) => e.preventDefault()}
-          >
-            <button
-              onClick={() => handleNavigate("prev")}
-              className="absolute top-1/2 -left-10 z-20 -translate-y-1/2 rounded-full bg-white p-1"
-              aria-label="previous drink"
-            >
-              <ChevronLeft className="text-ti-brown size-4" />
-            </button>
-            <button
-              onClick={() => handleNavigate("next")}
-              className="absolute top-1/2 -right-10 z-20 -translate-y-1/2 rounded-full bg-white p-1"
-              aria-label="next drink"
-            >
-              <ChevronRight className="text-ti-brown size-4" />
-            </button>
-            <DrinkDetail {...filteredEntries[currentDrinkIndex]} />
-          </DialogContent>
-        </Dialog>
-      </div>
-      <div className="grid grid-cols-[auto] gap-14 lg:hidden">
-        {filteredEntries.map((drink, index) => (
-          <Drink key={index} {...drink} />
-        ))}
-      </div>
+          <div className="grid grid-cols-[auto] gap-14 lg:hidden">
+            {filteredEntries.map((drink, index) => (
+              <Drink key={index} {...drink} />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }

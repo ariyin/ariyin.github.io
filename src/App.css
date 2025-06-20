@@ -444,6 +444,42 @@
   @apply mb-8;
 }
 
+/* === LOADING === */
+
+.loading-text::after {
+  content: "";
+  animation: dots 1.5s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bounce {
+  animation: bounce 0.7s infinite;
+}
+
 @media (max-width: 600px) {
   .gallery-async-image {
     width: calc(100vw - 100px);

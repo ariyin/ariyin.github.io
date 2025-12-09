@@ -25,7 +25,7 @@ function About() {
           <div className="my-2 flex flex-col gap-2">
             <h3>hello!</h3>
             <p className="max-w-xl">
-              i'm a third year cs major at ucla, interested in full-stack
+              i'm a fourth year cs major at ucla, interested in full-stack
               (mostly frontend) and ui/ux! in my spare time, i enjoy playing
               overwatch, reading manhwas and novels, listening to new songs, and
               visiting new cafes.

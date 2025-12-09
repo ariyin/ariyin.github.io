@@ -26,8 +26,13 @@ export default function LastFmArtist({ username, apiKey }) {
       return <p className="text-xl"> {error} </p>;
     }
 
-    if (!artist) {
-      return;
+    if (!artist || !Array.isArray(artist) || artist.length === 0) {
+      return (
+        <>
+          <p className="headliner">no headliner this week... hmm...</p>
+          <p className="action">maybe next week?</p>
+        </>
+      );
     }
 
     const [{ name: artistName } = {}] = artist;
